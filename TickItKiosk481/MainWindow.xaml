@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="48" Width="106"><Run Language="en-ca" Text="TickIt!"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="106" Margin="0,346,0,0"><Run Language="en-ca" Text="TickIt!"/></TextBlock>
 
     </Grid>
 </Window>
