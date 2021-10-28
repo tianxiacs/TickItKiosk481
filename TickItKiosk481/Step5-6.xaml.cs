@@ -20,6 +20,11 @@ namespace TickItKiosk481
         public Step5_6()
         {
             InitializeComponent();
+            DateTime tom = DateTime.Today.AddDays(1);
         }
+    
+        
     }
+    
+
 }
