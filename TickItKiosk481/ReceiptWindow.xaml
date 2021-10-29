@@ -1,0 +1,22 @@
+<Window x:Class="TickItKiosk481.PaymentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TickItKiosk481"
+        mc:Ignorable="d"
+        Title="ReceiptWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="713*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Margin="217,108,0,0" Text="Payment Successful" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" TextAlignment="Center" FontSize="24" Grid.Column="1"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="0,396,0,0" Width="68" FontSize="14"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="68,396,0,0" VerticalAlignment="Top" Height="38" Width="55" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="241,169,0,0" Text="Would you like a receipt ?" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24" FontSize="18" Grid.Column="1"/>
+        <Button Content="Yes" HorizontalAlignment="Left" Margin="217,236,0,170" Width="74" FontSize="16" Grid.Column="1"/>
+        <Button Content="No" HorizontalAlignment="Left" Margin="378,236,0,170" Width="83" FontSize="16" Grid.Column="1"/>
+
+    </Grid>
+</Window>
