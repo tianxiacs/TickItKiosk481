@@ -1,0 +1,26 @@
+﻿<Page x:Class="TickItKiosk481.ShowSelection"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TickItKiosk481"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ShowSelection">
+
+    <Grid Background="White">
+        <Label Content="Now Playing" HorizontalAlignment="Left" Margin="288,24,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="0,409,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="60,409,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Image HorizontalAlignment="Left" Height="252" Margin="50,80,0,0" VerticalAlignment="Top" Width="174" Source="./Dunkirk-movie-poster.jpg"/>
+        <Image HorizontalAlignment="Left" Height="252" Margin="267,80,0,0" VerticalAlignment="Top" Width="174" Source="./your-name-movie-poster.jpg"/>
+        <Image HorizontalAlignment="Left" Height="252" Margin="480,80,0,0" VerticalAlignment="Top" Width="174" Source="./Venom_Poster.jpg"/>
+        <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Left" Margin="240,391,0,0" VerticalAlignment="Top"/>
+        <Button Content="More movies" HorizontalAlignment="Left" Margin="698,200,0,0" VerticalAlignment="Top" Height="25" Width="80"/>
+        <Label Content="Dunkirk" HorizontalAlignment="Left" Margin="110,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.262,0.476"/>
+        <Label Content="Your Name" HorizontalAlignment="Left" Margin="318,337,0,0" VerticalAlignment="Top"/>
+        <Label Content="Venom" HorizontalAlignment="Left" Margin="545,332,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
