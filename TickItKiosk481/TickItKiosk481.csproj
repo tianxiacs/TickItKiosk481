@@ -6,4 +6,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="debit.jpg" />
+    <None Remove="drink-rem.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="debit.jpg" />
+    <Resource Include="drink-rem.png" />
+  </ItemGroup>
+
 </Project>

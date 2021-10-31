@@ -14,18 +14,13 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for ShowSelection.xaml
+    /// Interaction logic for NoMembership.xaml
     /// </summary>
-    public partial class ShowSelection : Page
+    public partial class NoMembership : Page
     {
-        public ShowSelection()
+        public NoMembership()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

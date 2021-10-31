@@ -23,7 +23,7 @@
         <Button Content="Language" HorizontalAlignment="Left" Margin="10,394,0,0" VerticalAlignment="Top" Height="30" Width="70"/>
         <Button Content="Help?" HorizontalAlignment="Left" Margin="85,394,0,0" VerticalAlignment="Top" Height="30" Width="65"/>
         <Label Content="Venom" FontSize="20" HorizontalAlignment="Left" Height="38" Margin="240,49,0,0" VerticalAlignment="Top" Width="102"/>
-        <Label Content="Tuesday October 12, 2021" HorizontalAlignment="Left" Height="26" Margin="258,84,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="Tuesday November 9, 2021" HorizontalAlignment="Left" Height="26" Margin="258,84,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="18:00" HorizontalAlignment="Left" Height="26" Margin="258,106,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="3D" HorizontalAlignment="Left" Height="26" Margin="258,125,0,0" VerticalAlignment="Top" Width="172"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="90" Margin="569,186,0,0"><Run Language="en-ca" Text="Subtotal"/><Run Text=":"/><LineBreak/><Run/></TextBlock>

@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for ShowSelection.xaml
+    /// Interaction logic for GiftCardPayment.xaml
     /// </summary>
-    public partial class ShowSelection : Page
+    public partial class GiftCardPayment : Page
     {
-        public ShowSelection()
+        public GiftCardPayment()
         {
             InitializeComponent();
         }
