@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="EndWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,81,0,0" Text="Thankyou for using Tick-It" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" TextAlignment="Center" FontSize="24"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,69,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="0,396,0,0" Width="68" FontSize="14"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="68,396,0,0" VerticalAlignment="Top" Height="38" Width="55" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,174,0,0" Text="Please collect your tickets and food vouchers" TextWrapping="Wrap" VerticalAlignment="Top" Width="536" Height="35" FontSize="24" TextAlignment="Center"/>
-        <Button Content="Start new transaction" HorizontalAlignment="Center" Margin="0,281,0,99" Width="267" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,217,0,0" Text="Enjoy your show!" TextWrapping="Wrap" VerticalAlignment="Top" Width="536" Height="35" FontSize="24" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
+        <Button Content="Start a new transaction&#xD;&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,298,0,57" Width="388" FontSize="22"/>
+        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,217,0,173" Width="208" FontSize="18"/>
 
     </Grid>
 </Window>

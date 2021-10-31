@@ -76,16 +76,16 @@
             <TextBlock Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay, StringFormat='yyyy-MM-dd '}"></TextBlock>
             <TextBlock Grid.Row="0" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay, StringFormat='yyyy-MM-dd '}"></TextBlock>
             <Button Grid.Row="1" Grid.Column="0" Background="#FFCF2525">
-                <TextBlock>14:15 <LineBreak/> IMAX</TextBlock>
+                <TextBlock><Run Text="14:15"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
             <Button Grid.Row="3" Grid.Column="0" Background="#FF6BEA82">
-                <TextBlock>19:45 <LineBreak/> IMAX</TextBlock>
+                <TextBlock><Run Text="19:45"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
             <Button Grid.Row="2" Grid.Column="1" Background="#FF6BEA82">
-                <TextBlock>17:15 <LineBreak/> Normal</TextBlock>
+                <TextBlock><Run Text="17:15"/><LineBreak/><Run Language="en-ca" Text="2D"/></TextBlock>
             </Button>
             <Button Grid.Row="1" Grid.Column="2" Background="#FF6BEA82">
-                <TextBlock>15:30 <LineBreak/> IMAX</TextBlock>
+                <TextBlock><Run Text="15:30"/><LineBreak/><Run Language="en-ca" Text="2D"/></TextBlock>
             </Button>
             <Button Grid.Row="3" Grid.Column="2" Background="#FFCF2525">
                 <TextBlock>19:30 <LineBreak/> 3D</TextBlock>
@@ -100,13 +100,13 @@
                 <TextBlock>14:00 <LineBreak/> 3D</TextBlock>
             </Button>
             <Button Grid.Row="2" Grid.Column="5" Background="#FF6BEA82">
-                <TextBlock>18:00 <LineBreak/> IMAX</TextBlock>
+                <TextBlock><Run Text="18:00"/><LineBreak/><Run Language="en-ca" Text="2D"/></TextBlock>
             </Button>
             <Button Grid.Row="3" Grid.Column="5" Background="#FF6BEA82">
                 <TextBlock>21:15 <LineBreak/> 3D</TextBlock>
             </Button>
             <Button Grid.Row="2" Grid.Column="6" Background="#FF6BEA82">
-                <TextBlock>17:45 <LineBreak/> IMAX</TextBlock>
+                <TextBlock><Run Text="17:45"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
         </Grid>
         <Button Margin="-725,-120,0,0" Height="40" Width="70" IsDefault="True" HorizontalAlignment="Center" VerticalAlignment="Center">Language</Button>

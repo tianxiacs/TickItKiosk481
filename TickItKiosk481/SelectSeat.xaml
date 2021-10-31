@@ -90,7 +90,8 @@
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="325,119,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <TextBlock HorizontalAlignment="Left" Margin="325,117,0,0" FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30"><Run Language="en-ca" Text=" "/><Run Text="√"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="325,117,0,0" FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30"><Run Language="en-ca" Text=" "/><Run Text="√"/></TextBlock>
-        <Rectangle HorizontalAlignment="Left" Height="32" Margin="86,345,0,0" Stroke="Black" VerticalAlignment="Top" Width="473"/>
+        <Rectangle HorizontalAlignment="Left" Height="32" Margin="86,345,0,0" Stroke="Black" VerticalAlignment="Top" Width="473" Fill="#FFB1BCE0"/>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="298,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"><Run Language="en-ca" Text="Screen"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="648,12,0,0"><Run Language="en-ca" Text="Welcome, Jonny!"/><LineBreak/><Run Text="Membership Points:"/><Run Text=" 3500"/></TextBlock>
     </Grid>
 </Page>
