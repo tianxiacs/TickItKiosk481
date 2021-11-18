@@ -8,24 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for SelectTicket.xaml
+    /// Interaction logic for MemberScan.xaml
     /// </summary>
-    public partial class SelectTicket : Page
+    public partial class MemberScan : Window
     {
-        public SelectTicket()
+        public MemberScan()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -8,17 +8,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for LanguageScreen.xaml
+    /// Interaction logic for Food.xaml
     /// </summary>
-    public partial class LanguageScreen : Page
+    public partial class Food : Window
     {
-        public LanguageScreen()
+        public Food()
         {
             InitializeComponent();
         }

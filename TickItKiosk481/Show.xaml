@@ -15,7 +15,7 @@
         <Image HorizontalAlignment="Left" Height="252" Margin="278,65,0,0" VerticalAlignment="Top" Width="174" Source="/your-name-movie-poster.jpg"/>
         <Image HorizontalAlignment="Left" Height="252" Margin="491,65,0,0" VerticalAlignment="Top" Width="174" Source="/Venom_Poster.jpg"/>
         <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Center" Margin="0,405,0,0" VerticalAlignment="Top"/>
-        <Button Content="More movies" HorizontalAlignment="Left" Margin="703,208,0,0" VerticalAlignment="Top" Height="25" Width="80"/>
+        <Button Content="Next Page" HorizontalAlignment="Left" Margin="703,208,0,0" VerticalAlignment="Top" Height="25" Width="80"/>
         <Label Content="Dunkirk" HorizontalAlignment="Left" Margin="121,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.262,0.476"/>
         <Label Content="Your Name" HorizontalAlignment="Left" Margin="329,318,0,0" VerticalAlignment="Top"/>
         <Label Content="Venom" HorizontalAlignment="Left" Margin="556,318,0,0" VerticalAlignment="Top"/>

@@ -8,24 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for StartCountDown.xaml
+    /// Interaction logic for Timeout.xaml
     /// </summary>
-    public partial class StartCountDown : Page
+    public partial class Timeout : Window
     {
-        public StartCountDown()
+        public Timeout()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

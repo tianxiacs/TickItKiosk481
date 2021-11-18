@@ -8,17 +8,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for DebitCreditPayment.xaml
+    /// Interaction logic for MemberWelcome.xaml
     /// </summary>
-    public partial class DebitCreditPayment : Page
+    public partial class MemberWelcome : Window
     {
-        public DebitCreditPayment()
+        public MemberWelcome()
         {
             InitializeComponent();
         }

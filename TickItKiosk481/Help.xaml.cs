@@ -8,24 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for TimeoutScreen.xaml
+    /// Interaction logic for Help.xaml
     /// </summary>
-    public partial class TimeoutScreen : Page
+    public partial class Help : Window
     {
-        public TimeoutScreen()
+        public Help()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

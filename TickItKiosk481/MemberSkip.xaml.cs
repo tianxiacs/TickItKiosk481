@@ -8,17 +8,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for NoMembership.xaml
+    /// Interaction logic for MemberSkip.xaml
     /// </summary>
-    public partial class NoMembership : Page
+    public partial class MemberSkip : Window
     {
-        public NoMembership()
+        public MemberSkip()
         {
             InitializeComponent();
         }

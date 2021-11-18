@@ -8,17 +8,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for SelectSeat.xaml
+    /// Interaction logic for Ticket.xaml
     /// </summary>
-    public partial class SelectSeat : Page
+    public partial class Ticket : Window
     {
-        public SelectSeat()
+        public Ticket()
         {
             InitializeComponent();
         }
