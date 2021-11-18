@@ -11,12 +11,12 @@
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="9,6,0,0"/>
         <Button Content="More movies" HorizontalAlignment="Left" Margin="703,208,0,0" VerticalAlignment="Top" Height="25" Width="80"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="655,6,0,0"><Run Language="en-ca" Text="No membership info"/><LineBreak/></TextBlock>
-        <Button Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="655,29,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click"/>
+        <Button Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="655,29,0,0" VerticalAlignment="Top" Width="135" />
         <Button Content="Language" HorizontalAlignment="Left" Margin="9,408,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="78,408,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Image HorizontalAlignment="Left" Height="252" Margin="61,65,0,0" VerticalAlignment="Top" Width="174" Source="/Dunkirk-movie-poster.jpg"/>
-        <Image HorizontalAlignment="Left" Height="252" Margin="278,65,0,0" VerticalAlignment="Top" Width="174" Source="/your-name-movie-poster.jpg"/>
-        <Image HorizontalAlignment="Left" Height="252" Margin="491,65,0,0" VerticalAlignment="Top" Width="174" Source="/Venom_Poster.jpg"/>
+        <Image HorizontalAlignment="Left" Height="252" Margin="61,65,0,0" VerticalAlignment="Top" Width="174" Source="images/Dunkirk-movie-poster.jpg"/>
+        <Image HorizontalAlignment="Left" Height="252" Margin="278,65,0,0" VerticalAlignment="Top" Width="174" Source="images/your-name-movie-poster.jpg"/>
+        <Image HorizontalAlignment="Left" Height="252" Margin="491,65,0,0" VerticalAlignment="Top" Width="174" Source="images/Venom_Poster.jpg"/>
         <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Center" Margin="0,405,0,0" VerticalAlignment="Top"/>
         <Label Content="Dunkirk" HorizontalAlignment="Left" Margin="121,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.262,0.476"/>
         <Label Content="Your Name" HorizontalAlignment="Left" Margin="329,318,0,0" VerticalAlignment="Top"/>

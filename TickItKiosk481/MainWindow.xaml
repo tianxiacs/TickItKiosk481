@@ -11,7 +11,7 @@
         <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Left" Margin="459,156,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Button Content="English" HorizontalAlignment="Left" Margin="459,227,0,0" VerticalAlignment="Top" Height="29" Width="72"/>
         <Button Content="Français" HorizontalAlignment="Left" Margin="609,227,0,0" VerticalAlignment="Top" Height="29" Width="72"/>
-        <Image HorizontalAlignment="Left" Height="290" Margin="87,0,0,0" VerticalAlignment="Center" Width="282" Source="/logo.png"/>
+        <Image HorizontalAlignment="Left" Height="290" Margin="87,0,0,0" VerticalAlignment="Center" Width="282" Source="images/logo.png"/>
 
     </Grid>
 </Window>

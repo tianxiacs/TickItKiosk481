@@ -30,7 +30,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="632,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"><Run Text="F"/><Run Text="ries"/><LineBreak/><Run Text="("/><Run Text="S"/><Run Language="en-ca" Text="mall"/><Run Text=")"/></TextBlock>
         <Image Margin="203,67,523,259" Stretch="Fill" Source="/popcorn.png"/>
         <Image Margin="370,67,355,259" Stretch="Fill" Source="/popcorn.png"/>
-        <TextBox HorizontalAlignment="Left" Margin="656,10,0,0" Text="Time left for seat reservation: 4:00" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="43" FontSize="14" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox HorizontalAlignment="Left" Margin="656,10,0,0" Text="Time left for seat reservation: 4:00" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="43" FontSize="14"/>
         <Image Margin="185,245,505,84" Stretch="Fill" Source="/drink-rem.png"/>
         <Image Margin="361,245,330,84" Stretch="Fill" Source="/drink-rem.png"/>
         <Image Margin="534,70,173,259" Stretch="Fill" Source="/fries-rem.png"/>
@@ -59,7 +59,7 @@
         <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="236,190,0,0" VerticalAlignment="Top" Width="20"/>
         <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="236,365,0,0" VerticalAlignment="Top" Width="20"/>
         <Label Content="You have 4 minutes left to &#xA;complete the transaction" HorizontalAlignment="Left" Height="148" Margin="236,178,0,0" VerticalAlignment="Top" Width="376" Background="#FF88C3CD" OpacityMask="#FF6AAEA5" FontSize="30" Opacity="0.9"/>
-        <Button Content="Continue" HorizontalAlignment="Left" Height="32" Margin="376,275,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click"/>
+        <Button Content="Continue" HorizontalAlignment="Left" Height="32" Margin="376,275,0,0" VerticalAlignment="Top" Width="78"/>
 
     </Grid>
 </Window>

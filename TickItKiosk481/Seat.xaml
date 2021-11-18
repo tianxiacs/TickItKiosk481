@@ -20,13 +20,13 @@
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="643,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="643,222,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <TextBlock HorizontalAlignment="Left" Margin="643,220,0,0" FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" Height="30"><Run Language="en-ca" Text=" "/><Run Text="√"/></TextBlock>
-        <Image Margin="643,270,125,132" Stretch="Fill" Source="/MUTCD_D9-6.svg.png" Height="32"/>
+        <Image Margin="643,270,125,132" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="93,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="140,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="93,117,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="140,117,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
-        <Image Margin="91,256,677,146" Stretch="Fill" Source="/MUTCD_D9-6.svg.png" Height="32"/>
-        <Image Margin="45,256,723,146" Stretch="Fill" Source="/MUTCD_D9-6.svg.png" Height="32"/>
+        <Image Margin="91,256,677,146" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
+        <Image Margin="45,256,723,146" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="186,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="233,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="186,117,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
@@ -54,7 +54,7 @@
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="511,164,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="464,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="511,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
-        <Image Margin="511,254,257,148" Stretch="Fill" Source="/MUTCD_D9-6.svg.png" Height="32"/>
+        <Image Margin="511,254,257,148" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="140,256,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="186,256,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>
         <Rectangle HorizontalAlignment="Left" Height="30" Margin="233,256,0,0" Stroke="Black" VerticalAlignment="Top" Width="30"/>

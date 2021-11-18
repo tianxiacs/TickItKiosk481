@@ -25,17 +25,17 @@
         <Label Content="18:00" HorizontalAlignment="Left" Height="26" Margin="258,106,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="3D" HorizontalAlignment="Left" Height="26" Margin="258,125,0,0" VerticalAlignment="Top" Width="172"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="90" Margin="569,186,0,0"><Run Language="en-ca" Text="Subtotal"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
-        <Image Margin="26,85,590,82" Stretch="Fill" Source="/Venom_Poster.jpg"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="440,210,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="Button_Click"/>
+        <Image Margin="26,85,590,82" Stretch="Fill" Source="images/Venom_Poster.jpg"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="440,210,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="374,256,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
         <Label Content="1" HorizontalAlignment="Left" Height="26" Margin="407,252,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="440,256,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="Button_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="440,256,0,0" VerticalAlignment="Top" Width="20" Height="20" />
         <Button Content="-" HorizontalAlignment="Left" Margin="374,301,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
         <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="407,297,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="440,301,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="Button_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="440,301,0,0" VerticalAlignment="Top" Width="20" Height="20" />
         <Button Content="-" HorizontalAlignment="Left" Margin="374,345,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
         <Label Content="1" HorizontalAlignment="Left" Height="26" Margin="407,341,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="440,345,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="Button_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="440,345,0,0" VerticalAlignment="Top" Width="20" Height="20" />
         <Label Content="Adult Ticket x 1&#x9;&#x9;$10" HorizontalAlignment="Left" Height="26" Margin="569,220,0,0" VerticalAlignment="Top" Width="179"/>
         <Label Content="Child Ticket x 1&#x9;&#x9;$8" HorizontalAlignment="Left" Height="26" Margin="569,239,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="Redeemed Ticket x 1&#x9;$0" HorizontalAlignment="Left" Height="26" Margin="569,257,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF5D73FD"/>

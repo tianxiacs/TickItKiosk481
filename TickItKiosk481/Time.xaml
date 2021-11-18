@@ -115,7 +115,7 @@
             <Label Content="Today" HorizontalAlignment="Left" Height="26" Margin="21,39,0,0" VerticalAlignment="Top" Width="43"/>
             <Label Content="Tomorrow" HorizontalAlignment="Left" Height="26" Margin="96,39,0,0" VerticalAlignment="Top" Width="63"/>
         </Grid>
-        <Image Height="220" Source="/Venom_Poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
+        <Image Height="220" Source="images/Venom_Poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="648,10,0,0"><Run Language="en-ca" Text="Welcome, Jonny!"/><LineBreak/><Run Text="Membership Points:"/><Run Text=" 3500"/></TextBlock>
 
     </Grid>
