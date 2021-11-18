@@ -8,24 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for ShowSelection.xaml
+    /// Interaction logic for Show_Selection.xaml
     /// </summary>
-    public partial class ShowSelection : Page
+    public partial class Show_Selection : Window
     {
-        public ShowSelection()
+        public Show_Selection()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
