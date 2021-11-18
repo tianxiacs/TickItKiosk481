@@ -1,11 +1,11 @@
-<Window x:Class="TickItKiosk481.PaymentWindow"
+﻿<Window x:Class="TickItKiosk481.Payment_Window"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="PaymentWindow" Height="450" Width="800">
+        Title="Payment_Window" Height="450" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="165" Margin="299,106,0,0" Text="Order Summary" FontSize="18"/>
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="57" FontSize="14"/>
