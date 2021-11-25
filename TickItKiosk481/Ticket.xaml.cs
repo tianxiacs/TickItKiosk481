@@ -21,5 +21,21 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void GetLanuage(object sender, RoutedEventArgs e)
+        {
+            LanguageScreen.lastPage = "Ticket";
+            LanguageScreen objLanguageScreen = new LanguageScreen();
+            this.Visibility = Visibility.Hidden;
+            objLanguageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            Help.lastPage = "Ticket";
+            Help objHelp = new Help();
+            this.Visibility = Visibility.Hidden;
+            objHelp.Show();
+        }
     }
 }

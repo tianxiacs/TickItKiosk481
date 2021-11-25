@@ -21,5 +21,28 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void BackToTicket(object sender, RoutedEventArgs e)
+        {
+            Ticket objTicket = new Ticket();
+            this.Visibility = Visibility.Hidden;
+            objTicket.Show();
+        }
+
+        private void GetLanuage(object sender, RoutedEventArgs e)
+        {
+            LanguageScreen.lastPage = "Seat";
+            LanguageScreen objLanguageScreen = new LanguageScreen();
+            this.Visibility = Visibility.Hidden;
+            objLanguageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            Help.lastPage = "Seat";
+            Help objHelp = new Help();
+            this.Visibility = Visibility.Hidden;
+            objHelp.Show();
+        }
     }
 }

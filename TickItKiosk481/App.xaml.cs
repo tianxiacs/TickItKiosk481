@@ -13,5 +13,9 @@ namespace TickItKiosk481
     /// </summary>
     public partial class App : Application
     {
+        public static MainWindow mainWindow = new MainWindow();
+        public static Countdown countDown = new Countdown();
+        public static Seat seat = new Seat();
+
     }
 }
