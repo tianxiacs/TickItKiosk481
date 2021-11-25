@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for End_Window.xaml
+    /// Interaction logic for Show_Selection.xaml
     /// </summary>
-    public partial class End_Window : Window
+    public partial class ShowSelection : Window
     {
-        public End_Window()
+        public ShowSelection()
         {
             InitializeComponent();
         }
