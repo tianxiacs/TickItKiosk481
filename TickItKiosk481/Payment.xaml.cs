@@ -15,9 +15,9 @@ namespace TickItKiosk481
     /// <summary>
     /// Interaction logic for Payment_Window.xaml
     /// </summary>
-    public partial class Payment_Window : Window
+    public partial class Payment : Window
     {
-        public Payment_Window()
+        public Payment()
         {
             InitializeComponent();
         }

@@ -13,18 +13,13 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for End_Window.xaml
     /// </summary>
-    public partial class Step5_6 : Window
+    public partial class EndWindow : Window
     {
-        public Step5_6()
+        public EndWindow()
         {
             InitializeComponent();
-            DateTime tom = DateTime.Today.AddDays(1);
         }
-    
-        
     }
-    
-
 }

@@ -24,5 +24,11 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void GetShow(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.seat.Show();
+        }
     }
 }
