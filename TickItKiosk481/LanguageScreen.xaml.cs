@@ -17,18 +17,18 @@ namespace TickItKiosk481
     /// </summary>
     public partial class LanguageScreen : Window
     {
-        //public static string lastPage1 = "last";
+        public static string lastPage = "last";
         // public static Window lastSeat = new Seat();
         // lastPageSeat = MainWindow.getObject();
         public LanguageScreen()
         {
             InitializeComponent();
         }
-        /*
+
         private void GoBack(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
-            lastSeat.Show();
+            //this.Visibility = Visibility.Hidden;
+            //lastSeat.Show();
             
             // hide current window
             // show lastPageSeat Window
@@ -44,7 +44,7 @@ namespace TickItKiosk481
                 this.Visibility = Visibility.Hidden;
                 objTicket.Show();
             }
-            */
+
         }
     }
 }
