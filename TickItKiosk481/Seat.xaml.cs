@@ -28,20 +28,18 @@ namespace TickItKiosk481
             App.ticket.Show();
         }
 
-        private void GetLanuage(object sender, RoutedEventArgs e)
+        private void GetLanguage(object sender, RoutedEventArgs e)
         {
-            LanguageScreen.lastPage = "Seat";
-            LanguageScreen objLanguageScreen = new LanguageScreen();
+            LanguageScreen.lastPage = this;
             this.Visibility = Visibility.Hidden;
-            objLanguageScreen.Show();
+            App.languageScreen.Show();
         }
 
         private void GetHelp(object sender, RoutedEventArgs e)
         {
-            Help.lastPage = "Seat";
-            Help objHelp = new Help();
+            Help.lastPage = this;
             this.Visibility = Visibility.Hidden;
-            objHelp.Show();
+            App.help.Show();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Help : Window
     {
-        public static string lastPage = "last";
+        public static Window lastPage;
         public Help()
         {
             InitializeComponent();
@@ -25,17 +25,8 @@ namespace TickItKiosk481
 
         private void GoBack(object sender, RoutedEventArgs e)
         {
-            if (lastPage == "Seat")
-            {
-                Seat objSeat = new Seat();
-                this.Visibility = Visibility.Hidden;
-                objSeat.Show();
-            }else if (lastPage == "Ticket")
-            {
-                Ticket objTicket = new Ticket();
-                this.Visibility = Visibility.Hidden;
-                objTicket.Show();
-            }
+            this.Visibility = Visibility.Hidden;
+            lastPage.Show();
         }
     }
 }

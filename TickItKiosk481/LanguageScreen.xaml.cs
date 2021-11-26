@@ -17,9 +17,8 @@ namespace TickItKiosk481
     /// </summary>
     public partial class LanguageScreen : Window
     {
-        public static string lastPage = "last";
-        // public static Window lastSeat = new Seat();
-        // lastPageSeat = MainWindow.getObject();
+        public static Window lastPage;
+
         public LanguageScreen()
         {
             InitializeComponent();
@@ -27,24 +26,8 @@ namespace TickItKiosk481
 
         private void GoBack(object sender, RoutedEventArgs e)
         {
-            //this.Visibility = Visibility.Hidden;
-            //lastSeat.Show();
-            
-            // hide current window
-            // show lastPageSeat Window
-            if (lastPage == "Seat")
-            {
-                Seat objSeat = new Seat();
-                this.Visibility = Visibility.Hidden;
-                objSeat.Show();
-            }
-            else if (lastPage == "Ticket")
-            {
-                Ticket objTicket = new Ticket();
-                this.Visibility = Visibility.Hidden;
-                objTicket.Show();
-            }
-
+            this.Visibility = Visibility.Hidden;
+            lastPage.Show();
         }
     }
 }

@@ -18,7 +18,7 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="307,217,0,0"><Run Language="en-ca" Text="Adult"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="202" Margin="0,377,0,0"><Run Text="(You can redeem up to"/><Run Language="en-ca" Text=" 3 movies)"/><LineBreak/><Run/></TextBlock>
         <Button Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="70" Height="31"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="10,394,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanuage"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="10,394,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage"/>
         <Button Content="Help?" HorizontalAlignment="Left" Margin="85,394,0,0" VerticalAlignment="Top" Height="30" Width="65" Click="GetHelp"/>
         <Label Content="Venom" FontSize="20" HorizontalAlignment="Left" Height="38" Margin="240,49,0,0" VerticalAlignment="Top" Width="102"/>
         <Label Content="Tuesday November 9, 2021" HorizontalAlignment="Left" Height="26" Margin="258,84,0,0" VerticalAlignment="Top" Width="172"/>

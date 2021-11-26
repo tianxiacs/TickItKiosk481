@@ -28,20 +28,18 @@ namespace TickItKiosk481
             InitializeComponent();
         }
 
-        private void GetLanuage(object sender, RoutedEventArgs e)
+        private void GetLanguage(object sender, RoutedEventArgs e)
         {
-            LanguageScreen.lastPage = "Ticket";
-            LanguageScreen objLanguageScreen = new LanguageScreen();
+            LanguageScreen.lastPage = this;
             this.Visibility = Visibility.Hidden;
-            objLanguageScreen.Show();
+            App.languageScreen.Show();
         }
 
         private void GetHelp(object sender, RoutedEventArgs e)
         {
-            Help.lastPage = "Ticket";
-            Help objHelp = new Help();
+            Help.lastPage = this;
             this.Visibility = Visibility.Hidden;
-            objHelp.Show();
+            App.help.Show();
         }
 
         private void AddAdult(object sender, RoutedEventArgs e)
@@ -97,5 +95,6 @@ namespace TickItKiosk481
             this.Visibility = Visibility.Hidden;
             App.seat.Show();
         }
+
     }
 }
