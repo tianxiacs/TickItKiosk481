@@ -24,9 +24,8 @@ namespace TickItKiosk481
 
         private void BackToTicket(object sender, RoutedEventArgs e)
         {
-            Ticket objTicket = new Ticket();
             this.Visibility = Visibility.Hidden;
-            objTicket.Show();
+            App.ticket.Show();
         }
 
         private void GetLanuage(object sender, RoutedEventArgs e)
