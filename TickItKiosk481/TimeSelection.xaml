@@ -9,11 +9,18 @@
         Title="Select Show Timings" Height="450" Width="800">
 
     <Grid>
-        <Button Margin="7,6,723,396" RenderTransformOrigin="-5.835,-6.187">Back</Button>
+        <Grid Height="300" Width="600" Margin="180,92,20,42">
+            <Label Content="Today" HorizontalAlignment="Left" Height="26" Margin="21,39,0,0" VerticalAlignment="Top" Width="43"/>
+            <Label Content="Tomorrow" HorizontalAlignment="Left" Height="26" Margin="96,39,0,0" VerticalAlignment="Top" Width="63"/>
+        </Grid>
+        <Button Margin="7,6,723,396" RenderTransformOrigin="-5.835,-6.187" Click="GoBack" Content="Back"/>
         <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="432,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="72"><Run Language="en-ca" Text="Venom"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" FontSize="12" Margin="7,276,0,32" TextWrapping="Wrap" Width="170" TextAlignment="Center"><Run Language="en-ca" Text="While trying to take down Carlton, the CEO of Life Foundation, Eddie, a journalist, investigates experiments of human trials. Unwittingly, he gets merged with a symbiotic alien with lethal abilities."/></TextBlock>
         <TextBlock HorizontalAlignment="Left" FontSize="18" TextAlignment="Center" Width="300" Height="30" Margin="318,48,0,356" FontWeight="Bold"><Run Language="en-ca" Text="Select Your Show Time For Venom"/></TextBlock>
         <Grid Height="300" Width="600" Margin="180,92,20,42">
+            <Grid.Resources>
+                <SolidColorBrush x:Key="brush" Color="Black"/>
+            </Grid.Resources>
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -29,9 +36,6 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid.Resources>
-                <SolidColorBrush x:Key="brush" Color="Black"/>
-            </Grid.Resources>
             <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1 1 0 1"/>
             <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1 1 0 1"/>
             <Border Grid.Column="2" Grid.Row="0" BorderBrush="{StaticResource brush}" BorderThickness="1 1 0 1"/>
@@ -75,46 +79,42 @@
             <TextBlock Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="2021-1"/><Run Text="1"/><Run Text="-"/><Run Text="0"/><Run Language="en-ca" Text="8"/><Run Text=" "/></TextBlock>
             <TextBlock Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="2021-1"/><Run Text="1"/><Run Text="-"/><Run Text="0"/><Run Text="9 "/></TextBlock>
             <TextBlock Grid.Row="0" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="2021-1"/><Run Text="1"/><Run Text="-"/><Run Language="en-ca" Text="10"/></TextBlock>
-            <Button Grid.Row="1" Grid.Column="0" Background="#FFCF2525">
+            <Button Grid.Row="1" Grid.Column="0" Background="#FFCF2525" Click="Show1">
                 <TextBlock><Run Text="14:15"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
-            <Button Grid.Row="3" Grid.Column="0" Background="#FF6BEA82">
+            <Button Grid.Row="3" Grid.Column="0" Background="#FF6BEA82" Click="Show2">
                 <TextBlock><Run Text="19:45"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
-            <Button Grid.Row="2" Grid.Column="1" Background="#FF6BEA82">
+            <Button Grid.Row="2" Grid.Column="1" Background="#FF6BEA82" Click="Show3">
                 <TextBlock><Run Text="17:15"/><LineBreak/><Run Language="en-ca" Text="2D"/></TextBlock>
             </Button>
-            <Button Grid.Row="1" Grid.Column="2" Background="#FF6BEA82">
+            <Button Grid.Row="1" Grid.Column="2" Background="#FF6BEA82" Click="Show4">
                 <TextBlock><Run Text="15:30"/><LineBreak/><Run Language="en-ca" Text="2D"/></TextBlock>
             </Button>
-            <Button Grid.Row="3" Grid.Column="2" Background="#FFCF2525">
-                <TextBlock>19:30 <LineBreak/> 3D</TextBlock>
+            <Button Grid.Row="3" Grid.Column="2" Background="#FFCF2525" Click="Show5">
+                <TextBlock><Run Text="19:30"/><LineBreak/><Run Text="3D"/></TextBlock>
             </Button>
-            <Button Grid.Row="3" Grid.Column="3" Background="#FF6BEA82">
-                <TextBlock>18:25 <LineBreak/> 2D</TextBlock>
+            <Button Grid.Row="3" Grid.Column="3" Background="#FF6BEA82" Click="Show6">
+                <TextBlock><Run Text="18:25"/><LineBreak/><Run Text="2D"/></TextBlock>
             </Button>
-            <Button Grid.Row="1" Grid.Column="4" Background="#FFCF2525">
-                <TextBlock>14:30 <LineBreak/> 3D</TextBlock>
+            <Button Grid.Row="1" Grid.Column="4" Background="#FFCF2525" Click="Show7">
+                <TextBlock><Run Text="14:30"/><LineBreak/><Run Text="3D"/></TextBlock>
             </Button>
-            <Button Grid.Row="1" Grid.Column="5" Background="#FF6BEA82">
-                <TextBlock>14:00 <LineBreak/> 3D</TextBlock>
+            <Button Grid.Row="1" Grid.Column="5" Background="#FF6BEA82" Click="Show8">
+                <TextBlock><Run Text="14:00"/><LineBreak/><Run Text="3D"/></TextBlock>
             </Button>
-            <Button Grid.Row="2" Grid.Column="5" Background="#FF6BEA82">
+            <Button Grid.Row="2" Grid.Column="5" Background="#FF6BEA82" Click="Show9">
                 <TextBlock><Run Text="18:00"/><LineBreak/><Run Language="en-ca" Text="2D"/></TextBlock>
             </Button>
-            <Button Grid.Row="3" Grid.Column="5" Background="#FF6BEA82">
-                <TextBlock>21:15 <LineBreak/> 3D</TextBlock>
+            <Button Grid.Row="3" Grid.Column="5" Background="#FF6BEA82" Click="Show10">
+                <TextBlock><Run Text="21:15"/><LineBreak/><Run Text="3D"/></TextBlock>
             </Button>
-            <Button Grid.Row="2" Grid.Column="6" Background="#FF6BEA82">
+            <Button Grid.Row="2" Grid.Column="6" Background="#FF6BEA82" Click="Show11">
                 <TextBlock><Run Text="17:45"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
         </Grid>
-        <Button Margin="11,393,0,0" Height="40" Width="70" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top">Language</Button>
-        <Button Width="70" Height="40" Margin="84,393,646,1">Help</Button>
-        <Grid Height="300" Width="600" Margin="180,92,20,42">
-            <Label Content="Today" HorizontalAlignment="Left" Height="26" Margin="21,39,0,0" VerticalAlignment="Top" Width="43"/>
-            <Label Content="Tomorrow" HorizontalAlignment="Left" Height="26" Margin="96,39,0,0" VerticalAlignment="Top" Width="63"/>
-        </Grid>
+        <Button Margin="11,393,0,0" Height="40" Width="70" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ChangeLanguage" Content="Language"/>
+        <Button Width="70" Height="40" Margin="84,393,646,1" Click="GetHelp" Content="Help"/>
         <Image Height="220" Source="images/Venom_Poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="648,10,0,0"><Run Language="en-ca" Text="Welcome, Jonny!"/><LineBreak/><Run Text="Membership Points:"/><Run Text=" 3500"/></TextBlock>
 
