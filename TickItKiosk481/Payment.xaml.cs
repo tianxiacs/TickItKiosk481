@@ -21,5 +21,17 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void CreditDebitPayment(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.cdp.Show();
+        }
+
+        private void GiftCardPayment(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.giftPayment.Show();
+        }
     }
 }

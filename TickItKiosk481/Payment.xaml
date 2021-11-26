@@ -15,9 +15,9 @@
         <Button Content="Language" HorizontalAlignment="Left" Margin="0,396,0,0" Width="68" FontSize="14"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="68,396,0,0" VerticalAlignment="Top" Height="38" Width="55" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="546,91,0,0" Text="Please Select a payment option" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24" FontSize="18"/>
-        <Button Content="Debit Card" HorizontalAlignment="Left" Margin="610,163,0,243" Width="71"/>
-        <Button Content="Credit Card" HorizontalAlignment="Left" Margin="610,226,0,180" Width="71"/>
-        <Button Content="Gift Card" HorizontalAlignment="Left" Margin="611,292,0,114" Width="69"/>
+        <Button Content="Debit Card" HorizontalAlignment="Left" Margin="610,163,0,243" Width="71" Click="CreditDebitPayment"/>
+        <Button Content="Credit Card" HorizontalAlignment="Left" Margin="610,226,0,180" Width="71" Click="CreditDebitPayment"/>
+        <Button Content="Gift Card" HorizontalAlignment="Left" Margin="611,292,0,114" Width="69" Click="GiftCardPayment"/>
         <Label Content="Adult Ticket x 1&#x9;&#x9;$10" HorizontalAlignment="Left" Height="26" Margin="279,150,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="Child Ticket x 1&#x9;&#x9;$8" HorizontalAlignment="Left" Height="26" Margin="280,169,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="Redeemed Ticket x 1&#x9;$0" HorizontalAlignment="Left" Height="26" Margin="280,187,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF5D73FD"/>
