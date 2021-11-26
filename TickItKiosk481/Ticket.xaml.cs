@@ -17,6 +17,12 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Ticket : Window
     {
+        public static double subtotal = 0.0;
+        public static int adultNum = 0;
+        public static int childNum = 0;
+        public static int seniorNum = 0;
+        public static int redeemNum = 0;
+
         public Ticket()
         {
             InitializeComponent();
@@ -36,6 +42,60 @@ namespace TickItKiosk481
             Help objHelp = new Help();
             this.Visibility = Visibility.Hidden;
             objHelp.Show();
+        }
+
+        private void AddAdult(object sender, RoutedEventArgs e)
+        {
+            adultNum++;
+            AdultLabel.Content = adultNum;
+        }
+
+        private void AddChild(object sender, RoutedEventArgs e)
+        {
+            childNum++;
+            ChildLabel.Content = childNum;
+        }
+
+        private void AddSenior(object sender, RoutedEventArgs e)
+        {
+            seniorNum++;
+            SeniorLabel.Content = seniorNum;
+        }
+
+        private void AddRedeem(object sender, RoutedEventArgs e)
+        {
+            redeemNum++;
+            RedeemLabel.Content = redeemNum;
+        }
+
+        private void MinusAdult(object sender, RoutedEventArgs e)
+        {
+            adultNum--;
+            AdultLabel.Content = adultNum;
+        }
+
+        private void MinusChild(object sender, RoutedEventArgs e)
+        {
+            childNum--;
+            ChildLabel.Content = childNum;
+        }
+
+        private void MinusSenior(object sender, RoutedEventArgs e)
+        {
+            seniorNum--;
+            SeniorLabel.Content = seniorNum;
+        }
+
+        private void MinusRedeem(object sender, RoutedEventArgs e)
+        {
+            redeemNum--;
+            RedeemLabel.Content = redeemNum;
+        }
+
+        private void GoToSeats(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.seat.Show();
         }
     }
 }
