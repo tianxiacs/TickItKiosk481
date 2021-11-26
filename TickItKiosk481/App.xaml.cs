@@ -30,6 +30,16 @@ namespace TickItKiosk481
         public static Help help = new Help();
         public static Timeout timeOut = new Timeout();
         public static EndWindow endWindow = new EndWindow();
-
+        public static Dictionary<string, double> prices = new Dictionary<string, double>() {
+            {"Adult Ticket", 12.99 },
+            {"Child Ticket", 9.99},
+            {"Senior Ticket", 12.99},
+            {"Popcorn (Large)",10.00},
+            {"Popcorn (Small)", 5.00},
+            {"Fries (Large)", 3.00},
+            {"Fries (Small)", 2.00},
+            {"Fountain Pop (Large)", 3.00},
+            {"Fountain Pop (Small)", 2.00}
+        };
     }
 }
