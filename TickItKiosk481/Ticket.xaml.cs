@@ -68,25 +68,37 @@ namespace TickItKiosk481
 
         private void MinusAdult(object sender, RoutedEventArgs e)
         {
-            adultNum--;
+            if (adultNum > 0)
+            {
+                adultNum--;
+            }
             AdultLabel.Content = adultNum;
         }
 
         private void MinusChild(object sender, RoutedEventArgs e)
         {
-            childNum--;
+            if (childNum > 0)
+            {
+                childNum--;
+            }
             ChildLabel.Content = childNum;
         }
 
         private void MinusSenior(object sender, RoutedEventArgs e)
         {
-            seniorNum--;
+            if (seniorNum > 0)
+            {
+                seniorNum--;
+            }
             SeniorLabel.Content = seniorNum;
         }
 
         private void MinusRedeem(object sender, RoutedEventArgs e)
         {
-            redeemNum--;
+            if (redeemNum > 0)
+            {
+                redeemNum--;
+            }
             RedeemLabel.Content = redeemNum;
         }
 
@@ -96,5 +108,10 @@ namespace TickItKiosk481
             App.seat.Show();
         }
 
+        private void BackToTimeSelection(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.timeSelection.Show();
+        }
     }
 }
