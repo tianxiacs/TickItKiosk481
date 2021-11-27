@@ -1,0 +1,40 @@
+﻿<Window x:Class="TickItKiosk481.ShowSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TickItKiosk481"
+        mc:Ignorable="d"
+        Title="Show_Selection" Height="450" Width="800">
+    <Grid>
+        <Label Content="Now Playing" HorizontalAlignment="Left" Margin="296,-1,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="9,8,0,0"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="9,413,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="78,413,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Left" Margin="228,28,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="648,12,0,0"><Run Language="en-ca" Text="Welcome, Jonny!"/><LineBreak/><Run Text="Membership Points:"/><Run Text=" 3500"/></TextBlock>
+        <Button Content="More movies" HorizontalAlignment="Left" Margin="682,192,0,0" VerticalAlignment="Top" Height="25" Width="80" RenderTransformOrigin="0.858,0.188"/>
+        <Label Content="Next show: 3D @ 1:45 PM&#xA;Available Seats: 47&#xA;Longest row of connected seats: 7" HorizontalAlignment="Left" Height="56" Margin="53,320,0,0" VerticalAlignment="Top" Width="192" Foreground="#FF1E43EA"/>
+        <Label Content="Next show: 3D @ 6 PM&#xA;Available Seats: 22&#xA;Longest row of connected seats: 5" HorizontalAlignment="Left" Height="56" Margin="250,326,0,0" VerticalAlignment="Top" Width="191" Foreground="#FF1E43EA"/>
+        <Label Content="Next show: 3D @ 7:45 PM &#xA;Available Seats: 16&#xA;Longest row of connected seats: 3" HorizontalAlignment="Left" Height="59" Margin="450,326,0,0" VerticalAlignment="Top" Width="190" Foreground="#FF1E43EA"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Height="230" Width="160">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/Dunkirk-movie-poster.jpg" />
+            </Button.Background>
+        </Button>
+        <Button Content="Dunkirk" HorizontalAlignment="Left" Margin="104,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="250,70,0,0" VerticalAlignment="Top" Height="230" Width="160">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/your-name-movie-poster.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Your Name" HorizontalAlignment="Left" Margin="296,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="450,70,0,0" VerticalAlignment="Top" Height="230" Width="160" Click="selectMovieVenomPoster">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/Venom_Poster.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Venom" HorizontalAlignment="Left" Margin="506,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" Click="selectMovieVenomTitle" />
+
+    </Grid>
+</Window>
