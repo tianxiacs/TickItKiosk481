@@ -13,19 +13,13 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for MemberWelcome.xaml
+    /// Interaction logic for Timeout.xaml
     /// </summary>
-    public partial class MemberWelcome : Window
+    public partial class Timeout : Window
     {
-        public MemberWelcome()
+        public Timeout()
         {
             InitializeComponent();
-        }
-
-        private void welcomeMembershipContinue(object sender, RoutedEventArgs e)
-        {
-            this.Visibility = Visibility.Hidden;
-            App.showSelection.Show();
         }
     }
 }

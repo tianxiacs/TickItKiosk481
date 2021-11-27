@@ -13,25 +13,21 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for Show_Selection.xaml
+    /// Interaction logic for LanguageScreen.xaml
     /// </summary>
-    public partial class ShowSelection : Window
+    public partial class LanguageScreen : Window
     {
-        public ShowSelection()
+        public static Window lastPage;
+
+        public LanguageScreen()
         {
             InitializeComponent();
         }
 
-        private void selectMovieVenomPoster(object sender, RoutedEventArgs e)
+        private void GoBack(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.timeSelection.Show();
-        }
-
-        private void selectMovieVenomTitle(object sender, RoutedEventArgs e)
-        {
-            this.Visibility = Visibility.Hidden;
-            App.timeSelection.Show();
+            lastPage.Show();
         }
     }
 }

@@ -13,25 +13,25 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for Show_Selection.xaml
+    /// Interaction logic for Payment_Window.xaml
     /// </summary>
-    public partial class ShowSelection : Window
+    public partial class Payment : Window
     {
-        public ShowSelection()
+        public Payment()
         {
             InitializeComponent();
         }
 
-        private void selectMovieVenomPoster(object sender, RoutedEventArgs e)
+        private void CreditDebitPayment(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.timeSelection.Show();
+            App.cdp.Show();
         }
 
-        private void selectMovieVenomTitle(object sender, RoutedEventArgs e)
+        private void GiftCardPayment(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.timeSelection.Show();
+            App.giftPayment.Show();
         }
     }
 }

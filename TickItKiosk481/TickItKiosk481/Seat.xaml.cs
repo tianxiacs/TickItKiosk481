@@ -13,25 +13,33 @@ using System.Windows.Shapes;
 namespace TickItKiosk481
 {
     /// <summary>
-    /// Interaction logic for Show_Selection.xaml
+    /// Interaction logic for Seat.xaml
     /// </summary>
-    public partial class ShowSelection : Window
+    public partial class Seat : Window
     {
-        public ShowSelection()
+        public Seat()
         {
             InitializeComponent();
         }
 
-        private void selectMovieVenomPoster(object sender, RoutedEventArgs e)
+        private void BackToTicket(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.timeSelection.Show();
+            App.ticket.Show();
         }
 
-        private void selectMovieVenomTitle(object sender, RoutedEventArgs e)
+        private void GetLanguage(object sender, RoutedEventArgs e)
         {
+            LanguageScreen.lastPage = this;
             this.Visibility = Visibility.Hidden;
-            App.timeSelection.Show();
+            App.languageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            Help.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.help.Show();
         }
     }
 }
