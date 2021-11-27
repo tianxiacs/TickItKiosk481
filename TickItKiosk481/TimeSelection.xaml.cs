@@ -19,7 +19,11 @@ namespace TickItKiosk481
     // App.timeSelection.showName
     public partial class TimeSelection : Window
     {
-        public static String showName = null;
+        /*
+         * Yuan did the change
+         * Using the "MembershipSkip" window to select the show Name
+         */
+        //public static String showName = null;
         public static String showTime = null;
         public static String showType = null;
         public static String showDate = null;
@@ -49,7 +53,7 @@ namespace TickItKiosk481
         private void Show1(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "14:15 PM";
             showType = "3D";
             showDate = "2021-11-04";
@@ -59,7 +63,7 @@ namespace TickItKiosk481
         private void Show2(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "19:45 PM";
             showType = "3D";
             showDate = "2021-11-04";
@@ -69,7 +73,7 @@ namespace TickItKiosk481
         private void Show3(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "17:15 PM";
             showType = "2D";
             showDate = "2021-11-05";
@@ -79,7 +83,7 @@ namespace TickItKiosk481
         private void Show4(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "15:30 PM";
             showType = "2D";
             showDate = "2021-11-06";
@@ -89,7 +93,7 @@ namespace TickItKiosk481
         private void Show5(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "19:30 PM";
             showType = "3D";
             showDate = "2021-11-06";
@@ -99,7 +103,7 @@ namespace TickItKiosk481
         private void Show6(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "18:25 PM";
             showType = "2D";
             showDate = "2021-11-07";
@@ -109,7 +113,7 @@ namespace TickItKiosk481
         private void Show7(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "14:30 PM";
             showType = "3D";
             showDate = "2021-11-08";
@@ -119,7 +123,7 @@ namespace TickItKiosk481
         private void Show8(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "14:00 PM";
             showType = "3D";
             showDate = "2021-11-09";
@@ -129,7 +133,7 @@ namespace TickItKiosk481
         private void Show9(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "18:00 PM";
             showType = "2D";
             showDate = "2021-11-09";
@@ -139,7 +143,7 @@ namespace TickItKiosk481
         private void Show10(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "21:15 PM";
             showType = "3D";
             showDate = "2021-11-09";
@@ -149,7 +153,7 @@ namespace TickItKiosk481
         private void Show11(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            showName = "Venom";
+            //showName = "Venom";
             showTime = "17:45 PM";
             showType = "3D";
             showDate = "2021-11-10";

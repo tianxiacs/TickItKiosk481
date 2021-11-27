@@ -17,9 +17,30 @@ namespace TickItKiosk481
     /// </summary>
     public partial class MemberSkip : Window
     {
+        public static String showName = null;
+
         public MemberSkip()
         {
             InitializeComponent();
+        }
+
+
+        private void selectMovieVenomPoster(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.timeSelection.Show();
+        }
+
+        private void selectMovieVenomTitle(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.timeSelection.Show();
+        }
+
+        private void scanMembershipCard(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.memberScan.Show();
         }
     }
 }
