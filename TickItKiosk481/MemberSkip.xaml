@@ -7,23 +7,39 @@
         mc:Ignorable="d"
         Title="MemberSkip" Height="450" Width="800">
     <Grid>
-        <Label Content="Now Playing" HorizontalAlignment="Left" Margin="299,15,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Now Playing" HorizontalAlignment="Left" Margin="269,-3,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="9,6,0,0"/>
-        <Button Content="More movies" HorizontalAlignment="Left" Margin="703,208,0,0" VerticalAlignment="Top" Height="25" Width="80"/>
+        <Button Content="More movies" HorizontalAlignment="Left" Margin="682,192,0,0" VerticalAlignment="Top" Height="25" Width="80" RenderTransformOrigin="0.858,0.188"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="655,6,0,0"><Run Language="en-ca" Text="No membership info"/><LineBreak/></TextBlock>
-        <Button Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="655,29,0,0" VerticalAlignment="Top" Width="135" />
+        <Button Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="655,29,0,0" VerticalAlignment="Top" Width="135" Click="scanMembershipCard" />
         <Button Content="Language" HorizontalAlignment="Left" Margin="9,408,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="78,408,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Image HorizontalAlignment="Left" Height="252" Margin="61,65,0,0" VerticalAlignment="Top" Width="174" Source="images/Dunkirk-movie-poster.jpg"/>
-        <Image HorizontalAlignment="Left" Height="252" Margin="278,65,0,0" VerticalAlignment="Top" Width="174" Source="images/your-name-movie-poster.jpg"/>
-        <Image HorizontalAlignment="Left" Height="252" Margin="491,65,0,0" VerticalAlignment="Top" Width="174" Source="images/Venom_Poster.jpg"/>
-        <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Center" Margin="0,405,0,0" VerticalAlignment="Top"/>
-        <Label Content="Dunkirk" HorizontalAlignment="Left" Margin="121,318,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.262,0.476"/>
-        <Label Content="Your Name" HorizontalAlignment="Left" Margin="329,318,0,0" VerticalAlignment="Top"/>
-        <Label Content="Venom" HorizontalAlignment="Left" Margin="556,318,0,0" VerticalAlignment="Top"/>
-        <Label Content="Next show: 3D @ 1 PM&#xA;Available Seats: 47&#xA;Longest row of connected seats: 7" HorizontalAlignment="Left" Height="56" Margin="52,344,0,0" VerticalAlignment="Top" Width="189" Foreground="#FF1E43EA"/>
-        <Label Content="Next show: 3D @ 6 PM&#xA;Available Seats: 22&#xA;Longest row of connected seats: 5" HorizontalAlignment="Left" Height="56" Margin="269,344,0,0" VerticalAlignment="Top" Width="191" Foreground="#FF1E43EA"/>
-        <Label Content="Next show: 3D @ 2 PM &#xA;Available Seats: 16&#xA;Longest row of connected seats: 3" HorizontalAlignment="Left" Height="59" Margin="485,344,0,0" VerticalAlignment="Top" Width="189" Foreground="#FF1E43EA"/>
+        <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Left" Margin="198,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.227,-13.725"/>
+
+        <Label Content="Next show: 3D @ 1:45 PM&#xA;Available Seats: 47&#xA;Longest row of connected seats: 7" HorizontalAlignment="Left" Height="56" Margin="53,320,0,0" VerticalAlignment="Top" Width="192" Foreground="#FF1E43EA"/>
+        <Label Content="Next show: 3D @ 6 PM&#xA;Available Seats: 22&#xA;Longest row of connected seats: 5" HorizontalAlignment="Left" Height="56" Margin="250,326,0,0" VerticalAlignment="Top" Width="191" Foreground="#FF1E43EA"/>
+        <Label Content="Next show: 3D @ 7:45 PM &#xA;Available Seats: 16&#xA;Longest row of connected seats: 3" HorizontalAlignment="Left" Height="59" Margin="450,326,0,0" VerticalAlignment="Top" Width="190" Foreground="#FF1E43EA"/>
+        
+        <Button Content="" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Height="230" Width="160">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Dunkirk-movie-poster.jpg" ></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Dunkirk" HorizontalAlignment="Left" Margin="104,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        
+        <Button Content="" HorizontalAlignment="Left" Margin="250,70,0,0" VerticalAlignment="Top" Height="230" Width="160">
+            <Button.Background>
+                <ImageBrush ImageSource="images/your-name-movie-poster.jpg"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Your Name" HorizontalAlignment="Left" Margin="296,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        
+        <Button Content="" HorizontalAlignment="Left" Margin="450,70,0,0" VerticalAlignment="Top" Height="230" Width="160" Click="selectMovieVenomPoster">
+            <Button.Background>
+                <ImageBrush ImageSource="images/Venom_Poster.jpg"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Venom" HorizontalAlignment="Left" Margin="506,300,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" Click="selectMovieVenomTitle"/>
 
     </Grid>
 </Window>

@@ -9,7 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="356" FontSize="35"><Run Language="en-ca" Text="Welcome back, Jonny!"/></TextBlock>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="304" FontSize="20" Margin="0,209,0,0"><Run Language="en-ca" Text="Membership points balance: 3500"/></TextBlock>
-        <Button Content="Continue" HorizontalAlignment="Center" Margin="0,298,0,92" Width="102" FontSize="18"/>
+        <Button Content="Continue" HorizontalAlignment="Center" Margin="0,298,0,92" Width="102" FontSize="18" Click="welcomeMembershipContinue"/>
 
     </Grid>
 </Window>

@@ -21,5 +21,17 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void skipMembership(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.memberSkip.Show();
+        }
+
+        private void membershipSignedIn(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.memberWelcome.Show();
+        }
     }
 }

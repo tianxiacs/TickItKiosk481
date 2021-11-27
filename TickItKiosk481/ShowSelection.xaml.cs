@@ -21,5 +21,17 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void selectMovieVenomPoster(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.timeSelection.Show();
+        }
+
+        private void selectMovieVenomTitle(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.timeSelection.Show();
+        }
     }
 }
