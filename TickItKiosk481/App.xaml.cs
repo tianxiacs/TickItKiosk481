@@ -33,7 +33,7 @@ namespace TickItKiosk481
         public static Dictionary<string, double> prices = new Dictionary<string, double>() {
             {"Adult Ticket", 12.99 },
             {"Child Ticket", 9.99},
-            {"Senior Ticket", 12.99},
+            {"Senior Ticket", 7.99},
             {"Popcorn (Large)",10.00},
             {"Popcorn (Small)", 5.00},
             {"Fries (Large)", 3.00},

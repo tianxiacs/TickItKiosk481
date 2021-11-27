@@ -40,124 +40,140 @@ namespace TickItKiosk481
 
         private void ChangeLanguage(object sender, RoutedEventArgs e)
         {
+            LanguageScreen.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.languageScreen.Show();
         }
 
         private void GetHelp(object sender, RoutedEventArgs e)
         {
+            Help.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.help.Show();
         }
 
-        private void Show1(object sender, RoutedEventArgs e)
+        private void GoToTicket()
         {
             this.Visibility = Visibility.Hidden;
+            App.ticket.Show();
+            App.ticket.DateLabel.Content = showDate;
+            App.ticket.TimeLabel.Content = showTime;
+            App.ticket.FormatLabel.Content = showType;
+            App.ticket.AdultLabel.Content = 0;
+            App.ticket.ChildLabel.Content = 0;
+            App.ticket.SeniorLabel.Content = 0;
+            App.ticket.RedeemLabel.Content = 0;
+            if (showType == "3D")
+            {
+                App.ticket.AdultPrice.Content = App.prices["Adult Ticket"];
+                App.ticket.ChildPrice.Content = App.prices["Child Ticket"];
+                App.ticket.SeniorPrice.Content = App.prices["Senior Ticket"];
+            }else if (showType == "2D")
+            {
+                App.ticket.AdultPrice.Content = App.prices["Adult Ticket"] - 2;
+                App.ticket.ChildPrice.Content = App.prices["Child Ticket"] - 2;
+                App.ticket.SeniorPrice.Content = App.prices["Senior Ticket"] - 2;
+            }
+            
+        }
+
+        private void Show1(object sender, RoutedEventArgs e)
+        {
             //showName = "Venom";
             showTime = "14:15 PM";
             showType = "3D";
             showDate = "2021-11-04";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show2(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "19:45 PM";
             showType = "3D";
             showDate = "2021-11-04";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show3(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "17:15 PM";
             showType = "2D";
             showDate = "2021-11-05";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show4(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "15:30 PM";
             showType = "2D";
             showDate = "2021-11-06";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show5(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "19:30 PM";
             showType = "3D";
             showDate = "2021-11-06";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show6(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "18:25 PM";
             showType = "2D";
             showDate = "2021-11-07";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show7(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "14:30 PM";
             showType = "3D";
             showDate = "2021-11-08";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show8(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "14:00 PM";
             showType = "3D";
             showDate = "2021-11-09";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show9(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "18:00 PM";
             showType = "2D";
             showDate = "2021-11-09";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show10(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "21:15 PM";
             showType = "3D";
             showDate = "2021-11-09";
-            App.ticket.Show();
+            GoToTicket();
         }
 
         private void Show11(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
             //showName = "Venom";
             showTime = "17:45 PM";
             showType = "3D";
             showDate = "2021-11-10";
-            App.ticket.Show();
+            GoToTicket();
         }
     }
     
