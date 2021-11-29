@@ -37,8 +37,6 @@
         <Label x:Name="RedeemLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="382,347,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="410,350,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" />
         <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="569,220,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label Content="Child Ticket x 1&#x9;&#x9;$8" HorizontalAlignment="Left" Height="26" Margin="201,384,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="Redeemed Ticket x 1&#x9;$0" HorizontalAlignment="Left" Height="26" Margin="201,402,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF5D73FD"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="568,290,0,0" VerticalAlignment="Top" Width="180"/>
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="568,305,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="568,316,0,0" VerticalAlignment="Top" Width="180"/>
