@@ -36,13 +36,13 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="353,350,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusRedeem"/>
         <Label x:Name="RedeemLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="382,347,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="410,350,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" />
-        <Label Content="Adult Ticket x 1&#x9;&#x9;$10" HorizontalAlignment="Left" Height="26" Margin="569,220,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label Content="Child Ticket x 1&#x9;&#x9;$8" HorizontalAlignment="Left" Height="26" Margin="569,239,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="Redeemed Ticket x 1&#x9;$0" HorizontalAlignment="Left" Height="26" Margin="569,257,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF5D73FD"/>
-        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="569,271,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="569,286,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="569,297,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label Content="&#x9;&#x9;&#x9;$18.9" HorizontalAlignment="Left" Height="26" Margin="563,310,0,0" VerticalAlignment="Top" Width="185"/>
+        <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="569,220,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label Content="Child Ticket x 1&#x9;&#x9;$8" HorizontalAlignment="Left" Height="26" Margin="201,384,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="Redeemed Ticket x 1&#x9;$0" HorizontalAlignment="Left" Height="26" Margin="201,402,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF5D73FD"/>
+        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="568,290,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="568,305,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="568,316,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="SubtotalPriceTicket" Content="" HorizontalAlignment="Left" Height="26" Margin="688,329,0,0" VerticalAlignment="Top" Width="60"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="569,53,0,0"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
         <Label Content="Current Points&#x9;&#x9;3500" HorizontalAlignment="Left" Height="26" Margin="569,79,0,0" VerticalAlignment="Top" Width="179"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="569,90,0,0" VerticalAlignment="Top" Width="179"/>
