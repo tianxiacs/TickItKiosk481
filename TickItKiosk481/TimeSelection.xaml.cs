@@ -65,14 +65,14 @@ namespace TickItKiosk481
             App.ticket.RedeemLabel.Content = 0;
             if (showType == "3D")
             {
-                App.ticket.AdultPrice.Content = App.prices["Adult Ticket"];
-                App.ticket.ChildPrice.Content = App.prices["Child Ticket"];
-                App.ticket.SeniorPrice.Content = App.prices["Senior Ticket"];
+                App.ticket.AdultPrice.Content = App.prices["Adult Ticket 3D"];
+                App.ticket.ChildPrice.Content = App.prices["Child Ticket 3D"];
+                App.ticket.SeniorPrice.Content = App.prices["Senior Ticket 3D"];
             }else if (showType == "2D")
             {
-                App.ticket.AdultPrice.Content = App.prices["Adult Ticket"] - 2;
-                App.ticket.ChildPrice.Content = App.prices["Child Ticket"] - 2;
-                App.ticket.SeniorPrice.Content = App.prices["Senior Ticket"] - 2;
+                App.ticket.AdultPrice.Content = App.prices["Adult Ticket 2D"];
+                App.ticket.ChildPrice.Content = App.prices["Child Ticket 2D"];
+                App.ticket.SeniorPrice.Content = App.prices["Senior Ticket 2D"];
             }
             
         }
