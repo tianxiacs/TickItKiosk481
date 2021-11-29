@@ -175,6 +175,14 @@ namespace TickItKiosk481
             showDate = "2021-11-10";
             GoToTicket();
         }
+
+        private void ScanMemberTime(object sender, RoutedEventArgs e)
+        {
+            MemberScan.skipNextPage = this;
+            MemberWelcome.nextPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.memberScan.Show();
+        }
     }
     
 

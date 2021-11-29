@@ -10,8 +10,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="74,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="704" FontSize="30"><Run Text="Please scan "/><Run Language="en-ca" Text="the barcode on "/><Run Text="your membership card"/></TextBlock>
         <Image Margin="149,140,431,19" Stretch="Fill" Source="images/scanner.jpg"/>
         <TextBlock HorizontalAlignment="Left" Margin="418,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="227" FontSize="25"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
-        <Button Content="Skip and Continue without Membership" HorizontalAlignment="Left" Margin="400,262,0,129" Width="322" FontSize="18" Click="skipMembership"/>
-        <Button Content="Successfully sign in  Membership" HorizontalAlignment="Left" Margin="400,318,0,73" Width="322" FontSize="18" Click="membershipSignedIn"/>
+        <Button Content="Skip and Continue without Membership" HorizontalAlignment="Left" Margin="400,262,0,129" Width="322" FontSize="18" Click="SkipMember"/>
+        <Button Content="Successfully sign in  Membership" HorizontalAlignment="Left" Margin="400,318,0,73" Width="322" FontSize="18" Click="SignedIn"/>
 
     </Grid>
 </Window>

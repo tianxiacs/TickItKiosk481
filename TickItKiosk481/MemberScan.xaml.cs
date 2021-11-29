@@ -17,21 +17,23 @@ namespace TickItKiosk481
     /// </summary>
     public partial class MemberScan : Window
     {
+        public static Window skipNextPage;
         public MemberScan()
         {
             InitializeComponent();
         }
 
-        private void skipMembership(object sender, RoutedEventArgs e)
+        private void SkipMember(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.memberSkip.Show();
+            skipNextPage.Show();
         }
 
-        private void membershipSignedIn(object sender, RoutedEventArgs e)
+        private void SignedIn(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
             App.memberWelcome.Show();
         }
+
     }
 }

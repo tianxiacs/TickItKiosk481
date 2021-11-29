@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="Ticket" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142"><Run Language="en-ca" Text="Welcome, Jonny!"/><LineBreak/><Run Text="Membership Points:"/><Run Text=" 3500"/></TextBlock>
         <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="55" Margin="594,365,0,0" VerticalAlignment="Top" Width="178" Click="GoToSeats"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="272" Margin="247,165,0,0"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="307,261,0,0"><Run Language="en-ca" Text="Child"/><LineBreak/><Run/></TextBlock>
@@ -57,6 +56,8 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="452,217,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="452,261,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="452,307,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="378,47,0,0" VerticalAlignment="Top" Width="136" Click="ScanMemberTicket" />
+        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;No membership info" HorizontalAlignment="Left" Margin="378,4,0,0" VerticalAlignment="Top" Width="136" Height="43"/>
 
     </Grid>
 </Window>

@@ -28,7 +28,7 @@ namespace TickItKiosk481
         private void GetShow(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.memberSkip.Show();
+            App.showSelection.Show();
         }
     }
 }

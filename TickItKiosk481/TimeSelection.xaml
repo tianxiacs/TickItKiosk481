@@ -116,7 +116,8 @@
         <Button Margin="11,393,0,0" Height="40" Width="70" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ChangeLanguage" Content="Language"/>
         <Button Width="70" Height="40" Margin="84,393,646,1" Click="GetHelp" Content="Help"/>
         <Image Height="220" Source="images/Venom_Poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="142" Margin="648,10,0,0"><Run Language="en-ca" Text="Welcome, Jonny!"/><LineBreak/><Run Text="Membership Points:"/><Run Text=" 3500"/></TextBlock>
+        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="655,58,0,0" VerticalAlignment="Top" Width="135" Click="ScanMemberTime" />
+        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;No membership info" HorizontalAlignment="Left" Margin="654,15,0,0" VerticalAlignment="Top" Width="136" Height="43"/>
 
     </Grid>
 

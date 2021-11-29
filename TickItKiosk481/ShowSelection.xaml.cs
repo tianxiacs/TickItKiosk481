@@ -33,5 +33,13 @@ namespace TickItKiosk481
             this.Visibility = Visibility.Hidden;
             App.timeSelection.Show();
         }
+
+        private void ScanMemberShow(object sender, RoutedEventArgs e)
+        {
+            MemberScan.skipNextPage = this;
+            MemberWelcome.nextPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.memberScan.Show();
+        }
     }
 }

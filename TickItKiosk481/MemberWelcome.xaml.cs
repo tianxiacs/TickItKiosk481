@@ -17,6 +17,7 @@ namespace TickItKiosk481
     /// </summary>
     public partial class MemberWelcome : Window
     {
+        public static Window nextPage;
         public MemberWelcome()
         {
             InitializeComponent();
@@ -25,7 +26,13 @@ namespace TickItKiosk481
         private void welcomeMembershipContinue(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
-            App.showSelection.Show();
+            nextPage.Show();
+            App.showSelection.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500";
+            App.showSelection.ScanMemberButton.Visibility = Visibility.Hidden;
+            App.timeSelection.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500";
+            App.timeSelection.ScanMemberButton.Visibility = Visibility.Hidden;
+            App.ticket.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500";
+            App.ticket.ScanMemberButton.Visibility = Visibility.Hidden;
         }
     }
 }

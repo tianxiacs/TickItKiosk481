@@ -14,7 +14,6 @@ namespace TickItKiosk481
     public partial class App : Application
     {
         public static MainWindow mainWindow = new MainWindow();
-        public static MemberSkip memberSkip = new MemberSkip();
         public static MemberScan memberScan = new MemberScan();
         public static MemberWelcome memberWelcome = new MemberWelcome();
         public static ShowSelection showSelection = new ShowSelection();
