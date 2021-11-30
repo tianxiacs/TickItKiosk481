@@ -43,5 +43,18 @@ namespace TickItKiosk481
             {"Fountain Pop (Large)", 3.00},
             {"Fountain Pop (Small)", 2.00}
         };
+        public static Dictionary<string, string> member1 = new Dictionary<string, string>()
+        {
+            {"name", "Johnny"},
+            {"id", "111222333"},
+            {"balance", "3500"}
+        };
+        public static Dictionary<string, string> member2 = new Dictionary<string, string>()
+        {
+            {"name", "Lori"},
+            {"id", "444555666"},
+            {"balance", "7400"}
+        };
+
     }
 }

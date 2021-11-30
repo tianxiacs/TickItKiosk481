@@ -27,12 +27,6 @@ namespace TickItKiosk481
         {
             this.Visibility = Visibility.Hidden;
             nextPage.Show();
-            App.showSelection.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500";
-            App.showSelection.ScanMemberButton.Visibility = Visibility.Hidden;
-            App.timeSelection.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500";
-            App.timeSelection.ScanMemberButton.Visibility = Visibility.Hidden;
-            App.ticket.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500";
-            App.ticket.ScanMemberButton.Visibility = Visibility.Hidden;
         }
     }
 }

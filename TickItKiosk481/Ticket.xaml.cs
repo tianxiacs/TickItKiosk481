@@ -24,9 +24,21 @@ namespace TickItKiosk481
         public static int redeemNum = 0;
         public static double subtotalTicket = 0.0;
 
+        public static int redeemLimit = 0;
+        public static int ticketLimit = 0;
+        public static int pointBalance = 0;
+
         public Ticket()
         {
             InitializeComponent();
+
+            // Set Points Balance Module to hidden
+            PointBalanceTitleLabel.Visibility = Visibility.Hidden;
+            CurrentPointsLabel.Visibility = Visibility.Hidden;
+            TicketRedeemBalanceLabel.Visibility = Visibility.Hidden;
+            RemainingPointsLabel.Visibility = Visibility.Hidden;
+            Divider1.Visibility = Visibility.Hidden;
+            Divider2.Visibility = Visibility.Hidden;
         }
 
         private void GetLanguage(object sender, RoutedEventArgs e)
@@ -43,9 +55,15 @@ namespace TickItKiosk481
             App.help.Show();
         }
 
+        private void CheckLimit()
+        {
+
+        }
+
         private void UpdateSubtotal()
         {
             string ticketField = "";
+            string pointField = "";
             if (adultNum > 0)
             {
                 if (TimeSelection.showType == "3D")
@@ -82,6 +100,7 @@ namespace TickItKiosk481
             if (redeemNum > 0)
             {
                 ticketField = ticketField + "Redeemed Ticket x " + redeemNum + "            $0";
+                pointField = "Ticket Redemption x " + redeemNum + "       1000";
             }
             
             SubtotalFieldTicket.Content = ticketField;
@@ -92,7 +111,9 @@ namespace TickItKiosk481
             {
                 SubtotalPriceTicket.Content = "$ " + String.Format("{0:0.##}", 1.05 * (adultNum * App.prices["Adult Ticket 2D"] + childNum * App.prices["Child Ticket 2D"] + seniorNum * App.prices["Senior Ticket 2D"]));
             }
-            
+
+            TicketRedeemBalanceLabel.Content = pointField;
+            RemainingPointsLabel.Content = "Remaining Points               " + (pointBalance - 1000 * redeemNum);
         }
         
         private void AddAdult(object sender, RoutedEventArgs e)

@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MemberWelcome" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="356" FontSize="35"><Run Language="en-ca" Text="Welcome back, Jonny!"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="304" FontSize="20" Margin="0,209,0,0"><Run Language="en-ca" Text="Membership points balance: 3500"/></TextBlock>
-        <Button Content="Continue" HorizontalAlignment="Center" Margin="0,298,0,92" Width="102" FontSize="18" Click="welcomeMembershipContinue"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="240" FontSize="36" Text="Welcome back, "/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="255" FontSize="20" Margin="211,184,0,0"><Run Language="en-ca" Text="Membership points balance: "/></TextBlock>
+        <Button Content="Continue" HorizontalAlignment="Left" Margin="345,334,0,56" Width="102" FontSize="18" Click="welcomeMembershipContinue"/>
+        <Label x:Name="MemberNameLabel" x:FieldModifier="public" Content="Name" HorizontalAlignment="Left" Margin="447,84,0,0" VerticalAlignment="Top" Height="62" Width="148" FontSize="36"/>
+        <Label x:Name="PointLabel" x:FieldModifier="public" Content="number" HorizontalAlignment="Left" Margin="466,179,0,0" VerticalAlignment="Top" Height="40" Width="87" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="201" FontSize="20" Margin="222,238,0,0" Text="You can redeem up to  "/>
+        <Label x:Name="MovieNumberLabel" x:FieldModifier="public" Content="xx movies" HorizontalAlignment="Left" Margin="422,233,0,0" VerticalAlignment="Top" Height="40" Width="145" FontSize="20"/>
 
     </Grid>
 </Window>

@@ -14,9 +14,8 @@
             <Label Content="Tomorrow" HorizontalAlignment="Left" Height="26" Margin="96,39,0,0" VerticalAlignment="Top" Width="63"/>
         </Grid>
         <Button Margin="7,6,723,396" RenderTransformOrigin="-5.835,-6.187" Click="GoBack" Content="Back"/>
-        <TextBlock HorizontalAlignment="Left" FontSize="20" Margin="432,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="72"><Run Language="en-ca" Text="Venom"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" FontSize="12" Margin="7,276,0,32" TextWrapping="Wrap" Width="170" TextAlignment="Center"><Run Language="en-ca" Text="While trying to take down Carlton, the CEO of Life Foundation, Eddie, a journalist, investigates experiments of human trials. Unwittingly, he gets merged with a symbiotic alien with lethal abilities."/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" FontSize="18" TextAlignment="Center" Width="300" Height="30" Margin="318,48,0,356" FontWeight="Bold"><Run Language="en-ca" Text="Select Your Show Time For Venom"/></TextBlock>
+        <TextBlock x:Name="MovieIntro" HorizontalAlignment="Left" FontSize="12" Margin="7,276,0,32" TextWrapping="Wrap" Width="170" TextAlignment="Center"><Run Language="en-ca" Text="While trying to take down Carlton, the CEO of Life Foundation, Eddie, a journalist, investigates experiments of human trials. Unwittingly, he gets merged with a symbiotic alien with lethal abilities."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" TextAlignment="Center" Width="300" Height="30" Margin="296,57,0,347" FontWeight="Normal" Text="Select Your Show Time"/>
         <Grid Height="300" Width="600" Margin="180,92,20,42">
             <Grid.Resources>
                 <SolidColorBrush x:Key="brush" Color="Black"/>
@@ -113,11 +112,14 @@
                 <TextBlock><Run Text="17:45"/><LineBreak/><Run Language="en-ca" Text="3D"/></TextBlock>
             </Button>
         </Grid>
-        <Button Margin="11,393,0,0" Height="40" Width="70" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ChangeLanguage" Content="Language"/>
-        <Button Width="70" Height="40" Margin="84,393,646,1" Click="GetHelp" Content="Help"/>
-        <Image Height="220" Source="images/Venom_Poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
-        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="655,58,0,0" VerticalAlignment="Top" Width="135" Click="ScanMemberTime" />
-        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;No membership info" HorizontalAlignment="Left" Margin="654,15,0,0" VerticalAlignment="Top" Width="136" Height="43"/>
+        <Button Margin="18,393,0,0" Height="31" Width="68" IsDefault="True" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ChangeLanguage" Content="Language"/>
+        <Button Width="70" Margin="96,393,634,10" Click="GetHelp" Content="Help"/>
+        <Image x:Name="PosterVenom" Height="220" Source="images/Venom_Poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
+        <Image x:Name="PosterYourName" Height="220" Source="images/your-name-movie-poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
+        <Image x:Name="PosterDunkirk" Height="220" Source="images/Dunkirk-movie-poster.jpg" Width="150" HorizontalAlignment="Left" Margin="18,49,0,165"/>
+        <Label x:Name="ShowSelectionTitle" x:FieldModifier="public" HorizontalContentAlignment="Center" Content="Title" HorizontalAlignment="Left" Margin="344,15,0,0" VerticalAlignment="Top" Width="204" Height="35" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="645,64,0,0" VerticalAlignment="Top" Width="136" Click="ScanMemberTime" />
+        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="645,6,0,0" VerticalAlignment="Top" Width="145" Height="59"/>
 
     </Grid>
 

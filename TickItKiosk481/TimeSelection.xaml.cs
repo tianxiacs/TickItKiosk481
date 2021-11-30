@@ -23,7 +23,7 @@ namespace TickItKiosk481
          * Yuan did the change
          * Using the "MembershipSkip" window to select the show Name
          */
-        //public static String showName = null;
+        public static String showName = null;
         public static String showTime = null;
         public static String showType = null;
         public static String showDate = null;
@@ -63,6 +63,16 @@ namespace TickItKiosk481
             App.ticket.ChildLabel.Content = 0;
             App.ticket.SeniorLabel.Content = 0;
             App.ticket.RedeemLabel.Content = 0;
+            App.ticket.SubtotalFieldTicket.Content = "";
+            App.ticket.SubtotalPriceTicket.Content = "$ 0";
+            App.ticket.TicketRedeemBalanceLabel.Content = "";
+            App.ticket.RemainingPointsLabel.Content = "Remaining Points               " + Ticket.pointBalance;
+            Ticket.adultNum = 0;
+            Ticket.childNum = 0;
+            Ticket.seniorNum = 0;
+            Ticket.redeemNum = 0;
+            Ticket.subtotal = 0.0;
+            Ticket.subtotalTicket = 0.0;
             if (showType == "3D")
             {
                 App.ticket.AdultPrice.Content = App.prices["Adult Ticket 3D"];
