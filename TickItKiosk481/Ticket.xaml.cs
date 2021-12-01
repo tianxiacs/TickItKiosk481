@@ -188,6 +188,8 @@ namespace TickItKiosk481
         {
             this.Visibility = Visibility.Hidden;
             App.seat.Show();
+            Seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
+            App.seat.RemainingSeatLabel.Content = adultNum + childNum + seniorNum + redeemNum;
         }
 
         private void BackToTimeSelection(object sender, RoutedEventArgs e)

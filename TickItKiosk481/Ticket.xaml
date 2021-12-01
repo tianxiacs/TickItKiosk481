@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Ticket" Height="450" Width="800">
     <Grid>
-        <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="55" Margin="590,353,0,0" VerticalAlignment="Top" Width="178" Click="GoToSeats"/>
+        <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="56" Margin="591,358,0,0" VerticalAlignment="Top" Width="168" Click="GoToSeats" FontSize="20"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="272" Margin="250,192,0,0"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="310,276,0,0"><Run Language="en-ca" Text="Child"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="310,322,0,0"><Run Language="en-ca" Text="Senior"/></TextBlock>

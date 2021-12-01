@@ -17,9 +17,11 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Seat : Window
     {
+        public static int remainingSeatNum = 0;
         public Seat()
         {
             InitializeComponent();
+            SeatContinueWarningLabel.Visibility = Visibility.Hidden;
         }
 
         private void BackToTicket(object sender, RoutedEventArgs e)
@@ -40,6 +42,38 @@ namespace TickItKiosk481
             Help.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.help.Show();
+        }
+
+        private void SeatClick(object sender, RoutedEventArgs e)
+        {
+            Button seatBoxButton = e.Source as Button;
+            SeatContinueWarningLabel.Visibility = Visibility.Hidden;
+            if (remainingSeatNum > 0 && Convert.ToString(seatBoxButton.Content) == "")
+            {
+                seatBoxButton.Content = "√";
+                remainingSeatNum--;
+                RemainingSeatLabel.Content = remainingSeatNum;
+            }
+            else if (Convert.ToString(seatBoxButton.Content) == "√")
+            {
+                seatBoxButton.Content = "";
+                remainingSeatNum++;
+                RemainingSeatLabel.Content = remainingSeatNum;
+            }
+
+        }
+
+        private void GoToFood(object sender, RoutedEventArgs e)
+        {
+            if (remainingSeatNum > 0)
+            {
+                SeatContinueWarningLabel.Visibility = Visibility.Visible;
+            }else
+            {
+                this.Visibility = Visibility.Hidden;
+                App.food.Show();
+            }
+            
         }
     }
 }
