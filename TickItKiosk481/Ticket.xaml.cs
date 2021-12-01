@@ -39,6 +39,8 @@ namespace TickItKiosk481
             RemainingPointsLabel.Visibility = Visibility.Hidden;
             Divider1.Visibility = Visibility.Hidden;
             Divider2.Visibility = Visibility.Hidden;
+
+            TicketContinueWarningLabel.Visibility = Visibility.Hidden;
         }
 
         private void GetLanguage(object sender, RoutedEventArgs e)
@@ -121,6 +123,7 @@ namespace TickItKiosk481
             adultNum++;
             AdultLabel.Content = adultNum;
             UpdateSubtotal();
+            TicketContinueWarningLabel.Visibility = Visibility.Hidden;
         }
 
         private void AddChild(object sender, RoutedEventArgs e)
@@ -128,6 +131,7 @@ namespace TickItKiosk481
             childNum++;
             ChildLabel.Content = childNum;
             UpdateSubtotal();
+            TicketContinueWarningLabel.Visibility = Visibility.Hidden;
         }
 
         private void AddSenior(object sender, RoutedEventArgs e)
@@ -135,13 +139,19 @@ namespace TickItKiosk481
             seniorNum++;
             SeniorLabel.Content = seniorNum;
             UpdateSubtotal();
+            TicketContinueWarningLabel.Visibility = Visibility.Hidden;
         }
 
         private void AddRedeem(object sender, RoutedEventArgs e)
         {
-            redeemNum++;
-            RedeemLabel.Content = redeemNum;
-            UpdateSubtotal();
+            if (redeemNum < redeemLimit)
+            {
+                redeemNum++;
+                RedeemLabel.Content = redeemNum;
+                UpdateSubtotal();
+                TicketContinueWarningLabel.Visibility = Visibility.Hidden;
+            }
+            
         }
 
         private void MinusAdult(object sender, RoutedEventArgs e)
@@ -186,10 +196,17 @@ namespace TickItKiosk481
 
         private void GoToSeats(object sender, RoutedEventArgs e)
         {
-            this.Visibility = Visibility.Hidden;
-            App.seat.Show();
-            Seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
-            App.seat.RemainingSeatLabel.Content = adultNum + childNum + seniorNum + redeemNum;
+            if (adultNum + childNum + seniorNum + redeemNum > 0)
+            {
+                this.Visibility = Visibility.Hidden;
+                App.seat.Show();
+                Seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
+                App.seat.RemainingSeatLabel.Content = adultNum + childNum + seniorNum + redeemNum;
+            }else
+            {
+                TicketContinueWarningLabel.Visibility = Visibility.Visible;
+            }
+            
         }
 
         private void BackToTimeSelection(object sender, RoutedEventArgs e)
