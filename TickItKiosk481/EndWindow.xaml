@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="End_Window" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
+        Title="End_Window" Height="470" Width="815" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <TextBox HorizontalAlignment="Center" Margin="0,47,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="6,386,0,10" Width="68" FontSize="14" Click="GetLanguage"/>

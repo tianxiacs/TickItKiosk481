@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="MemberWelcome" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
+        Title="MemberWelcome" Height="470" Width="815" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="198,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="240" FontSize="36" Text="Welcome back, "/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="255" FontSize="20" Margin="211,184,0,0"><Run Language="en-ca" Text="Membership points balance: "/></TextBlock>

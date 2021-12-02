@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="GiftPayment" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
+        Title="GiftPayment" Height="470" Width="815" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <Image Margin="180,121,400,38" Stretch="Fill" Source="images/scanner.jpg"/>
         <TextBlock HorizontalAlignment="Left" Margin="430,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="226" FontSize="25"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>

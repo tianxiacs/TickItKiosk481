@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
+        Title="MainWindow" Height="470" Width="815" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <Label Content="Please select your preferred language" HorizontalAlignment="Left" Margin="427,105,0,0" VerticalAlignment="Top" Height="51" Width="287" FontSize="16"/>
         <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Left" Margin="459,156,0,0" VerticalAlignment="Top" FontSize="16"/>

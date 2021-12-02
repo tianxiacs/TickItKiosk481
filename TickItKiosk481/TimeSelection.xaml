@@ -6,7 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Select Show Timings" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
+        Title="Select Show Timings" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
 
     <Grid>
         <Grid Height="300" Width="600" Margin="180,92,20,42">
