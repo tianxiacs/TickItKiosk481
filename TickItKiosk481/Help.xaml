@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Help" Height="450" Width="800">
+        Title="Help" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <Label Content="Please wait for assistance from a staff member" HorizontalAlignment="Center" Margin="0,161,0,0" VerticalAlignment="Top" Height="46" Width="522" FontSize="25"/>
         <Button Content="Cancel" HorizontalAlignment="Center" Margin="0,235,0,0" VerticalAlignment="Top" Height="29" Width="72" Click="GoBack"/>

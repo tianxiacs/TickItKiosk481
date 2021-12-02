@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="CreditDebitPayment" Height="450" Width="800">
+        Title="CreditDebitPayment" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="418,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="270" FontSize="25"><Run Text="&lt;-"/><Run Text="Use the "/><Run Language="en-ca" Text="debit machine to insert, tap, or swipe the card"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="103,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="631" FontSize="30"><Run Text="Please "/><Run Text="use the debit machin"/><Run Language="en-ca" Text="e for card payment"/><Run Text=" "/></TextBlock>

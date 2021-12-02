@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Ticket" Height="450" Width="800">
+        Title="Ticket" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0">
     <Grid>
         <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="40" Margin="599,377,0,0" VerticalAlignment="Top" Width="168" Click="GoToSeats" FontSize="20"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="272" Margin="250,192,0,0"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
