@@ -71,7 +71,7 @@ namespace TickItKiosk481
             }else
             {
                 this.Visibility = Visibility.Hidden;
-                App.food.Show();
+                App.countDown.Show();
             }
             
         }

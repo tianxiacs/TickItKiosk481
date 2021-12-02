@@ -26,7 +26,7 @@ namespace TickItKiosk481
         private void StartTimer(object sender, RoutedEventArgs e)
         {
             DispatcherTimer countdown = new DispatcherTimer();
-            countdown.Interval = TimeSpan.FromSeconds(1);
+            countdown.Interval = TimeSpan.FromSeconds(1.5);
             countdown.Tick += decreaseTime;
             countdown.Start();
         }
@@ -36,6 +36,10 @@ namespace TickItKiosk481
         {
             TimerLabel.Content = timer_count;
             timer_count--;
+            if(timer_count == 0)
+            {
+                App.timeOut.Show();
+            }
         }
     }
 }
