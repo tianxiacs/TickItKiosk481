@@ -17,16 +17,18 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Ticket : Window
     {
-        public static double subtotal = 0.0;
-        public static int adultNum = 0;
-        public static int childNum = 0;
-        public static int seniorNum = 0;
-        public static int redeemNum = 0;
-        public static double subtotalTicket = 0.0;
+        public int adultNum = 0;
+        public int childNum = 0;
+        public int seniorNum = 0;
+        public int redeemNum = 0;
+        public double subtotalTicket = 0.0;
 
-        public static int redeemLimit = 0;
-        public static int ticketLimit = 0;
-        public static int pointBalance = 0;
+        public int redeemLimit = 0;
+        public int ticketLimit = 0;
+        public int pointBalance = 0;
+
+        public string subtotalFieldText = "";
+        public string pointsFieldText = "";
 
         public Ticket()
         {
@@ -45,14 +47,14 @@ namespace TickItKiosk481
 
         private void GetLanguage(object sender, RoutedEventArgs e)
         {
-            LanguageScreen.lastPage = this;
+            App.languageScreen.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.languageScreen.Show();
         }
 
         private void GetHelp(object sender, RoutedEventArgs e)
         {
-            Help.lastPage = this;
+            App.help.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.help.Show();
         }
@@ -68,10 +70,10 @@ namespace TickItKiosk481
             string pointField = "";
             if (adultNum > 0)
             {
-                if (TimeSelection.showType == "3D")
+                if (App.timeSelection.showType == "3D")
                 {
                     ticketField = ticketField + "Adult Ticket x " + adultNum + "               $ " + App.prices["Adult Ticket 3D"] + "\n";
-                }else if (TimeSelection.showType == "2D")
+                }else if (App.timeSelection.showType == "2D")
                 {
                     ticketField = ticketField + "Adult Ticket x " + adultNum + "               $ " + App.prices["Adult Ticket 2D"] + "\n";
                 }
@@ -79,22 +81,22 @@ namespace TickItKiosk481
             }
             if (childNum > 0)
             {
-                if (TimeSelection.showType == "3D")
+                if (App.timeSelection.showType == "3D")
                 {
                     ticketField = ticketField + "Child Ticket x " + childNum + "               $ " + App.prices["Child Ticket 3D"] + "\n";
                 }
-                else if (TimeSelection.showType == "2D")
+                else if (App.timeSelection.showType == "2D")
                 {
                     ticketField = ticketField + "Child Ticket x " + childNum + "               $ " + App.prices["Child Ticket 2D"] + "\n";
                 }
             }
             if (seniorNum > 0)
             {
-                if (TimeSelection.showType == "3D")
+                if (App.timeSelection.showType == "3D")
                 {
                     ticketField = ticketField + "Senior Ticket x " + seniorNum + "              $ " + App.prices["Senior Ticket 3D"] + "\n";
                 }
-                else if (TimeSelection.showType == "2D")
+                else if (App.timeSelection.showType == "2D")
                 {
                     ticketField = ticketField + "Senior Ticket x " + seniorNum + "              $ " + App.prices["Senior Ticket 2D"] + "\n";
                 }
@@ -106,16 +108,20 @@ namespace TickItKiosk481
             }
             
             SubtotalFieldTicket.Content = ticketField;
-            if (TimeSelection.showType == "3D")
-            {
-                SubtotalPriceTicket.Content = "$ " + String.Format("{0:0.##}", 1.05 * (adultNum * App.prices["Adult Ticket 3D"] + childNum * App.prices["Child Ticket 3D"] + seniorNum * App.prices["Senior Ticket 3D"]));
-            }else if (TimeSelection.showType == "2D")
-            {
-                SubtotalPriceTicket.Content = "$ " + String.Format("{0:0.##}", 1.05 * (adultNum * App.prices["Adult Ticket 2D"] + childNum * App.prices["Child Ticket 2D"] + seniorNum * App.prices["Senior Ticket 2D"]));
-            }
-
             TicketRedeemBalanceLabel.Content = pointField;
             RemainingPointsLabel.Content = "Remaining Points               " + (pointBalance - 1000 * redeemNum);
+            if (App.timeSelection.showType == "3D")
+            {
+                subtotalTicket = 1.05 * (adultNum * App.prices["Adult Ticket 3D"] + childNum * App.prices["Child Ticket 3D"] + seniorNum * App.prices["Senior Ticket 3D"]);
+                SubtotalPriceTicket.Content = "$ " + String.Format("{0:0.##}", subtotalTicket);
+            }else if (App.timeSelection.showType == "2D")
+            {
+                subtotalTicket = 1.05 * (adultNum * App.prices["Adult Ticket 2D"] + childNum * App.prices["Child Ticket 2D"] + seniorNum * App.prices["Senior Ticket 2D"]);
+                SubtotalPriceTicket.Content = "$ " + String.Format("{0:0.##}", subtotalTicket);
+            }
+
+            subtotalFieldText = ticketField;
+            pointsFieldText = pointField;
         }
         
         private void AddAdult(object sender, RoutedEventArgs e)
@@ -200,9 +206,17 @@ namespace TickItKiosk481
             {
                 this.Visibility = Visibility.Hidden;
                 App.seat.Show();
-                Seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
+                App.seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
                 App.seat.RemainingSeatLabel.Content = adultNum + childNum + seniorNum + redeemNum;
-            }else
+
+                App.food.allFieldText = subtotalFieldText;
+                App.food.subtotalAll = subtotalTicket;
+                App.payment.pointTotalText = pointsFieldText;
+
+                App.food.FoodSubtotalLabel.Content = App.food.allFieldText;
+                App.food.FoodPriceLabel.Content = "$ " + String.Format("{0:0.##}", subtotalTicket);
+            }
+            else
             {
                 TicketContinueWarningLabel.Visibility = Visibility.Visible;
             }
@@ -217,8 +231,8 @@ namespace TickItKiosk481
 
         private void ScanMemberTicket(object sender, RoutedEventArgs e)
         {
-            MemberScan.skipNextPage = this;
-            MemberWelcome.nextPage = this;
+            App.memberScan.skipNextPage = this;
+            App.memberWelcome.nextPage = this;
             this.Visibility = Visibility.Hidden;
             App.memberScan.Show();
         }

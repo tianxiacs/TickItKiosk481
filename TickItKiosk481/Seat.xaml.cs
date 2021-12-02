@@ -17,7 +17,7 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Seat : Window
     {
-        public static int remainingSeatNum = 0;
+        public int remainingSeatNum = 0;
         public Seat()
         {
             InitializeComponent();
@@ -32,14 +32,14 @@ namespace TickItKiosk481
 
         private void GetLanguage(object sender, RoutedEventArgs e)
         {
-            LanguageScreen.lastPage = this;
+            App.languageScreen.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.languageScreen.Show();
         }
 
         private void GetHelp(object sender, RoutedEventArgs e)
         {
-            Help.lastPage = this;
+            App.help.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.help.Show();
         }

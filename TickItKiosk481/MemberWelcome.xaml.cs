@@ -17,16 +17,17 @@ namespace TickItKiosk481
     /// </summary>
     public partial class MemberWelcome : Window
     {
-        public static Window nextPage;
+        public Window nextPage;
         public MemberWelcome()
         {
             InitializeComponent();
         }
 
-        private void welcomeMembershipContinue(object sender, RoutedEventArgs e)
+        private void MembershipContinue(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
             nextPage.Show();
         }
+
     }
 }

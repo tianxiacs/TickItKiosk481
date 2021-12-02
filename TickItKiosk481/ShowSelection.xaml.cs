@@ -22,11 +22,25 @@ namespace TickItKiosk481
             InitializeComponent();
         }
 
+        private void GetLanguage(object sender, RoutedEventArgs e)
+        {
+            App.languageScreen.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.languageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            App.help.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.help.Show();
+        }
+
         private void SelectVenom(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
             App.timeSelection.Show();
-            TimeSelection.showName = "Venom";
+            App.timeSelection.showName = "Venom";
             App.timeSelection.ShowSelectionTitle.Content = "Venom";
             App.ticket.TicketTitleLabel.Content = "Venom";
 
@@ -43,8 +57,8 @@ namespace TickItKiosk481
 
         private void ScanMemberShow(object sender, RoutedEventArgs e)
         {
-            MemberScan.skipNextPage = this;
-            MemberWelcome.nextPage = this;
+            App.memberScan.skipNextPage = this;
+            App.memberWelcome.nextPage = this;
             this.Visibility = Visibility.Hidden;
             App.memberScan.Show();
         }
@@ -53,7 +67,7 @@ namespace TickItKiosk481
         {
             this.Visibility = Visibility.Hidden;
             App.timeSelection.Show();
-            TimeSelection.showName = "Your Name";
+            App.timeSelection.showName = "Your Name";
             App.timeSelection.ShowSelectionTitle.Content = "Your Name";
             App.ticket.TicketTitleLabel.Content = "Your Name";
 
@@ -72,7 +86,7 @@ namespace TickItKiosk481
         {
             this.Visibility = Visibility.Hidden;
             App.timeSelection.Show();
-            TimeSelection.showName = "Dunkirk";
+            App.timeSelection.showName = "Dunkirk";
             App.timeSelection.ShowSelectionTitle.Content = "Dunkirk";
             App.ticket.TicketTitleLabel.Content = "Dunkirk";
 

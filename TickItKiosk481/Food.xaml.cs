@@ -17,6 +17,8 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Food : Window
     {
+        public string allFieldText = "";
+        public double subtotalAll = 0.0;
         public Food()
         {
             InitializeComponent();

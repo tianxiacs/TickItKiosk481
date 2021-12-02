@@ -17,6 +17,9 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Payment : Window
     {
+        public string moneyTotalText = "";
+        public string pointTotalText = "";
+        
         public Payment()
         {
             InitializeComponent();

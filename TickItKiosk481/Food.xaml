@@ -9,58 +9,52 @@
     <Grid>
         <Button Content="+" HorizontalAlignment="Left" Margin="267,195,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="203,195,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.465" Height="40" Width="80"/>
-        <Button Content="Checkout" HorizontalAlignment="Left" Margin="664,364,0,0" VerticalAlignment="Top" Height="59" Width="117"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.465" Height="30" Width="69" Margin="13,12,0,0"/>
+        <Button Content="Checkout >>" HorizontalAlignment="Left" Margin="648,371,0,0" VerticalAlignment="Top" Height="45" Width="142" FontSize="20" FontWeight="Bold"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="435,195,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="370,195,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="602,195,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="542,195,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="267,368,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="203,368,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="435,368,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="370,368,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="602,368,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="542,368,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="Next&#xA;Page" HorizontalAlignment="Left" Margin="723,204,0,0" VerticalAlignment="Top" Height="43" Width="58"/>
-        <TextBlock HorizontalAlignment="Left" Margin="309,13,0,0" Text="Select Your Food" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="437,366,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="371,366,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="603,366,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="541,366,0,0" VerticalAlignment="Top" Width="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="273,20,0,0" Text="Please Select Your Food" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="231"/>
         <TextBlock HorizontalAlignment="Left" Margin="282,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Popcorn"/><LineBreak/><Run Text="("/><Run Text="L"/><Run Language="en-ca" Text="arge"/><Run Text=")"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="630,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"><Run Text="F"/><Run Text="ries"/><LineBreak/><Run Text="(L"/><Run Language="en-ca" Text="arge"/><Run Text=")"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="450,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Popcorn"/><LineBreak/><Run Text="("/><Run Text="S"/><Run Language="en-ca" Text="mall"/><Run Text=")"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="448,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81"><Run Language="en-ca" Text="Fountain Pop"/><LineBreak/><Run Text="("/><Run Language="en-ca" Text="Small"/><Run Text=")"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="632,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"><Run Text="F"/><Run Text="ries"/><LineBreak/><Run Text="("/><Run Text="S"/><Run Language="en-ca" Text="mall"/><Run Text=")"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="623,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81"><Run Language="en-ca" Text="Fountain Pop"/><LineBreak/><Run Text="("/><Run Language="en-ca" Text="Small"/><Run Text=")"/></TextBlock>
         <Image Margin="203,67,523,259" Stretch="Fill" Source="images/popcorn.png"/>
         <Image Margin="370,67,355,259" Stretch="Fill" Source="images/popcorn.png"/>
         <TextBox HorizontalAlignment="Left" Margin="656,10,0,0" Text="Time left for seat reservation: 3:15" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="43" FontSize="14"/>
         <Label Content="1" HorizontalAlignment="Left" Height="26" Margin="235,192,0,0" VerticalAlignment="Top" Width="20"/>
-        <Image Margin="185,245,505,84" Stretch="Fill" Source="images/drink-rem.png"/>
-        <Image Margin="361,245,330,84" Stretch="Fill" Source="images/drink-rem.png"/>
+        <Image Margin="357,243,333,86" Stretch="Fill" Source="images/drink-rem.png"/>
+        <Image Margin="536,243,155,86" Stretch="Fill" Source="images/drink-rem.png"/>
         <Image Margin="534,70,173,259" Stretch="Fill" Source="images/fries-rem.png"/>
-        <Image Margin="534,250,173,79" Stretch="Fill" Source="images/fries-rem.png"/>
-        <TextBlock HorizontalAlignment="Left" Margin="277,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81"><Run Text="Fountain Pop"/><LineBreak/><Run Text="("/><Run Language="en-ca" Text="Large"/><Run Text=")"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="449,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81"><Run Text="Fountain Pop"/><LineBreak/><Run Text="("/><Run Language="en-ca" Text="Large"/><Run Text=")"/></TextBlock>
         <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="405,192,0,0" VerticalAlignment="Top" Width="20"/>
         <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="575,192,0,0" VerticalAlignment="Top" Width="20"/>
-        <Label Content="2" HorizontalAlignment="Left" Height="26" Margin="235,365,0,0" VerticalAlignment="Top" Width="20"/>
-        <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="405,365,0,0" VerticalAlignment="Top" Width="20"/>
-        <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="575,365,0,0" VerticalAlignment="Top" Width="20"/>
-        <Label Content="$ 3" HorizontalAlignment="Left" Height="29" Margin="273,314,0,0" VerticalAlignment="Top" Width="41"/>
-        <Label Content="$ 2" HorizontalAlignment="Left" Height="29" Margin="445,314,0,0" VerticalAlignment="Top" Width="41"/>
-        <Label Content="$ 2" HorizontalAlignment="Left" Height="29" Margin="627,311,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="2" HorizontalAlignment="Left" Height="26" Margin="406,363,0,0" VerticalAlignment="Top" Width="20"/>
+        <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="575,363,0,0" VerticalAlignment="Top" Width="20"/>
+        <Label Content="$ 3" HorizontalAlignment="Left" Height="29" Margin="445,312,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="$ 2" HorizontalAlignment="Left" Height="29" Margin="620,312,0,0" VerticalAlignment="Top" Width="41"/>
         <Label Content="$ 3" HorizontalAlignment="Left" Height="29" Margin="627,124,0,0" VerticalAlignment="Top" Width="41"/>
         <Label Content="$ 5" HorizontalAlignment="Left" Height="29" Margin="450,123,0,0" VerticalAlignment="Top" Width="41"/>
         <Label Content="$ 10" HorizontalAlignment="Left" Height="30" Margin="282,123,0,0" VerticalAlignment="Top" Width="41"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="165" Margin="13,92,0,0" FontSize="18"><Run Language="en-ca" Text="Subtotal"/></TextBlock>
-        <Label Content="Adult Ticket x 1&#x9;&#x9;$10" HorizontalAlignment="Left" Height="26" Margin="13,121,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label Content="Child Ticket x 1&#x9;&#x9;$8" HorizontalAlignment="Left" Height="26" Margin="14,140,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="Redeemed Ticket x 1&#x9;$0" HorizontalAlignment="Left" Height="26" Margin="14,159,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF5D73FD"/>
-        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="14,217,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="14,232,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="14,243,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label Content="&#x9;&#x9;&#x9;$35.7" HorizontalAlignment="Left" Height="26" Margin="8,256,0,0" VerticalAlignment="Top" Width="184"/>
-        <Label Content="Popcorn&#x9;(Large)&#x9;&#x9;$10" HorizontalAlignment="Left" Height="26" Margin="14,175,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label Content="Fountain Pop (Large) x 2&#x9;$6" HorizontalAlignment="Left" Height="26" Margin="14,194,0,0" VerticalAlignment="Top" Width="172"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="9,407,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="78,407,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="39,287,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="FoodSubtotalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="148" Margin="13,121,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="14,258,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="14,274,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="14,284,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="FoodPriceLabel" x:FieldModifier="public" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="131,301,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="9,402,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="83,402,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="268,366,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="203,366,0,0" VerticalAlignment="Top" Width="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="293,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"><Run Text="F"/><Run Text="ries"/><LineBreak/><Run Text="("/><Run Text="S"/><Run Language="en-ca" Text="mall"/><Run Text=")"/></TextBlock>
+        <Image Margin="195,248,512,81" Stretch="Fill" Source="/images/fries-rem.png"/>
+        <Label Content="0" HorizontalAlignment="Left" Height="26" Margin="236,363,0,0" VerticalAlignment="Top" Width="20"/>
+        <Label Content="$ 2" HorizontalAlignment="Left" Height="29" Margin="288,309,0,0" VerticalAlignment="Top" Width="41"/>
 
     </Grid>
 </Window>

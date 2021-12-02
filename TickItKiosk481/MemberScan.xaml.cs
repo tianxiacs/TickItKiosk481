@@ -17,7 +17,7 @@ namespace TickItKiosk481
     /// </summary>
     public partial class MemberScan : Window
     {
-        public static Window skipNextPage;
+        public Window skipNextPage;
         public MemberScan()
         {
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace TickItKiosk481
             App.memberWelcome.MemberNameLabel.Content = "Johnny!";
             App.memberWelcome.PointLabel.Content = 3500;
             App.memberWelcome.MovieNumberLabel.Content = "3 movies.";
-            Ticket.redeemLimit = 3;
+            App.ticket.redeemLimit = 3;
 
             App.showSelection.MemberInfoLabel.Content = "Welcome back, Jonny!\nMembership Points: 3500\nAvailable Redemption: 3";
             App.showSelection.ScanMemberButton.Visibility = Visibility.Hidden;
@@ -60,7 +60,7 @@ namespace TickItKiosk481
             App.ticket.Divider1.Visibility = Visibility.Visible;
             App.ticket.Divider2.Visibility = Visibility.Visible;
 
-            Ticket.pointBalance = 3500;
+            App.ticket.pointBalance = 3500;
             App.ticket.RedeemLimitLabel.Content = "(You can redeem up to 3 movies)";
         }
 
@@ -71,7 +71,7 @@ namespace TickItKiosk481
             App.memberWelcome.MemberNameLabel.Content = "Lori!";
             App.memberWelcome.PointLabel.Content = 7400;
             App.memberWelcome.MovieNumberLabel.Content = "7 movies.";
-            Ticket.redeemLimit = 7;
+            App.ticket.redeemLimit = 7;
 
             App.showSelection.MemberInfoLabel.Content = "Welcome back, Lori!\nMembership Points: 7400\nAvailable Redemption: 7";
             App.showSelection.ScanMemberButton.Visibility = Visibility.Hidden;
@@ -89,7 +89,7 @@ namespace TickItKiosk481
             App.ticket.Divider1.Visibility = Visibility.Visible;
             App.ticket.Divider2.Visibility = Visibility.Visible;
 
-            Ticket.pointBalance = 7400;
+            App.ticket.pointBalance = 7400;
             App.ticket.RedeemLimitLabel.Content = "(You can redeem up to 7 movies)";
         }
     }

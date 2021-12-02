@@ -17,7 +17,7 @@ namespace TickItKiosk481
     /// </summary>
     public partial class LanguageScreen : Window
     {
-        public static Window lastPage;
+        public Window lastPage;
 
         public LanguageScreen()
         {

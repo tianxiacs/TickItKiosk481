@@ -9,8 +9,8 @@
     <Grid>
         <Label Content="Now Playing" HorizontalAlignment="Left" Margin="296,8,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="9,8,0,0"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="82,401,0,0" VerticalAlignment="Top" Height="25" Width="60"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top" Height="26" Width="60" Click="GetLanguage"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="82,401,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="GetHelp"/>
         <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Left" Margin="214,44,0,0" VerticalAlignment="Top"/>
         <Label Content="Next show: 3D @ 1:45 PM&#xA;Available Seats: 27&#xA;Longest row of connected seats: 7" HorizontalAlignment="Left" Height="56" Margin="44,328,0,0" VerticalAlignment="Top" Width="192" Foreground="#FF1E43EA"/>
         <Label Content="Next show: 3D @ 6 PM&#xA;Available Seats: 22&#xA;Longest row of connected seats: 5" HorizontalAlignment="Left" Height="56" Margin="248,328,0,0" VerticalAlignment="Top" Width="191" Foreground="#FF1E43EA"/>
