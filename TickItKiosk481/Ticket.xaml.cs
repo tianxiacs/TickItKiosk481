@@ -29,6 +29,7 @@ namespace TickItKiosk481
 
         public string subtotalFieldText = "";
         public string pointsFieldText = "";
+        public string pointsAfterText = "";
 
         public Ticket()
         {
@@ -103,13 +104,14 @@ namespace TickItKiosk481
             }
             if (redeemNum > 0)
             {
-                ticketField = ticketField + "Redeemed Ticket x " + redeemNum + "            $0";
+                ticketField = ticketField + "Redeemed Ticket x " + redeemNum + "            $0" + "\n";
                 pointField = "Ticket Redemption x " + redeemNum + "       1000";
             }
             
             SubtotalFieldTicket.Content = ticketField;
             TicketRedeemBalanceLabel.Content = pointField;
-            RemainingPointsLabel.Content = "Remaining Points               " + (pointBalance - 1000 * redeemNum);
+            pointsAfterText = "Remaining Points               " + (pointBalance - 1000 * redeemNum);
+            RemainingPointsLabel.Content = pointsAfterText;
             if (App.timeSelection.showType == "3D")
             {
                 subtotalTicket = 1.05 * (adultNum * App.prices["Adult Ticket 3D"] + childNum * App.prices["Child Ticket 3D"] + seniorNum * App.prices["Senior Ticket 3D"]);
@@ -204,17 +206,29 @@ namespace TickItKiosk481
         {
             if (adultNum + childNum + seniorNum + redeemNum > 0)
             {
-                this.Visibility = Visibility.Hidden;
-                App.seat.Show();
                 App.seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
                 App.seat.RemainingSeatLabel.Content = adultNum + childNum + seniorNum + redeemNum;
 
                 App.food.allFieldText = subtotalFieldText;
                 App.food.subtotalAll = subtotalTicket;
-                App.payment.pointTotalText = pointsFieldText;
 
                 App.food.FoodSubtotalLabel.Content = App.food.allFieldText;
                 App.food.FoodPriceLabel.Content = "$ " + String.Format("{0:0.##}", subtotalTicket);
+
+                App.payment.PointsBeforeFinalLabel.Content = pointBalance;
+                App.payment.PointsFieldFinalLabel.Content = pointsFieldText;
+                App.payment.PointsAfterFinalLabel.Content = pointsAfterText;
+
+                foreach (Button b in App.seat.clickedButtons)
+                {
+                    if (Convert.ToString(b.Content) == "√")
+                    {
+                        b.Content = "";
+                    }
+                }
+
+                this.Visibility = Visibility.Hidden;
+                App.seat.Show();
             }
             else
             {

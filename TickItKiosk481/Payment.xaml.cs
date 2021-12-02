@@ -17,24 +17,42 @@ namespace TickItKiosk481
     /// </summary>
     public partial class Payment : Window
     {
-        public string moneyTotalText = "";
-        public string pointTotalText = "";
-        
         public Payment()
         {
             InitializeComponent();
         }
 
-        private void CreditDebitPayment(object sender, RoutedEventArgs e)
+        private void GoToCreditDebitPayment(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
             App.cdp.Show();
         }
 
-        private void GiftCardPayment(object sender, RoutedEventArgs e)
+        private void GoToGiftCardPayment(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
             App.giftPayment.Show();
         }
+
+        private void BackToFood(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.food.Show();
+        }
+
+        private void GetLanguage(object sender, RoutedEventArgs e)
+        {
+            App.languageScreen.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.languageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            App.help.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.help.Show();
+        }
+
     }
 }

@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="End_Window" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,69,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="6,386,0,10" Width="68" FontSize="14"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="88,386,0,0" VerticalAlignment="Top" Height="38" Width="55" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
-        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,306,0,0" Width="388" FontSize="22" VerticalAlignment="Top"/>
-        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,217,0,173" Width="208" FontSize="18"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,47,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="6,386,0,10" Width="68" FontSize="14" Click="GetLanguage"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="88,386,0,0" VerticalAlignment="Top" Height="38" Width="55" FontSize="14" Click="GetHelp"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
+        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,317,0,0" Width="388" FontSize="22" VerticalAlignment="Top" Click="RestartSession"/>
+        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,195,0,195" Width="208" FontSize="18" Click="PrintReceipt"/>
+        <TextBlock x:Name="ReceiptPrintedLabel" HorizontalAlignment="Center" Height="35" Margin="0,244,0,0" Text="Receipt has been printed. Please collect it with your ticket(s)." TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Foreground="#FFE40F0F" FontWeight="Normal"/>
 
     </Grid>
 </Window>

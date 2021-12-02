@@ -22,7 +22,7 @@
         <Label x:Name="DateLabel" x:FieldModifier="public" Content="Tuesday November 9, 2021" HorizontalAlignment="Left" Height="26" Margin="323,114,0,0" VerticalAlignment="Top" Width="172"/>
         <Label x:Name="TimeLabel" x:FieldModifier="public" Content="18:00" HorizontalAlignment="Left" Height="26" Margin="323,136,0,0" VerticalAlignment="Top" Width="172"/>
         <Label x:Name="FormatLabel" Content="3D" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="323,155,0,0" VerticalAlignment="Top" Width="172"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="90" Margin="569,164,0,0"><Run Language="en-ca" Text="Subtotal"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="90" Margin="579,31,0,0"><Run Language="en-ca" Text="Subtotal"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
         <Image x:Name="VenomPoster" x:FieldModifier="public" Margin="26,85,590,82" Stretch="Fill" Source="images/Venom_Poster.jpg"/>
         <Image x:Name="YourNamePoster" x:FieldModifier="public" Margin="26,85,590,82" Stretch="Fill" Source="images/your-name-movie-poster.jpg"/>
         <Image x:Name="DunkirkPoster" x:FieldModifier="public" Margin="26,85,590,82" Stretch="Fill" Source="images/Dunkirk-movie-poster.jpg"/>
@@ -36,17 +36,11 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="356,365,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusRedeem"/>
         <Label x:Name="RedeemLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="385,362,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="413,365,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" />
-        <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="569,198,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="568,268,0,0" VerticalAlignment="Top" Width="180"/>
-        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="568,283,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="568,294,0,0" VerticalAlignment="Top" Width="180"/>
-        <Label x:Name="SubtotalPriceTicket" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="688,307,0,0" VerticalAlignment="Top" Width="60"/>
-        <TextBlock x:Name="PointBalanceTitleLabel" x:FieldModifier="public" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="569,31,0,0"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
-        <Label x:Name="CurrentPointsLabel" x:FieldModifier="public" Content="Current Points&#x9;&#x9;3500" HorizontalAlignment="Left" Height="26" Margin="569,63,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label x:Name="Divider1" x:FieldModifier="public" Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="569,74,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label x:Name="TicketRedeemBalanceLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="569,90,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label x:Name="Divider2" x:FieldModifier="public" Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="569,105,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label x:Name="RemainingPointsLabel" x:FieldModifier="public" Content="Remaining Points&#x9;&#x9;2500" HorizontalAlignment="Left" Height="26" Margin="569,122,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="579,64,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="578,134,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="578,149,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="578,160,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="SubtotalPriceTicket" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="698,174,0,0" VerticalAlignment="Top" Width="60"/>
         <Label x:Name="AdultPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="460,227,0,0" VerticalAlignment="Top" Width="57"/>
         <Label x:Name="ChildPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="460,272,0,0" VerticalAlignment="Top" Width="57"/>
         <Label x:Name="SeniorPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="460,317,0,0" VerticalAlignment="Top" Width="57"/>
@@ -61,6 +55,12 @@
         <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="372,10,0,0" VerticalAlignment="Top" Width="145" Height="59"/>
         <Label x:Name="RedeemLimitLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="27" Margin="302,390,0,0" VerticalAlignment="Top" Width="186"/>
         <TextBlock x:Name="TicketContinueWarningLabel" HorizontalAlignment="Left" Height="35" Margin="614,342,0,0" Text="Please select ticket(s) before continuing!" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Foreground="#FFE40F0F" FontWeight="Normal"/>
+        <TextBlock x:Name="PointBalanceTitleLabel" x:FieldModifier="public" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="579,214,0,0"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="CurrentPointsLabel" x:FieldModifier="public" Content="Current Points&#x9;&#x9;3500" HorizontalAlignment="Left" Height="26" Margin="579,246,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="Divider1" x:FieldModifier="public" Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="579,258,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="TicketRedeemBalanceLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="579,274,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="Divider2" x:FieldModifier="public" Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="579,288,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="RemainingPointsLabel" x:FieldModifier="public" Content="Remaining Points&#x9;&#x9;2500" HorizontalAlignment="Left" Height="26" Margin="579,306,0,0" VerticalAlignment="Top" Width="190"/>
 
     </Grid>
 </Window>

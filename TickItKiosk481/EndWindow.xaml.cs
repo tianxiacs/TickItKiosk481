@@ -20,6 +20,32 @@ namespace TickItKiosk481
         public EndWindow()
         {
             InitializeComponent();
+            ReceiptPrintedLabel.Visibility = Visibility.Hidden;
+        }
+
+        private void GetLanguage(object sender, RoutedEventArgs e)
+        {
+            App.languageScreen.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.languageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            App.help.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.help.Show();
+        }
+
+        private void RestartSession(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.mainWindow.Show();
+        }
+
+        private void PrintReceipt(object sender, RoutedEventArgs e)
+        {
+            ReceiptPrintedLabel.Visibility = Visibility.Visible;
         }
     }
 }

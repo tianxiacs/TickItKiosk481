@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +19,7 @@ namespace TickItKiosk481
     public partial class Seat : Window
     {
         public int remainingSeatNum = 0;
+        public ArrayList clickedButtons = new ArrayList();
         public Seat()
         {
             InitializeComponent();
@@ -53,12 +55,14 @@ namespace TickItKiosk481
                 seatBoxButton.Content = "√";
                 remainingSeatNum--;
                 RemainingSeatLabel.Content = remainingSeatNum;
+                clickedButtons.Add(seatBoxButton);
             }
             else if (Convert.ToString(seatBoxButton.Content) == "√")
             {
                 seatBoxButton.Content = "";
                 remainingSeatNum++;
                 RemainingSeatLabel.Content = remainingSeatNum;
+                clickedButtons.Remove(seatBoxButton);
             }
 
         }

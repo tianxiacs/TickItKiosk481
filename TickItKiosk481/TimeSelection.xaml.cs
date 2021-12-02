@@ -54,8 +54,6 @@ namespace TickItKiosk481
 
         private void GoToTicket()
         {
-            this.Visibility = Visibility.Hidden;
-            App.ticket.Show();
             App.ticket.DateLabel.Content = showDate;
             App.ticket.TimeLabel.Content = showTime;
             App.ticket.FormatLabel.Content = showType;
@@ -83,7 +81,9 @@ namespace TickItKiosk481
                 App.ticket.ChildPrice.Content = App.prices["Child Ticket 2D"];
                 App.ticket.SeniorPrice.Content = App.prices["Senior Ticket 2D"];
             }
-            
+
+            this.Visibility = Visibility.Hidden;
+            App.ticket.Show();
         }
 
         private void Show1(object sender, RoutedEventArgs e)

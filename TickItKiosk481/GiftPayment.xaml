@@ -7,11 +7,14 @@
         mc:Ignorable="d"
         Title="GiftPayment" Height="450" Width="800">
     <Grid>
-        <Image Margin="154,139,426,20" Stretch="Fill" Source="images/scanner.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Margin="428,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="227" FontSize="25"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
+        <Image Margin="180,121,400,38" Stretch="Fill" Source="images/scanner.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="430,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="226" FontSize="25"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
         <TextBlock HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="564" FontSize="30"><Run Text="Please scan "/><Run Text="the barcode on "/><Run Text="your "/><Run Language="en-ca" Text="gift"/><Run Text=" card"/></TextBlock>
-        <Button Content="Back to select another payment method" HorizontalAlignment="Left" Height="35" Margin="10,10,0,0" VerticalAlignment="Top" Width="232"/>
+        <Button Content="Back to select another payment method" HorizontalAlignment="Left" Height="35" Margin="10,10,0,0" VerticalAlignment="Top" Width="232" Click="BackToPayment"/>
         <TextBox HorizontalAlignment="Left" Margin="656,10,0,0" Text="Time left for seat reservation: 1:45" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="43" FontSize="14" />
+        <Button Content="Language" HorizontalAlignment="Left" Margin="4,396,0,6" Width="68" FontSize="14" Click="GetLanguage"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="83,396,0,0" VerticalAlignment="Top" Height="32" Width="68" FontSize="14" Click="GetHelp"/>
+        <Button Content="Successfully Pay" HorizontalAlignment="Left" Height="47" Margin="564,317,0,0" VerticalAlignment="Top" Width="159" FontSize="20" Click="GoToEnd"/>
 
     </Grid>
 </Window>
