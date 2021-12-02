@@ -101,5 +101,10 @@ namespace TickItKiosk481
             App.timeSelection.MovieIntro.Text = "In May 1940, Germany advanced into France, trapping Allied troops on the beaches of Dunkirk. At the end of this heroic mission, 330,000 French, British, Belgian and Dutch soldiers were safely evacuated.";
         }
 
+        private void BackToMain(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.mainWindow.Show();
+        }
     }
 }

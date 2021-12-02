@@ -8,7 +8,7 @@
         Title="Show_Selection" Height="450" Width="800">
     <Grid>
         <Label Content="Now Playing" HorizontalAlignment="Left" Margin="296,8,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="9,8,0,0"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="9,8,0,0" Click="BackToMain"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="10,400,0,0" VerticalAlignment="Top" Height="26" Width="60" Click="GetLanguage"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="82,401,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="GetHelp"/>
         <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Left" Margin="214,44,0,0" VerticalAlignment="Top"/>
