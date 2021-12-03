@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace TickItKiosk481
 {
@@ -20,6 +21,25 @@ namespace TickItKiosk481
         public Countdown()
         {
             InitializeComponent();
+        }
+
+        private void StartTimer(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer countdown = new DispatcherTimer();
+            countdown.Interval = TimeSpan.FromSeconds(1.5);
+            countdown.Tick += decreaseTime;
+            countdown.Start();
+        }
+
+        int timer_count = 240;
+        private void decreaseTime(object sender, EventArgs e)
+        {
+            TimerLabel.Content = timer_count;
+            timer_count--;
+            if(timer_count == 0)
+            {
+                App.timeOut.Show();
+            }
         }
     }
 }
