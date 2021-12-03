@@ -31,6 +31,13 @@ namespace TickItKiosk481
         public Food()
         {
             InitializeComponent();
+
+            GiveUpSeatLabel.Visibility = Visibility.Hidden;
+            YesGiveUpButton.Visibility = Visibility.Hidden;
+            NoGiveUpButton.Visibility = Visibility.Hidden;
+
+            TimerPopUpWindow.Visibility = Visibility.Hidden;
+            TimerPopUpContinueButton.Visibility = Visibility.Hidden;
         }
 
         private void ChangeLanguage(object sender, RoutedEventArgs e)
@@ -193,8 +200,42 @@ namespace TickItKiosk481
 
         private void BackToSeat(object sender, RoutedEventArgs e)
         {
+            GiveUpSeatLabel.Visibility = Visibility.Visible;
+            YesGiveUpButton.Visibility = Visibility.Visible;
+            NoGiveUpButton.Visibility = Visibility.Visible;
+        }
+
+        private void DiscardPopUp(object sender, RoutedEventArgs e)
+        {
+            TimerPopUpContinueButton.Visibility = Visibility.Hidden;
+            TimerPopUpWindow.Visibility = Visibility.Hidden;
+        }
+
+        private void GiveUpAndGoBackToSeat(object sender, RoutedEventArgs e)
+        {
+            GiveUpSeatLabel.Visibility = Visibility.Hidden;
+            YesGiveUpButton.Visibility = Visibility.Hidden;
+            NoGiveUpButton.Visibility = Visibility.Hidden;
+
+            App.seat.remainingSeatNum = App.ticket.totalSeatsBooked;
+            App.seat.RemainingSeatLabel.Content = App.ticket.totalSeatsBooked;
+            foreach (Button b in App.seat.clickedButtons)
+            {
+                if (Convert.ToString(b.Content) == "√")
+                {
+                    b.Content = "";
+                }
+            }
+
             this.Visibility = Visibility.Hidden;
             App.seat.Show();
+        }
+
+        private void StayInFood(object sender, RoutedEventArgs e)
+        {
+            GiveUpSeatLabel.Visibility = Visibility.Hidden;
+            YesGiveUpButton.Visibility = Visibility.Hidden;
+            NoGiveUpButton.Visibility = Visibility.Hidden;
         }
     }
 }

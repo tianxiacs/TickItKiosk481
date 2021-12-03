@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Ticket" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
-    <Grid HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Margin="0,-16,0,0">
-        <TextBox HorizontalAlignment="Center" Margin="0,53,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="19,403,0,9" Width="68" FontSize="14" Click="GetLanguage"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="101,403,0,0" VerticalAlignment="Top" Height="38" Width="64" FontSize="14" Click="GetHelp"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
-        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,323,0,0" Width="388" FontSize="22" VerticalAlignment="Top" Click="RestartSession"/>
-        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,201,0,189" Width="208" FontSize="18" Click="PrintReceipt"/>
-        <TextBlock x:Name="ReceiptPrintedLabel" HorizontalAlignment="Center" Height="35" Margin="0,261,0,0" Text="Receipt has been printed. Please collect it with your ticket(s)." TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Foreground="#FFE40F0F" FontWeight="Normal"/>
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
+        <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="22,495,0,27" Width="68" FontSize="14" Click="GetLanguage"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="104,495,0,0" VerticalAlignment="Top" Height="38" Width="64" FontSize="14" Click="GetHelp"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
+        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,373,0,0" Width="388" FontSize="22" VerticalAlignment="Top" Click="RestartSession"/>
+        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,251,0,254" Width="208" FontSize="18" Click="PrintReceipt"/>
+        <TextBlock x:Name="ReceiptPrintedLabel" HorizontalAlignment="Center" Height="35" Margin="0,311,0,0" Text="Receipt has been printed. Please collect it with your ticket(s)." TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Foreground="#FFE40F0F" FontWeight="Normal"/>
 
     </Grid>
 </Window>

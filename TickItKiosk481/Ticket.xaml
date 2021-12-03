@@ -5,62 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Ticket" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
-    <Grid HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Margin="0,-16,0,0">
-        <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="40" Margin="599,394,0,0" VerticalAlignment="Top" Width="168" Click="GoToSeats" FontSize="20"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="26" Width="272" Margin="250,0,0,0"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="310,293,0,0"><Run Language="en-ca" Text="Child"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="310,339,0,0"><Run Language="en-ca" Text="Senior"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="103" Margin="242,382,0,0"><Run Language="en-ca" Text="Points Redemption"/><LineBreak/><Run/></TextBlock>
-        <Button Content="-" HorizontalAlignment="Left" Margin="356,247,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusAdult"/>
-        <Label x:Name="AdultLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="385,244,0,0" VerticalAlignment="Top" Width="23"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="310,249,0,0"><Run Language="en-ca" Text="Adult"/><LineBreak/><Run/></TextBlock>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTimeSelection"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage"/>
-        <Button Content="Help?" HorizontalAlignment="Left" Margin="85,411,0,0" VerticalAlignment="Top" Height="30" Width="65" Click="GetHelp"/>
-        <Label x:Name="TicketTitleLabel" Content="Venom" FontSize="20" HorizontalAlignment="Left" Height="36" Margin="244,101,0,0" VerticalAlignment="Top" Width="123"/>
-        <Label x:Name="DateLabel" x:FieldModifier="public" Content="Tuesday November 9, 2021" HorizontalAlignment="Left" Height="26" Margin="323,131,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label x:Name="TimeLabel" x:FieldModifier="public" Content="18:00" HorizontalAlignment="Left" Height="26" Margin="323,153,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label x:Name="FormatLabel" Content="3D" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="323,172,0,0" VerticalAlignment="Top" Width="172"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="90" Margin="579,48,0,0"><Run Language="en-ca" Text="Subtotal"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
-        <Image x:Name="VenomPoster" x:FieldModifier="public" Margin="26,102,590,65" Stretch="Fill" Source="images/Venom_Poster.jpg"/>
-        <Image x:Name="YourNamePoster" x:FieldModifier="public" Margin="26,102,590,65" Stretch="Fill" Source="images/your-name-movie-poster.jpg"/>
-        <Image x:Name="DunkirkPoster" x:FieldModifier="public" Margin="26,102,590,65" Stretch="Fill" Source="images/Dunkirk-movie-poster.jpg"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="413,247,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddAdult"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="356,293,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusChild"/>
-        <Label x:Name="ChildLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="385,290,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="413,293,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddChild" />
-        <Button Content="-" HorizontalAlignment="Left" Margin="356,338,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusSenior"/>
-        <Label x:Name="SeniorLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="385,335,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="413,338,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddSenior" />
-        <Button Content="-" HorizontalAlignment="Left" Margin="356,382,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusRedeem"/>
-        <Label x:Name="RedeemLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="385,379,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="413,382,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" />
-        <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="579,81,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="578,151,0,0" VerticalAlignment="Top" Width="180"/>
-        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="578,166,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="578,177,0,0" VerticalAlignment="Top" Width="180"/>
-        <Label x:Name="SubtotalPriceTicket" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="698,191,0,0" VerticalAlignment="Top" Width="60"/>
-        <Label x:Name="AdultPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="460,244,0,0" VerticalAlignment="Top" Width="57"/>
-        <Label x:Name="ChildPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="460,289,0,0" VerticalAlignment="Top" Width="57"/>
-        <Label x:Name="SeniorPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="460,334,0,0" VerticalAlignment="Top" Width="57"/>
-        <Label Content="1000 points" HorizontalAlignment="Left" Height="26" Margin="451,378,0,0" VerticalAlignment="Top" Width="74"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="265,158,0,0"><Run Text="Time"/><Run Language="en-ca" Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="44" Margin="265,178,0,0"><Run Text="Format"/><Run Language="en-ca" Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="265,137,0,0"><Run Text="Date"/><Run Language="en-ca" Text=":"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="455,249,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="455,293,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="455,339,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="372,85,0,0" VerticalAlignment="Top" Width="136" Click="ScanMemberTicket" />
-        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="372,27,0,0" VerticalAlignment="Top" Width="145" Height="59"/>
-        <Label x:Name="RedeemLimitLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="27" Margin="302,407,0,0" VerticalAlignment="Top" Width="186"/>
-        <TextBlock x:Name="TicketContinueWarningLabel" HorizontalAlignment="Left" Height="35" Margin="614,359,0,0" Text="Please select ticket(s) before continuing!" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Foreground="#FFE40F0F" FontWeight="Normal"/>
-        <TextBlock x:Name="PointBalanceTitleLabel" x:FieldModifier="public" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="579,231,0,0"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
-        <Label x:Name="CurrentPointsLabel" x:FieldModifier="public" Content="Current Points&#x9;&#x9;3500" HorizontalAlignment="Left" Height="26" Margin="579,263,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label x:Name="Divider1" x:FieldModifier="public" Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="579,275,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label x:Name="TicketRedeemBalanceLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="579,291,0,0" VerticalAlignment="Top" Width="190"/>
-        <Label x:Name="Divider2" x:FieldModifier="public" Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="579,305,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label x:Name="RemainingPointsLabel" x:FieldModifier="public" Content="Remaining Points&#x9;&#x9;2500" HorizontalAlignment="Left" Height="26" Margin="579,323,0,0" VerticalAlignment="Top" Width="190"/>
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
+        <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="40" Margin="608,497,0,0" VerticalAlignment="Top" Width="168" Click="GoToSeats" FontSize="20"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="272" Margin="254,312,0,0"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="319,396,0,0"><Run Language="en-ca" Text="Child"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="319,442,0,0"><Run Language="en-ca" Text="Senior"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="103" Margin="251,485,0,0"><Run Language="en-ca" Text="Points Redemption"/><LineBreak/><Run/></TextBlock>
+        <Button Content="-" HorizontalAlignment="Left" Margin="365,350,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusAdult"/>
+        <Label x:Name="AdultLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="394,347,0,0" VerticalAlignment="Top" Width="23"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="319,352,0,0"><Run Language="en-ca" Text="Adult"/><LineBreak/><Run/></TextBlock>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTimeSelection"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="19,514,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage"/>
+        <Button Content="Help?" HorizontalAlignment="Left" Margin="94,514,0,0" VerticalAlignment="Top" Height="30" Width="65" Click="GetHelp"/>
+        <Label x:Name="TicketTitleLabel" Content="Venom" FontSize="24" HorizontalAlignment="Left" Height="47" Margin="94,146,0,0" VerticalAlignment="Top" Width="234" FontWeight="Bold"/>
+        <Label x:Name="DateLabel" x:FieldModifier="public" Content="Tuesday November 9, 2021" HorizontalAlignment="Left" Height="26" Margin="332,234,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label x:Name="TimeLabel" x:FieldModifier="public" Content="18:00" HorizontalAlignment="Left" Height="26" Margin="332,256,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label x:Name="FormatLabel" Content="3D" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="332,275,0,0" VerticalAlignment="Top" Width="172"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="90" Margin="588,140,0,0"><Run Language="en-ca" Text="Subtotal"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <Image x:Name="VenomPoster" x:FieldModifier="public" Margin="35,205,581,81" Stretch="Fill" Source="images/Venom_Poster.jpg"/>
+        <Image x:Name="YourNamePoster" x:FieldModifier="public" Margin="35,205,581,86" Stretch="Fill" Source="images/your-name-movie-poster.jpg"/>
+        <Image x:Name="DunkirkPoster" x:FieldModifier="public" Margin="35,205,581,86" Stretch="Fill" Source="images/Dunkirk-movie-poster.jpg"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="422,350,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddAdult"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="365,396,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusChild"/>
+        <Label x:Name="ChildLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="394,393,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="422,396,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddChild" />
+        <Button Content="-" HorizontalAlignment="Left" Margin="365,441,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusSenior"/>
+        <Label x:Name="SeniorLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="394,438,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="422,441,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddSenior" />
+        <Button Content="-" HorizontalAlignment="Left" Margin="365,485,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusRedeem"/>
+        <Label x:Name="RedeemLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="394,482,0,0" VerticalAlignment="Top" Width="20"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="422,485,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" />
+        <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="588,173,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="587,243,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="587,258,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="587,269,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="SubtotalPriceTicket" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="707,283,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="AdultPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="469,347,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="ChildPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="469,392,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="SeniorPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="469,437,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label Content="1000 points" HorizontalAlignment="Left" Height="26" Margin="460,481,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="274,261,0,0"><Run Text="Time"/><Run Language="en-ca" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="44" Margin="274,281,0,0"><Run Text="Format"/><Run Language="en-ca" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="274,240,0,0"><Run Text="Date"/><Run Language="en-ca" Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="464,352,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="464,396,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="10" Margin="464,442,0,0"><Run Language="en-ca" Text="$"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="23" Margin="320,196,0,0" VerticalAlignment="Top" Width="136" Click="ScanMemberTicket" />
+        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="320,138,0,0" VerticalAlignment="Top" Width="146" Height="59"/>
+        <Label x:Name="RedeemLimitLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="27" Margin="311,510,0,0" VerticalAlignment="Top" Width="186"/>
+        <TextBlock x:Name="TicketContinueWarningLabel" HorizontalAlignment="Left" Height="35" Margin="623,462,0,0" Text="Please select ticket(s) before continuing!" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Foreground="#FFE40F0F" FontWeight="Normal"/>
+        <TextBlock x:Name="PointBalanceTitleLabel" x:FieldModifier="public" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="588,328,0,0"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <Label x:Name="CurrentPointsLabel" x:FieldModifier="public" Content="Current Points&#x9;&#x9;3500" HorizontalAlignment="Left" Height="26" Margin="588,360,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="Divider1" x:FieldModifier="public" Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="588,372,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="TicketRedeemBalanceLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="588,388,0,0" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="Divider2" x:FieldModifier="public" Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="588,402,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label x:Name="RemainingPointsLabel" x:FieldModifier="public" Content="Remaining Points&#x9;&#x9;2500" HorizontalAlignment="Left" Height="26" Margin="588,420,0,0" VerticalAlignment="Top" Width="190"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="90,119,0,0" VerticalAlignment="Top" Width="682"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Margin="173,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="203,74,0,0" Text="Show Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="290,74,0,0" Text="Time Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="374,74,0,0" Text="Ticket Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="459,74,0,0" Text="Seat Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="549,74,0,0" Text="Food Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="640,74,0,0" Text="Order Review and Payment" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="90,79,0,0" Text="Progress:" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Margin="259,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Margin="347,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="44" Margin="373,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="58" StrokeThickness="2"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="327,11,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="29,29,0,0" VerticalAlignment="Top" Width="289"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="467,29,0,0" VerticalAlignment="Top" Width="302"/>
 
     </Grid>
 </Window>

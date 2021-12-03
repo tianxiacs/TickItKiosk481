@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Timeout" Height="450" Width="800">
-    <Grid>
-        <TextBox HorizontalAlignment="Center" Margin="0,119,0,0" Text="Sorry, time is up for your reserved seats." TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="25" Height="37" />
-        <Button Content="Language" HorizontalAlignment="Left" Margin="8,394,0,2" Width="68" FontSize="14"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="89,394,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="30" FontSize="20" TextAlignment="Center" Margin="0,195,0,0"><Run Text="Please start "/><Run Language="en-ca" Text="a new"/><Run Text=" transaction"/></TextBlock>
-        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,271,0,84" Width="388" FontSize="22"/>
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
+        <TextBox HorizontalAlignment="Center" Margin="0,150,0,0" Text="Sorry, time is up for your reserved seats." TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="25" Height="37" />
+        <Button Content="Language" HorizontalAlignment="Left" Margin="18,497,0,25" Width="68" FontSize="14" Click="ChangeLanguage"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="99,497,0,0" VerticalAlignment="Top" Height="38" Width="61" FontSize="14" Click="GetHelp"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="30" FontSize="20" TextAlignment="Center" Margin="0,226,0,0"><Run Text="Please start "/><Run Language="en-ca" Text="a new"/><Run Text=" transaction"/></TextBlock>
+        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,302,0,177" Width="388" FontSize="22" Click="StartNewSession"/>
 
     </Grid>
 </Window>

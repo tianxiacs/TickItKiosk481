@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Ticket" Height="450" Width="800" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
-    <Grid HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Margin="0,-16,0,0">
-        <TextBlock HorizontalAlignment="Left" Margin="418,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="270" FontSize="25"><Run Text="&lt;-"/><Run Text="Use the "/><Run Language="en-ca" Text="debit machine to insert, tap, or swipe the card"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="103,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="631" FontSize="30"><Run Text="Please "/><Run Text="use the debit machin"/><Run Language="en-ca" Text="e for card payment"/><Run Text=" "/></TextBlock>
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
+        <TextBlock HorizontalAlignment="Left" Margin="419,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="270" FontSize="25"><Run Text="&lt;-"/><Run Text="Use the "/><Run Language="en-ca" Text="debit machine to insert, tap, or swipe the card"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="104,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="631" FontSize="30"><Run Text="Please "/><Run Text="use the debit machin"/><Run Language="en-ca" Text="e for card payment"/><Run Text=" "/></TextBlock>
         <Button Content="Back to select another payment method" HorizontalAlignment="Left" Height="35" Margin="10,23,0,0" VerticalAlignment="Top" Width="232" Click="BackToPayment"/>
-        <Image HorizontalAlignment="Left" Height="300" Margin="170,129,0,0" VerticalAlignment="Top" Width="219" Source="images/debit.jpg"/>
-        <TextBox HorizontalAlignment="Left" Margin="656,23,0,0" Text="Time left for seat reservation: 1:45" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="43" FontSize="14"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="10,409,0,9" Width="68" FontSize="14" Click="GetLanguage"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="89,409,0,0" VerticalAlignment="Top" Height="32" Width="68" FontSize="14" Click="GetHelp"/>
-        <Button Content="Successfully Pay" HorizontalAlignment="Left" Height="47" Margin="564,348,0,0" VerticalAlignment="Top" Width="159" FontSize="20" Click="GoToEndWindow"/>
+        <Image HorizontalAlignment="Left" Height="300" Margin="171,158,0,0" VerticalAlignment="Top" Width="219" Source="images/debit.jpg"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="15,498,0,21" Width="85" FontSize="14" Click="GetLanguage"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="113,498,0,0" VerticalAlignment="Top" Height="41" Width="78" FontSize="14" Click="GetHelp"/>
+        <Button Content="Successfully Pay" HorizontalAlignment="Left" Height="47" Margin="565,377,0,0" VerticalAlignment="Top" Width="159" FontSize="20" Click="GoToEndWindow"/>
+        <TextBox HorizontalAlignment="Left" Margin="603,25,0,0" Text="Time left for seat reservation:" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="55" FontSize="14"/>
+        <Label x:Name="TimerLabel" Content="Label" HorizontalAlignment="Left" Margin="620,48,0,0" VerticalAlignment="Top" Width="158" FontSize="14"/>
 
     </Grid>
 </Window>

@@ -31,6 +31,8 @@ namespace TickItKiosk481
         public string pointsFieldText = "";
         public string pointsAfterText = "";
 
+        public int totalSeatsBooked = 0;
+
         public Ticket()
         {
             InitializeComponent();
@@ -58,11 +60,6 @@ namespace TickItKiosk481
             App.help.lastPage = this;
             this.Visibility = Visibility.Hidden;
             App.help.Show();
-        }
-
-        private void CheckLimit()
-        {
-
         }
 
         private void UpdateSubtotal()
@@ -206,8 +203,9 @@ namespace TickItKiosk481
         {
             if (adultNum + childNum + seniorNum + redeemNum > 0)
             {
-                App.seat.remainingSeatNum = adultNum + childNum + seniorNum + redeemNum;
-                App.seat.RemainingSeatLabel.Content = adultNum + childNum + seniorNum + redeemNum;
+                totalSeatsBooked = adultNum + childNum + seniorNum + redeemNum;
+                App.seat.remainingSeatNum = totalSeatsBooked;
+                App.seat.RemainingSeatLabel.Content = totalSeatsBooked;
 
                 App.food.allFieldText = subtotalFieldText;
                 App.food.subtotalAll = subtotalTicket;

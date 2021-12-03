@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace TickItKiosk481
 {
@@ -67,17 +68,46 @@ namespace TickItKiosk481
 
         }
 
+        private void StartTimer()
+        {
+            DispatcherTimer countdown = new DispatcherTimer();
+            countdown.Interval = TimeSpan.FromSeconds(1);
+            countdown.Tick += decreaseTime;
+            countdown.Start();
+        }
+
+        int timerCount = 240;
+        private void decreaseTime(object sender, EventArgs e)
+        {
+            string timerStr = timerCount / 60 + " Minutes " + (timerCount % 60) + " Seconds";
+            App.food.TimerLabel.Content = timerStr;
+            App.payment.TimerLabel.Content = timerStr;
+            App.cdp.TimerLabel.Content = timerStr;
+            App.giftPayment.TimerLabel.Content = timerStr;
+            timerCount--;
+            if (timerCount == 0)
+            {
+                App.timeOut.Show();
+            }
+        }
+
         private void GoToFood(object sender, RoutedEventArgs e)
         {
             if (remainingSeatNum > 0)
             {
                 SeatContinueWarningLabel.Visibility = Visibility.Visible;
-            }else
-            {
-                this.Visibility = Visibility.Hidden;
-                App.countDown.Show();
             }
-            
+            else
+            {
+                App.food.TimerPopUpWindow.Visibility = Visibility.Visible;
+                App.food.TimerPopUpContinueButton.Visibility = Visibility.Visible;
+                timerCount = 240;
+                StartTimer();
+                this.Visibility = Visibility.Hidden;
+                App.food.Show();
+            }
+
         }
+
     }
 }

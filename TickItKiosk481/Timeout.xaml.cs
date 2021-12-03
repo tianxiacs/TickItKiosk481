@@ -21,5 +21,25 @@ namespace TickItKiosk481
         {
             InitializeComponent();
         }
+
+        private void StartNewSession(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Hidden;
+            App.mainWindow.Show();
+        }
+
+        private void ChangeLanguage(object sender, RoutedEventArgs e)
+        {
+            App.languageScreen.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.languageScreen.Show();
+        }
+
+        private void GetHelp(object sender, RoutedEventArgs e)
+        {
+            App.help.lastPage = this;
+            this.Visibility = Visibility.Hidden;
+            App.help.Show();
+        }
     }
 }

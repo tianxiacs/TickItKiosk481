@@ -12,6 +12,7 @@
     <None Remove="images\Dunkirk-movie-poster.jpg" />
     <None Remove="images\fries-rem.png" />
     <None Remove="images\logo.png" />
+    <None Remove="images\logoLetter.png" />
     <None Remove="images\MUTCD_D9-6.svg.png" />
     <None Remove="images\popcorn.png" />
     <None Remove="images\scanner.jpg" />
@@ -35,6 +36,7 @@
     <Resource Include="images\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\logoLetter.png" />
     <Resource Include="images\MUTCD_D9-6.svg.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

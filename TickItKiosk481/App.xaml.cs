@@ -20,7 +20,6 @@ namespace TickItKiosk481
         public static TimeSelection timeSelection = new TimeSelection();
         public static Ticket ticket = new Ticket();
         public static Seat seat = new Seat();
-        public static Countdown countDown = new Countdown();
         public static Food food = new Food();
         public static Payment payment = new Payment();
         public static CreditDebitPayment cdp = new CreditDebitPayment();
