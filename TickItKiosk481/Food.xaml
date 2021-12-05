@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
-    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
+    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800" Background="PaleGoldenrod">
         <Button Content="+" HorizontalAlignment="Left" Margin="265,319,0,0" VerticalAlignment="Top" Width="20" Click="AddPopcornLarge"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="201,319,0,0" VerticalAlignment="Top" Width="20" Click="MinusPopcornLarge"/>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.465" Height="30" Width="69" Margin="11,114,0,0" Click="BackToSeat"/>
-        <Button Content="Checkout >>" HorizontalAlignment="Left" Margin="646,495,0,0" VerticalAlignment="Top" Height="45" Width="142" FontSize="20" FontWeight="Bold" Click="GoToPayment"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.465" Height="30" Width="69" Margin="11,114,0,0" Click="BackToSeat" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Checkout " HorizontalAlignment="Left" Margin="646,505,0,0" VerticalAlignment="Top" Height="45" Width="142" FontSize="18" FontWeight="Bold" Click="GoToPayment" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="433,319,0,0" VerticalAlignment="Top" Width="20" Click="AddPopcornSmall"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="368,319,0,0" VerticalAlignment="Top" Width="20" Click="MinusPopcornSmall"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="600,319,0,0" VerticalAlignment="Top" Width="20" Click="AddFriesLarge"/>
@@ -47,8 +47,8 @@
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="12,437,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,447,0,0" VerticalAlignment="Top" Width="178"/>
         <Label x:Name="FoodPriceLabel" x:FieldModifier="public" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="129,464,0,0" VerticalAlignment="Top" Width="55"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="7,526,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="ChangeLanguage"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="81,526,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="GetHelp"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="10,518,0,0" VerticalAlignment="Top" Height="32" Width="70" Click="ChangeLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="114,518,0,0" VerticalAlignment="Top" Height="32" Width="62" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="266,490,0,0" VerticalAlignment="Top" Width="20" Click="AddFriesSmall"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="201,490,0,0" VerticalAlignment="Top" Width="20" Click="MinusFriesSmall"/>
         <TextBlock HorizontalAlignment="Left" Margin="291,404,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"><Run Text="F"/><Run Text="ries"/><LineBreak/><Run Text="("/><Run Text="S"/><Run Language="en-ca" Text="mall"/><Run Text=")"/></TextBlock>
@@ -78,14 +78,14 @@
         <Image HorizontalAlignment="Left" Height="50" Margin="327,11,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="29,29,0,0" VerticalAlignment="Top" Width="289"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="467,29,0,0" VerticalAlignment="Top" Width="302"/>
-        <Button x:Name="YesGiveUpButton" Content="Yes" HorizontalAlignment="Left" Height="32" Margin="176,278,0,0" VerticalAlignment="Top" Width="78" Click="GiveUpAndGoBackToSeat"/>
-        <Button x:Name="NoGiveUpButton" Content="No" HorizontalAlignment="Left" Height="32" Margin="328,278,0,0" VerticalAlignment="Top" Width="78" Click="StayInFood"/>
+        <Button x:Name="YesGiveUpButton" Content="Yes" HorizontalAlignment="Left" Height="32" Margin="176,278,0,0" VerticalAlignment="Top" Width="78" Click="GiveUpAndGoBackToSeat" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button x:Name="NoGiveUpButton" Content="No" HorizontalAlignment="Left" Height="32" Margin="328,278,0,0" VerticalAlignment="Top" Width="78" Click="StayInFood" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
         <TextBlock x:Name="TimerPopUpWindow" HorizontalAlignment="Left" Height="196" Margin="172,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You have 4 minutes left to complete the transaction before your seat reservation expires." Padding="10,10,10,0">
             <TextBlock.Background>
                 <SolidColorBrush Color="#FFEAE3D7" Opacity="0.9"/>
             </TextBlock.Background>
         </TextBlock>
-        <Button x:Name="TimerPopUpContinueButton" Content="Continue" HorizontalAlignment="Left" Height="32" Margin="345,372,0,0" VerticalAlignment="Top" Width="78" Click="DiscardPopUp"/>
+        <Button x:Name="TimerPopUpContinueButton" Content="Continue" HorizontalAlignment="Left" Height="32" Margin="345,372,0,0" VerticalAlignment="Top" Width="78" Click="DiscardPopUp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
 
     </Grid>
 </Window>

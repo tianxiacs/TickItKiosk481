@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="438" Margin="106,140,0,0"><Run Text="Please Select Your Seats"/><Run Text=" by T"/><Run Language="en-ca" Text="apping on"/><Run Text=" the Boxes"/></TextBlock>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTicket"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="8,520,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage"/>
-        <Button Content="Help?" HorizontalAlignment="Left" Margin="84,520,0,0" VerticalAlignment="Top" Height="30" Width="64" Click="GetHelp"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTicket" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="8,520,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="84,520,0,0" VerticalAlignment="Top" Height="30" Width="64" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="679,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Empty"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="679,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Occupied"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="16" Margin="679,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Selected"/></TextBlock>
@@ -83,7 +83,7 @@
         <Button Content="√" HorizontalAlignment="Left" Height="30" Margin="630,332,0,0" VerticalAlignment="Top" Width="30" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="22" Margin="576,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" FontSize="14"><Run Language="en-ca" Text="Remaining seats to select:"/></TextBlock>
         <Label x:Name="RemainingSeatLabel" Content="" HorizontalAlignment="Left" Height="26" Margin="738,173,0,0" VerticalAlignment="Top" Width="45"/>
-        <Button Content="Confirm Seats -&gt;" HorizontalAlignment="Left" Height="53" Margin="597,482,0,0" VerticalAlignment="Top" Width="178" FontSize="20" Click="GoToFood"/>
+        <Button Content="Confirm Seats -&gt;" HorizontalAlignment="Left" Height="53" Margin="597,482,0,0" VerticalAlignment="Top" Width="178" FontSize="20" Click="GoToFood" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <TextBlock x:Name="SeatContinueWarningLabel" HorizontalAlignment="Left" Height="35" Margin="618,445,0,0" Text="Please select all the seats before continuing!" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Foreground="#FFE40F0F" FontWeight="Normal"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="90,119,0,0" VerticalAlignment="Top" Width="682"/>
         <Rectangle HorizontalAlignment="Left" Height="3" Margin="173,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>

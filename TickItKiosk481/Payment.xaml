@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="136" Margin="300,210,0,0" Text="Order Summary" FontSize="18"/>
-        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="57" FontSize="14" Margin="12,111,0,0" Click="BackToFood"/>
+        <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="57" FontSize="14" Margin="12,111,0,0" Click="BackToFood" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <TextBox HorizontalAlignment="Left" Margin="279,148,0,0" Text="Order Review" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextAlignment="Center" FontSize="25"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="12,519,0,9" Width="68" FontSize="14" Click="GetLanguage"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="91,519,0,0" VerticalAlignment="Top" Height="32" Width="68" FontSize="14" Click="GetHelp"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="12,519,0,9" Width="68" FontSize="14" Click="GetLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="91,519,0,0" VerticalAlignment="Top" Height="32" Width="68" FontSize="14" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <TextBlock HorizontalAlignment="Left" Margin="557,241,0,0" Text="Please Select a payment option" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24" FontSize="18"/>
-        <Button Content="Debit Card" HorizontalAlignment="Left" Margin="621,313,0,204" Width="71" Click="GoToCreditDebitPayment"/>
-        <Button Content="Credit Card" HorizontalAlignment="Left" Margin="621,376,0,142" Width="71" Click="GoToCreditDebitPayment"/>
-        <Button Content="Gift Card" HorizontalAlignment="Left" Margin="622,442,0,74" Width="70" Click="GoToGiftCardPayment"/>
+        <Button Content="Debit Card" HorizontalAlignment="Left" Margin="621,313,0,204" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <Button Content="Credit Card" HorizontalAlignment="Left" Margin="621,376,0,142" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <Button Content="Gift Card" HorizontalAlignment="Left" Margin="622,442,0,74" Width="70" Click="GoToGiftCardPayment" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <Label x:Name="MoneyFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="200" Margin="282,289,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="282,434,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="282,449,0,0" VerticalAlignment="Top" Width="172"/>

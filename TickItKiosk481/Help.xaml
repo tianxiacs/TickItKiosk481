@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
         <Label Content="Please wait for assistance from a staff member" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Height="46" Width="522" FontSize="25"/>
-        <Button Content="Cancel" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Height="29" Width="72" Click="GoBack"/>
+        <Button Content="Cancel" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Height="37" Width="104" Click="GoBack" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="18"/>
+        <Image HorizontalAlignment="Center" Height="50" Margin="0,50,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="35,68,0,0" VerticalAlignment="Top" Width="289"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="473,68,0,0" VerticalAlignment="Top" Width="302"/>
 
     </Grid>
 </Window>

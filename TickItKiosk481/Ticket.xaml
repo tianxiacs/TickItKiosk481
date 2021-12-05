@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <Button Content="Select Seats -&gt;" HorizontalAlignment="Left" Height="40" Margin="608,497,0,0" VerticalAlignment="Top" Width="168" Click="GoToSeats" FontSize="20"/>
+        <Button Content="Select Seats" HorizontalAlignment="Left" Height="40" Margin="608,497,0,0" VerticalAlignment="Top" Width="168" Click="GoToSeats" FontSize="20" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="272" Margin="254,312,0,0"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="319,396,0,0"><Run Language="en-ca" Text="Child"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="319,442,0,0"><Run Language="en-ca" Text="Senior"/></TextBlock>
@@ -15,9 +15,9 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="365,350,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusAdult"/>
         <Label x:Name="AdultLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="394,347,0,0" VerticalAlignment="Top" Width="23"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="319,352,0,0"><Run Language="en-ca" Text="Adult"/><LineBreak/><Run/></TextBlock>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTimeSelection"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="19,514,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage"/>
-        <Button Content="Help?" HorizontalAlignment="Left" Margin="94,514,0,0" VerticalAlignment="Top" Height="30" Width="65" Click="GetHelp"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTimeSelection" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="19,514,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Help?" HorizontalAlignment="Left" Margin="94,514,0,0" VerticalAlignment="Top" Height="30" Width="65" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
         <Label x:Name="TicketTitleLabel" Content="Venom" FontSize="24" HorizontalAlignment="Left" Height="47" Margin="94,146,0,0" VerticalAlignment="Top" Width="234" FontWeight="Bold"/>
         <Label x:Name="DateLabel" x:FieldModifier="public" Content="Tuesday November 9, 2021" HorizontalAlignment="Left" Height="26" Margin="332,234,0,0" VerticalAlignment="Top" Width="172"/>
         <Label x:Name="TimeLabel" x:FieldModifier="public" Content="18:00" HorizontalAlignment="Left" Height="26" Margin="332,256,0,0" VerticalAlignment="Top" Width="172"/>

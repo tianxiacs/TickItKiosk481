@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
-        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
+        Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
         <TextBlock HorizontalAlignment="Left" Margin="209,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="240" FontSize="36" Text="Welcome back, "/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="255" FontSize="20" Margin="222,211,0,0"><Run Language="en-ca" Text="Membership points balance: "/></TextBlock>
-        <Button Content="Continue" HorizontalAlignment="Left" Margin="336,361,0,148" Width="102" FontSize="18" Click="MembershipContinue"/>
+        <Button Content="Continue" HorizontalAlignment="Left" Margin="336,361,0,148" Width="102" FontSize="18" Click="MembershipContinue" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
         <Label x:Name="MemberNameLabel" x:FieldModifier="public" Content="Name" HorizontalAlignment="Left" Margin="458,111,0,0" VerticalAlignment="Top" Height="62" Width="148" FontSize="36"/>
         <Label x:Name="PointLabel" x:FieldModifier="public" Content="number" HorizontalAlignment="Left" Margin="477,206,0,0" VerticalAlignment="Top" Height="40" Width="87" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="32" Width="201" FontSize="20" Margin="233,0,0,0" Text="You can redeem up to  "/>
         <Label x:Name="MovieNumberLabel" x:FieldModifier="public" Content="xx movies" HorizontalAlignment="Left" Margin="433,0,0,0" VerticalAlignment="Center" Height="40" Width="145" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="337,32,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="39,50,0,0" VerticalAlignment="Top" Width="289"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="477,50,0,0" VerticalAlignment="Top" Width="302"/>
 
     </Grid>
 </Window>

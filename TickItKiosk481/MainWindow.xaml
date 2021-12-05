@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:TickItKiosk481"
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
-    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
+    <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800" Background="PaleGoldenrod">
         <Label Content="Please select your preferred language" HorizontalAlignment="Left" Margin="426,176,0,0" VerticalAlignment="Top" Height="51" Width="287" FontSize="16"/>
         <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Left" Margin="458,227,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="English" HorizontalAlignment="Left" Margin="458,298,0,0" VerticalAlignment="Top" Height="29" Width="72" Click="GetShow"/>
-        <Button Content="Français" HorizontalAlignment="Left" Margin="608,298,0,0" VerticalAlignment="Top" Height="29" Width="72" Click="GetShow"/>
+        <Button Content="English" HorizontalAlignment="Left" Margin="458,298,0,0" VerticalAlignment="Top" Height="43" Width="93" Click="GetShow" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="18"/>
+        <Button Content="Français" HorizontalAlignment="Left" Margin="608,298,0,0" VerticalAlignment="Top" Height="43" Width="86" Click="GetShow" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="18"/>
         <Image HorizontalAlignment="Left" Height="290" Margin="83,0,0,0" VerticalAlignment="Center" Width="282" Source="images/logo.png"/>
 
     </Grid>
