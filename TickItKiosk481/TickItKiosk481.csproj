@@ -16,6 +16,7 @@
     <None Remove="images\MUTCD_D9-6.svg.png" />
     <None Remove="images\popcorn.png" />
     <None Remove="images\scanner.jpg" />
+    <None Remove="images\X.jpg" />
     <None Remove="images\your-name-movie-poster.jpg" />
     <None Remove="Venom_Poster.jpg" />
   </ItemGroup>
@@ -47,6 +48,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\Venom_Poster.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\X.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\your-name-movie-poster.jpg">
