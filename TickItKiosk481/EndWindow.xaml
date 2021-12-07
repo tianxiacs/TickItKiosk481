@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="22" Height="37"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="22,495,0,27" Width="68" FontSize="14" Click="GetLanguage"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="104,495,0,0" VerticalAlignment="Top" Height="38" Width="64" FontSize="14" Click="GetHelp"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
-        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,373,0,0" Width="388" FontSize="22" VerticalAlignment="Top" Click="RestartSession" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,251,0,254" Width="208" FontSize="18" Click="PrintReceipt" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="24" Height="37" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="22,495,0,27" Width="68" FontSize="14" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="104,495,0,0" VerticalAlignment="Top" Height="38" Width="64" FontSize="14" Click="GetHelp" Background="Black" Foreground="#FFE4E46D"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center" Foreground="#FF663232"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
+        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,373,0,0" Width="388" FontSize="22" VerticalAlignment="Top" Click="RestartSession" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="(Optional) Print a receipt" HorizontalAlignment="Center" Margin="0,251,0,254" Width="208" FontSize="18" Click="PrintReceipt" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <TextBlock x:Name="ReceiptPrintedLabel" HorizontalAlignment="Center" Height="35" Margin="0,311,0,0" Text="Receipt has been printed. Please collect it with your ticket(s)." TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Foreground="#FFE40F0F" FontWeight="Normal"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="328,24,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="30,42,0,0" VerticalAlignment="Top" Width="289"/>

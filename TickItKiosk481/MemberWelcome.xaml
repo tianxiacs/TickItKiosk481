@@ -9,7 +9,7 @@
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
         <TextBlock HorizontalAlignment="Left" Margin="209,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="240" FontSize="36" Text="Welcome back, "/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="255" FontSize="20" Margin="222,211,0,0"><Run Language="en-ca" Text="Membership points balance: "/></TextBlock>
-        <Button Content="Continue" HorizontalAlignment="Left" Margin="336,361,0,148" Width="102" FontSize="18" Click="MembershipContinue" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <Button Content="Continue" HorizontalAlignment="Left" Margin="336,361,0,148" Width="102" FontSize="18" Click="MembershipContinue" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Label x:Name="MemberNameLabel" x:FieldModifier="public" Content="Name" HorizontalAlignment="Left" Margin="458,111,0,0" VerticalAlignment="Top" Height="62" Width="148" FontSize="36"/>
         <Label x:Name="PointLabel" x:FieldModifier="public" Content="number" HorizontalAlignment="Left" Margin="477,206,0,0" VerticalAlignment="Top" Height="40" Width="87" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="32" Width="201" FontSize="20" Margin="233,0,0,0" Text="You can redeem up to  "/>
