@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <Label Content="Now Playing" HorizontalAlignment="Left" Margin="296,87,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="In Theatre This Week" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="229"/>
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="60" Margin="12,87,0,0" Click="BackToMain" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="12,523,0,0" VerticalAlignment="Top" Height="26" Width="60" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="84,524,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
@@ -42,7 +42,6 @@
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="508,26,0,0" Text="Food Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="582,26,0,0" Text="Order Review and Payment" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
         <Image HorizontalAlignment="Left" Height="48" Margin="12,18,0,0" VerticalAlignment="Top" Width="105" Source="images/logoLetter.png"/>
-        <Button Content="More Movie" HorizontalAlignment="Left" Margin="687,294,0,0" VerticalAlignment="Top" Height="26" Width="81" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="50,67,0,0" VerticalAlignment="Top" Width="682"/>
 
     </Grid>

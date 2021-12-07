@@ -10,7 +10,7 @@
         <Button Content="+" HorizontalAlignment="Left" Margin="286,464,0,0" VerticalAlignment="Top" Width="20" Click="AddPopcornLarge" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="223,465,0,0" VerticalAlignment="Top" Width="20" Click="MinusPopcornLarge" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.527,0.465" Height="30" Width="69" Margin="11,114,0,0" Click="BackToSeat" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
-        <Button Content="Checkout " HorizontalAlignment="Left" Margin="646,484,0,0" VerticalAlignment="Top" Height="45" Width="142" FontSize="18" FontWeight="Bold" Click="GoToPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Checkout >>" HorizontalAlignment="Left" Margin="645,493,0,0" VerticalAlignment="Top" Height="45" Width="142" FontSize="18" FontWeight="Bold" Click="GoToPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="284,278,0,0" VerticalAlignment="Top" Width="20" Click="AddPopcornSmall" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="224,278,0,0" VerticalAlignment="Top" Width="20" Click="MinusPopcornSmall" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="447,464,0,0" VerticalAlignment="Top" Width="20" Click="AddFriesLarge" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>

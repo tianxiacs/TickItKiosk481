@@ -17,6 +17,8 @@
         <Image HorizontalAlignment="Left" Height="50" Margin="337,32,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="39,50,0,0" VerticalAlignment="Top" Width="289"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="477,50,0,0" VerticalAlignment="Top" Width="302"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="12,519,0,9" Width="68" FontSize="14" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="91,519,0,0" VerticalAlignment="Top" Height="32" Width="68" FontSize="14" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
 
     </Grid>
 </Window>
