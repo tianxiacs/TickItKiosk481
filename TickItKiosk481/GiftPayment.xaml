@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <Image Margin="177,155,403,114" Stretch="Fill" Source="images/scanner.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Margin="427,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="226" FontSize="25"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
+        <Image Margin="94,155,486,114" Stretch="Fill" Source="images/scanner.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="345,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="414" FontSize="25" Foreground="#FF663232"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="113,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="564" FontSize="30"><Run Text="Please scan "/><Run Text="the barcode on "/><Run Text="your "/><Run Language="en-ca" Text="gift"/><Run Text=" card"/></TextBlock>
-        <Button Content="Select another payment method" HorizontalAlignment="Left" Height="35" Margin="18,48,0,0" VerticalAlignment="Top" Width="232" Click="BackToPayment" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="15"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="18,489,0,28" Width="91" FontSize="16" Click="GetLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="128,489,0,0" VerticalAlignment="Top" Height="43" Width="82" FontSize="16" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <Button Content="Successfully Pay" HorizontalAlignment="Left" Height="47" Margin="561,351,0,0" VerticalAlignment="Top" Width="159" FontSize="20" Click="GoToEnd" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <TextBox HorizontalAlignment="Left" Margin="603,48,0,0" Text="Time left for seat reservation:" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="55" FontSize="14"/>
+        <Button Content="Select another payment method" HorizontalAlignment="Left" Height="35" Margin="18,48,0,0" VerticalAlignment="Top" Width="232" Click="BackToPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="15"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="18,489,0,28" Width="91" FontSize="16" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="128,489,0,0" VerticalAlignment="Top" Height="43" Width="82" FontSize="16" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Successfully Pay" HorizontalAlignment="Left" Height="48" Margin="439,300,0,0" VerticalAlignment="Top" Width="159" FontSize="20" Click="GoToEnd" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <TextBox HorizontalAlignment="Left" Margin="603,48,0,0" Text="Time left for seat reservation:" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="55" FontSize="14" Background="{x:Null}"/>
         <Label x:Name="TimerLabel" Content="Label" HorizontalAlignment="Left" Margin="620,71,0,0" VerticalAlignment="Top" Width="158" FontSize="14"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="337,12,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="39,30,0,0" VerticalAlignment="Top" Width="289"/>

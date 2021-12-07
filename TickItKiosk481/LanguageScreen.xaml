@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <Label Content="Please select your preferred language" HorizontalAlignment="Left" Margin="244,185,0,0" VerticalAlignment="Top" Height="51" Width="287" FontSize="16"/>
-        <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Left" Margin="276,236,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="English" HorizontalAlignment="Left" Margin="244,307,0,0" VerticalAlignment="Top" Height="44" Width="96" Click="GoBack" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="17"/>
-        <Button Content="Français" HorizontalAlignment="Left" Margin="426,307,0,0" VerticalAlignment="Top" Height="44" Width="105" Click="GoBack" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="17"/>
+        <Label Content="Please select your preferred language" HorizontalAlignment="Left" Margin="204,158,0,0" VerticalAlignment="Top" Height="51" Width="368" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Center" Margin="0,222,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Button Content="English" HorizontalAlignment="Left" Margin="244,307,0,0" VerticalAlignment="Top" Height="44" Width="96" Click="GoBack" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="17"/>
+        <Button Content="Français" HorizontalAlignment="Left" Margin="426,307,0,0" VerticalAlignment="Top" Height="44" Width="105" Click="GoBack" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="17"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="322,47,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="24,65,0,0" VerticalAlignment="Top" Width="289"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="462,65,0,0" VerticalAlignment="Top" Width="302"/>
+        <Label Content="" HorizontalAlignment="Center" Height="20" Margin="0,492,0,0" VerticalAlignment="Top" Width="800" Background="#FF361515"/>
 
     </Grid>
 </Window>

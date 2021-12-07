@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800" Background="PaleGoldenrod">
-        <Label Content="Please select your preferred language" HorizontalAlignment="Left" Margin="426,176,0,0" VerticalAlignment="Top" Height="51" Width="287" FontSize="16"/>
-        <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Left" Margin="458,227,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button Content="English" HorizontalAlignment="Left" Margin="458,298,0,0" VerticalAlignment="Top" Height="43" Width="93" Click="GetShow" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="18"/>
-        <Button Content="Français" HorizontalAlignment="Left" Margin="608,298,0,0" VerticalAlignment="Top" Height="43" Width="86" Click="GetShow" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="18"/>
+        <Label Content="Please select your preferred language" HorizontalAlignment="Left" Margin="426,176,0,0" VerticalAlignment="Top" Height="51" Width="304" FontSize="16" Foreground="Black" FontWeight="Bold"/>
+        <Label Content="Veuillez sélectionner la langue" HorizontalAlignment="Left" Margin="458,227,0,0" VerticalAlignment="Top" FontSize="16" Foreground="Black" FontWeight="Bold"/>
+        <Button Content="English" HorizontalAlignment="Left" Margin="458,298,0,0" VerticalAlignment="Top" Height="43" Width="93" Click="GetShow" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Français" HorizontalAlignment="Left" Margin="608,298,0,0" VerticalAlignment="Top" Height="43" Width="86" Click="GetShow" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="18" FontWeight="Bold"/>
         <Image HorizontalAlignment="Left" Height="290" Margin="83,0,0,0" VerticalAlignment="Center" Width="282" Source="images/logo.png"/>
+        <Label Content="" HorizontalAlignment="Center" Height="20" Margin="0,492,0,0" VerticalAlignment="Top" Width="800" Background="#FF361515"/>
+        <Label Content="" HorizontalAlignment="Center" Height="20" Margin="0,45,0,0" VerticalAlignment="Top" Width="800" Background="#FF361515"/>
 
     </Grid>
 </Window>

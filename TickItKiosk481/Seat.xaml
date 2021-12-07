@@ -7,100 +7,93 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="438" Margin="106,140,0,0"><Run Text="Please Select Your Seats"/><Run Text=" by T"/><Run Language="en-ca" Text="apping on"/><Run Text=" the Boxes"/></TextBlock>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTicket" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
-        <Button Content="Language" HorizontalAlignment="Left" Margin="8,520,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="84,520,0,0" VerticalAlignment="Top" Height="30" Width="64" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="679,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Empty"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="679,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Occupied"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="679,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Selected"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="14" Margin="679,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Language="en-ca" Text="Wheelchair"/></TextBlock>
-        <Rectangle HorizontalAlignment="Left" Height="30" Margin="630,288,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Image Margin="629,381,139,147" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
-        <Image Margin="91,377,677,151" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
-        <Image Margin="46,377,722,151" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
-        <Image Margin="508,377,260,151" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png" Height="32"/>
-        <Rectangle HorizontalAlignment="Left" Height="30" Margin="553,377,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="30" Margin="276,285,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="30" Margin="323,285,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="30" Margin="462,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="30" Margin="509,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="32" Margin="59,466,0,0" Stroke="Black" VerticalAlignment="Top" Width="509" Fill="#FFB1BCE0"/>
-        <TextBlock HorizontalAlignment="Left" Height="16" Margin="296,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42"><Run Language="en-ca" Text="Screen"/></TextBlock>
-        <Button x:Name="SeatBox" Content="" HorizontalAlignment="Left" Height="30" Margin="91,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy" Content="" HorizontalAlignment="Left" Height="30" Margin="138,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy1" Content="" HorizontalAlignment="Left" Height="30" Margin="184,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy2" Content="" HorizontalAlignment="Left" Height="30" Margin="231,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy3" Content="" HorizontalAlignment="Left" Height="30" Margin="276,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy4" Content="" HorizontalAlignment="Left" Height="30" Margin="323,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy5" Content="" HorizontalAlignment="Left" Height="30" Margin="369,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy6" Content="" HorizontalAlignment="Left" Height="30" Margin="416,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy7" Content="" HorizontalAlignment="Left" Height="30" Margin="462,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy8" Content="" HorizontalAlignment="Left" Height="30" Margin="509,423,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy9" Content="" HorizontalAlignment="Left" Height="30" Margin="91,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy10" Content="" HorizontalAlignment="Left" Height="30" Margin="138,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy11" Content="" HorizontalAlignment="Left" Height="30" Margin="184,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy12" Content="" HorizontalAlignment="Left" Height="30" Margin="231,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy13" Content="" HorizontalAlignment="Left" Height="30" Margin="276,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy14" Content="" HorizontalAlignment="Left" Height="30" Margin="323,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy15" Content="" HorizontalAlignment="Left" Height="30" Margin="369,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy16" Content="" HorizontalAlignment="Left" Height="30" Margin="416,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy17" Content="" HorizontalAlignment="Left" Height="30" Margin="462,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy18" Content="" HorizontalAlignment="Left" Height="30" Margin="509,332,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy19" Content="" HorizontalAlignment="Left" Height="30" Margin="91,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy20" Content="" HorizontalAlignment="Left" Height="30" Margin="138,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy21" Content="" HorizontalAlignment="Left" Height="30" Margin="184,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy22" Content="" HorizontalAlignment="Left" Height="30" Margin="231,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy23" Content="" HorizontalAlignment="Left" Height="30" Margin="276,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy24" Content="" HorizontalAlignment="Left" Height="30" Margin="323,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy25" Content="" HorizontalAlignment="Left" Height="30" Margin="369,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy26" Content="" HorizontalAlignment="Left" Height="30" Margin="416,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy27" Content="" HorizontalAlignment="Left" Height="30" Margin="462,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy28" Content="" HorizontalAlignment="Left" Height="30" Margin="509,239,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy29" Content="" HorizontalAlignment="Left" Height="30" Margin="369,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy30" Content="" HorizontalAlignment="Left" Height="30" Margin="416,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy31" Content="" HorizontalAlignment="Left" Height="30" Margin="462,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy32" Content="" HorizontalAlignment="Left" Height="30" Margin="509,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy33" Content="" HorizontalAlignment="Left" Height="30" Margin="91,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy34" Content="" HorizontalAlignment="Left" Height="30" Margin="138,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy35" Content="" HorizontalAlignment="Left" Height="30" Margin="184,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy36" Content="" HorizontalAlignment="Left" Height="30" Margin="231,285,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy37" Content="" HorizontalAlignment="Left" Height="30" Margin="91,195,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy38" Content="" HorizontalAlignment="Left" Height="30" Margin="138,195,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy39" Content="" HorizontalAlignment="Left" Height="30" Margin="184,195,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy40" Content="" HorizontalAlignment="Left" Height="30" Margin="231,195,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy41" Content="" HorizontalAlignment="Left" Height="30" Margin="138,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy42" Content="" HorizontalAlignment="Left" Height="30" Margin="184,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy43" Content="" HorizontalAlignment="Left" Height="30" Margin="231,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy44" Content="" HorizontalAlignment="Left" Height="30" Margin="276,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy45" Content="" HorizontalAlignment="Left" Height="30" Margin="323,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy46" Content="" HorizontalAlignment="Left" Height="30" Margin="369,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy47" Content="" HorizontalAlignment="Left" Height="30" Margin="416,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy48" Content="" HorizontalAlignment="Left" Height="30" Margin="462,377,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy49" Content="" HorizontalAlignment="Left" Height="30" Margin="369,191,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="SeatBox_Copy50" Content="" HorizontalAlignment="Left" Height="30" Margin="416,191,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
-        <Button Content="" HorizontalAlignment="Left" Height="30" Margin="630,245,0,0" VerticalAlignment="Top" Width="30" FontSize="22" FontWeight="Bold"/>
-        <Button Content="√" HorizontalAlignment="Left" Height="30" Margin="630,332,0,0" VerticalAlignment="Top" Width="30" FontSize="22" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="22" Margin="576,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" FontSize="14"><Run Language="en-ca" Text="Remaining seats to select:"/></TextBlock>
-        <Label x:Name="RemainingSeatLabel" Content="" HorizontalAlignment="Left" Height="26" Margin="738,173,0,0" VerticalAlignment="Top" Width="45"/>
-        <Button Content="Confirm Seats -&gt;" HorizontalAlignment="Left" Height="53" Margin="597,482,0,0" VerticalAlignment="Top" Width="178" FontSize="20" Click="GoToFood" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="438" Margin="276,85,0,0" FontWeight="Bold"><Run Text="Select Your Seats"/><Run Text=" "/></TextBlock>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="70" Height="31" Click="BackToTicket" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Language" HorizontalAlignment="Left" Margin="8,520,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="84,520,0,0" VerticalAlignment="Top" Height="30" Width="64" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="14" Margin="675,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Foreground="#FF663232"><Run Language="en-ca" Text="Empty"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="675,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Foreground="#FF663232"><Run Language="en-ca" Text="Occupied"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="675,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Foreground="#FF663232"><Run Language="en-ca" Text="Selected"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="13" Margin="675,377,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Foreground="#FF663232"><Run Language="en-ca" Text="Wheelchair"/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="27" Margin="630,285,0,0" Stroke="Black" VerticalAlignment="Top" Width="28" Fill="Black"/>
+        <Image Margin="629,371,141,160" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png"/>
+        <Image Margin="90,372,679,157" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png"/>
+        <Image Margin="46,372,723,157" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png"/>
+        <Image Margin="498,372,270,157" Stretch="Fill" Source="images/MUTCD_D9-6.svg.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="29" Margin="542,372,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="29" Margin="271,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="29" Margin="317,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="29" Margin="453,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="29" Margin="499,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="31" Margin="59,459,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" Fill="#FFB1BCE0"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="291,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="41"><Run Language="en-ca" Text="Screen"/></TextBlock>
+        <Button x:Name="SeatBox" Content="" HorizontalAlignment="Left" Height="29" Margin="90,417,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy" Content="" HorizontalAlignment="Left" Height="29" Margin="136,417,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy1" Content="" HorizontalAlignment="Left" Height="29" Margin="181,417,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy2" Content="" HorizontalAlignment="Left" Height="29" Margin="227,417,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy3" Content="" HorizontalAlignment="Left" Height="29" Margin="271,417,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy4" Content="" HorizontalAlignment="Left" Height="29" Margin="317,417,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy5" Content="" HorizontalAlignment="Left" Height="29" Margin="362,417,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy6" Content="" HorizontalAlignment="Left" Height="29" Margin="408,417,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy7" Content="" HorizontalAlignment="Left" Height="29" Margin="453,417,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy8" Content="" HorizontalAlignment="Left" Height="29" Margin="499,417,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy9" Content="" HorizontalAlignment="Left" Height="30" Margin="90,328,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy10" Content="" HorizontalAlignment="Left" Height="30" Margin="136,328,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy11" Content="" HorizontalAlignment="Left" Height="30" Margin="181,328,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy12" Content="" HorizontalAlignment="Left" Height="30" Margin="227,328,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy13" Content="" HorizontalAlignment="Left" Height="30" Margin="271,328,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy14" Content="" HorizontalAlignment="Left" Height="30" Margin="317,328,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy15" Content="" HorizontalAlignment="Left" Height="30" Margin="362,328,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy16" Content="" HorizontalAlignment="Left" Height="30" Margin="408,328,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy17" Content="" HorizontalAlignment="Left" Height="30" Margin="453,328,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy18" Content="" HorizontalAlignment="Left" Height="30" Margin="499,328,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy19" Content="" HorizontalAlignment="Left" Height="29" Margin="90,238,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy20" Content="" HorizontalAlignment="Left" Height="29" Margin="136,238,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy21" Content="" HorizontalAlignment="Left" Height="29" Margin="181,238,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy22" Content="" HorizontalAlignment="Left" Height="29" Margin="227,238,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy23" Content="" HorizontalAlignment="Left" Height="29" Margin="271,238,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy24" Content="" HorizontalAlignment="Left" Height="29" Margin="317,238,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy25" Content="" HorizontalAlignment="Left" Height="29" Margin="362,238,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy26" Content="" HorizontalAlignment="Left" Height="29" Margin="408,238,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy27" Content="" HorizontalAlignment="Left" Height="29" Margin="453,238,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy28" Content="" HorizontalAlignment="Left" Height="29" Margin="499,238,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy29" Content="" HorizontalAlignment="Left" Height="29" Margin="362,283,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy30" Content="" HorizontalAlignment="Left" Height="29" Margin="408,283,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy31" Content="" HorizontalAlignment="Left" Height="29" Margin="453,283,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy32" Content="" HorizontalAlignment="Left" Height="29" Margin="499,283,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy33" Content="" HorizontalAlignment="Left" Height="29" Margin="90,283,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy34" Content="" HorizontalAlignment="Left" Height="29" Margin="136,283,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy35" Content="" HorizontalAlignment="Left" Height="29" Margin="181,283,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy36" Content="" HorizontalAlignment="Left" Height="29" Margin="227,283,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy37" Content="" HorizontalAlignment="Left" Height="29" Margin="90,195,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy38" Content="" HorizontalAlignment="Left" Height="29" Margin="136,195,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy39" Content="" HorizontalAlignment="Left" Height="29" Margin="181,195,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy40" Content="" HorizontalAlignment="Left" Height="29" Margin="227,195,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy41" Content="" HorizontalAlignment="Left" Height="29" Margin="136,372,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy42" Content="" HorizontalAlignment="Left" Height="29" Margin="181,372,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy43" Content="" HorizontalAlignment="Left" Height="29" Margin="227,372,0,0" VerticalAlignment="Top" Width="29" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy44" Content="" HorizontalAlignment="Left" Height="29" Margin="271,372,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy45" Content="" HorizontalAlignment="Left" Height="29" Margin="317,372,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy46" Content="" HorizontalAlignment="Left" Height="29" Margin="362,372,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy47" Content="" HorizontalAlignment="Left" Height="29" Margin="408,372,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy48" Content="" HorizontalAlignment="Left" Height="29" Margin="453,372,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy49" Content="" HorizontalAlignment="Left" Height="29" Margin="362,191,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="SeatBox_Copy50" Content="" HorizontalAlignment="Left" Height="29" Margin="408,191,0,0" VerticalAlignment="Top" Width="30" Click="SeatClick" FontSize="22" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Height="28" Margin="630,245,0,0" VerticalAlignment="Top" Width="28" FontSize="22" FontWeight="Bold"/>
+        <Button Content="√" HorizontalAlignment="Left" Height="28" Margin="630,325,0,0" VerticalAlignment="Top" Width="28" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="572,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" FontSize="14" Foreground="#FF663232"><Run Language="en-ca" Text="Remaining seats to select:"/></TextBlock>
+        <Label x:Name="RemainingSeatLabel" Content="" HorizontalAlignment="Left" Height="26" Margin="740,203,0,0" VerticalAlignment="Top" Width="45" Foreground="#FF663232"/>
+        <Button Content="Confirm Seats -&gt;" HorizontalAlignment="Left" Height="53" Margin="597,482,0,0" VerticalAlignment="Top" Width="178" FontSize="20" Click="GoToFood" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <TextBlock x:Name="SeatContinueWarningLabel" HorizontalAlignment="Left" Height="35" Margin="618,445,0,0" Text="Please select all the seats before continuing!" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Foreground="#FFE40F0F" FontWeight="Normal"/>
-        <Separator HorizontalAlignment="Left" Height="13" Margin="90,119,0,0" VerticalAlignment="Top" Width="682"/>
-        <Rectangle HorizontalAlignment="Left" Height="3" Margin="173,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="203,74,0,0" Text="Show Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="290,74,0,0" Text="Time Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="374,74,0,0" Text="Ticket Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="459,74,0,0" Text="Seat Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="549,74,0,0" Text="Food Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="34" Margin="640,74,0,0" Text="Order Review and Payment" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="29" Margin="90,79,0,0" Text="Progress:" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
-        <Rectangle HorizontalAlignment="Left" Height="3" Margin="259,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="3" Margin="347,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="26" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="3" Margin="429,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="Black"/>
-        <Rectangle HorizontalAlignment="Left" Height="44" Margin="458,68,0,0" Stroke="Black" VerticalAlignment="Top" Width="58" StrokeThickness="2"/>
-        <Image HorizontalAlignment="Left" Height="50" Margin="327,11,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
-        <Separator HorizontalAlignment="Left" Height="13" Margin="29,29,0,0" VerticalAlignment="Top" Width="289"/>
-        <Separator HorizontalAlignment="Left" Height="13" Margin="467,29,0,0" VerticalAlignment="Top" Width="302"/>
+        <Separator HorizontalAlignment="Left" Height="13" Margin="50,67,0,0" VerticalAlignment="Top" Width="682"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
+        <Label Content="Click on the box to select your seats" HorizontalAlignment="Left" Margin="262,125,0,0" VerticalAlignment="Top" Foreground="#FF663232"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="188,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"><Run Language="zh-cn" Text="Show"/><Run Text=" Selection"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="260,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"><Run Language="zh-cn" Text="Time"/><LineBreak/><Run Language="zh-cn" Text="Selection"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="332,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"><Run Language="zh-cn" Text="Ticket"/><Run Text=" Selection"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="508,26,0,0" Text="Food Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="582,26,0,0" Text="Order Review and Payment" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
+        <TextBlock HorizontalAlignment="Left" Height="44" Margin="408,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextAlignment="Center" Foreground="#FFF1F1C0" Background="#FF471F1F"><Run Text=" "/><Run Language="zh-cn" Text="Seat"/><LineBreak/><Run Text="Selection"/></TextBlock>
 
     </Grid>
 </Window>

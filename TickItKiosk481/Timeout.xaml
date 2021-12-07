@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <TextBox HorizontalAlignment="Center" Margin="0,150,0,0" Text="Sorry, time is up for your reserved seats." TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="25" Height="37" />
-        <Button Content="Language" HorizontalAlignment="Left" Margin="18,497,0,25" Width="68" FontSize="14" Click="ChangeLanguage" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="99,497,0,0" VerticalAlignment="Top" Height="38" Width="75" FontSize="14" Click="GetHelp" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="30" FontSize="20" TextAlignment="Center" Margin="0,226,0,0"><Run Text="Please start "/><Run Language="en-ca" Text="a new"/><Run Text=" transaction"/></TextBlock>
-        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,302,0,177" Width="388" FontSize="22" Click="StartNewSession" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,150,0,0" Text="Sorry, time is up for your reserved seats." TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="25" Height="37" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" />
+        <Button Content="Language" HorizontalAlignment="Left" Margin="18,497,0,25" Width="68" FontSize="14" Click="ChangeLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="99,497,0,0" VerticalAlignment="Top" Height="38" Width="75" FontSize="14" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="30" FontSize="24" TextAlignment="Center" Margin="0,226,0,0" FontWeight="Bold"><Run Text="Please start "/><Run Language="en-ca" Text="a new"/><Run Text=" transaction"/></TextBlock>
+        <Button Content="Start a new transaction&#xA;Commencer une nouvelle transaction" HorizontalAlignment="Center" Margin="0,302,0,177" Width="388" FontSize="22" Click="StartNewSession" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="327,33,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="29,51,0,0" VerticalAlignment="Top" Width="289"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="467,51,0,0" VerticalAlignment="Top" Width="302"/>
