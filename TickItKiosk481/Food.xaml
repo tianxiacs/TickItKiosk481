@@ -41,12 +41,12 @@
         <Label Content="$ 7.99" HorizontalAlignment="Left" Height="29" Margin="456,390,0,0" VerticalAlignment="Top" Width="45"/>
         <Label Content="$ 8.99" HorizontalAlignment="Left" Height="29" Margin="274,229,0,0" VerticalAlignment="Top" Width="44"/>
         <Label Content="$ 10.99" HorizontalAlignment="Left" Height="30" Margin="284,396,0,0" VerticalAlignment="Top" Width="56"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="165" Margin="11,202,0,0" FontSize="20" FontWeight="Bold"><Run Language="en-ca" Text="Subtotal"/></TextBlock>
-        <Label x:Name="FoodSubtotalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="188" Margin="11,242,0,0" VerticalAlignment="Top" Width="179"/>
-        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,421,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="12,437,0,0" VerticalAlignment="Top" Width="172"/>
-        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,447,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label x:Name="FoodPriceLabel" x:FieldModifier="public" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="129,464,0,0" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="165" Margin="11,184,0,0" FontSize="20" FontWeight="Bold"><Run Language="en-ca" Text="Subtotal"/></TextBlock>
+        <Label x:Name="FoodSubtotalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="188" Margin="11,224,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,403,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="12,419,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,429,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="FoodPriceLabel" x:FieldModifier="public" Content="$ 0" HorizontalAlignment="Left" Height="26" Margin="129,446,0,0" VerticalAlignment="Top" Width="55"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="10,518,0,0" VerticalAlignment="Top" Height="32" Width="70" Click="ChangeLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="114,518,0,0" VerticalAlignment="Top" Height="32" Width="62" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="452,276,0,0" VerticalAlignment="Top" Width="20" Click="AddFriesSmall" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
@@ -67,15 +67,15 @@
         <Run Language="zh-cn" Text=" "/>
         <Run Text="Food Selection"/>
         </TextBlock>
-        <TextBlock x:Name="GiveUpSeatLabel" HorizontalAlignment="Left" Height="195" Margin="101,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You are about to give up your reserved seat(s). Do you still want to go back?" Padding="10,10,10,0">
+        <TextBlock x:Name="GiveUpSeatLabel" HorizontalAlignment="Left" Height="195" Margin="201,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You are about to give up your reserved seat(s). Do you still want to go back?" Padding="10,10,10,0">
             <TextBlock.Background>
                 <SolidColorBrush Color="#FFEAE3D7" Opacity="0.9"/>
             </TextBlock.Background>
         </TextBlock>
-        <Button x:Name="YesGiveUpButton" Content="Yes" HorizontalAlignment="Left" Height="32" Margin="176,278,0,0" VerticalAlignment="Top" Width="78" Click="GiveUpAndGoBackToSeat" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
-        <Button x:Name="NoGiveUpButton" Content="No" HorizontalAlignment="Left" Height="32" Margin="328,278,0,0" VerticalAlignment="Top" Width="78" Click="StayInFood" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button x:Name="YesGiveUpButton" Content="Yes" HorizontalAlignment="Left" Height="32" Margin="276,344,0,0" VerticalAlignment="Top" Width="78" Click="GiveUpAndGoBackToSeat" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button x:Name="NoGiveUpButton" Content="No" HorizontalAlignment="Left" Height="32" Margin="428,344,0,0" VerticalAlignment="Top" Width="78" Click="StayInFood" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
 
-        <TextBlock x:Name="TimerPopUpWindow" HorizontalAlignment="Left" Height="196" Margin="172,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You have 4 minutes left to complete the transaction before your seat reservation expires." Padding="10,10,10,0">
+        <TextBlock x:Name="TimerPopUpWindow" HorizontalAlignment="Left" Height="196" Margin="169,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You have 4 minutes left to complete the transaction before your seat reservation expires." Padding="10,10,10,0">
             <TextBlock.Background>
                 <SolidColorBrush Color="#FFEAE3D7" Opacity="0.9"/>
             </TextBlock.Background>

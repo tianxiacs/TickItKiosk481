@@ -115,8 +115,8 @@
         <Image x:Name="PosterYourName" Height="220" Source="images/your-name-movie-poster.jpg" Width="150" HorizontalAlignment="Left" Margin="24,159,0,181"/>
         <Image x:Name="PosterDunkirk" Height="220" Source="images/Dunkirk-movie-poster.jpg" Width="150" HorizontalAlignment="Left" Margin="24,159,0,181"/>
         <Label x:Name="ShowSelectionTitle" x:FieldModifier="public" HorizontalContentAlignment="Center" Content="Title" HorizontalAlignment="Left" Margin="-10,122,0,0" VerticalAlignment="Top" Width="204" Height="36" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="22" Margin="649,141,0,0" VerticalAlignment="Top" Width="151" Click="ScanMemberTime" FontSize="14" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
-        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="645,76,0,0" VerticalAlignment="Top" Width="145" Height="59" Foreground="#FF663232"/>
+        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="22" Margin="639,140,0,0" VerticalAlignment="Top" Width="151" Click="ScanMemberTime" FontSize="14" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="637,80,0,0" VerticalAlignment="Top" Width="153" Height="59" Foreground="#FF663232" FontWeight="Bold"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="50,67,0,0" VerticalAlignment="Top" Width="682"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="188,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"><Run Language="zh-cn" Text="Show"/><Run Text=" Selection"/></TextBlock>

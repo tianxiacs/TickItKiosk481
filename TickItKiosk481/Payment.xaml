@@ -7,27 +7,27 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="136" Margin="302,189,0,0" Text="Order Summary" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="136" Margin="302,184,0,0" Text="Order Summary" FontSize="18" FontWeight="Bold"/>
         <Button Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="57" FontSize="14" Margin="14,90,0,0" Click="BackToFood" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
-        <TextBox HorizontalAlignment="Left" Margin="281,127,0,0" Text="Order Review" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextAlignment="Center" FontSize="25" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="281,121,0,0" Text="Order Review" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" TextAlignment="Center" FontSize="25" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="12,519,0,9" Width="68" FontSize="14" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="91,519,0,0" VerticalAlignment="Top" Height="32" Width="68" FontSize="14" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
-        <TextBlock HorizontalAlignment="Left" Margin="559,226,0,0" Text="Please Select a payment option" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Height="24" FontSize="20" FontWeight="Bold"/>
-        <Button Content="Debit Card" HorizontalAlignment="Left" Margin="623,292,0,225" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
-        <Button Content="Credit Card" HorizontalAlignment="Left" Margin="623,355,0,163" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="Yellow" FontFamily="Sitka Heading"/>
-        <Button Content="Gift Card" HorizontalAlignment="Left" Margin="624,421,0,95" Width="70" Click="GoToGiftCardPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
-        <Label x:Name="MoneyFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="200" Margin="284,268,0,0" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Margin="541,184,0,0" Text="Please Select a payment option" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Height="32" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Debit Card" HorizontalAlignment="Left" Margin="617,253,0,264" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Credit Card" HorizontalAlignment="Left" Margin="617,316,0,202" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Button Content="Gift Card" HorizontalAlignment="Left" Margin="618,382,0,134" Width="70" Click="GoToGiftCardPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
+        <Label x:Name="MoneyFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="200" Margin="281,225,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="284,413,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="284,428,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="284,439,0,0" VerticalAlignment="Top" Width="178"/>
         <Label x:Name="MoneyPriceFinalLabel" Content="$ 0" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="394,454,0,0" VerticalAlignment="Top" Width="57"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="33,224,0,0"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
-        <Label Content="Current Points" HorizontalAlignment="Left" Height="26" Margin="33,250,0,0" VerticalAlignment="Top" Width="89"/>
-        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="33,261,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label x:Name="PointsFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="33,277,0,0" VerticalAlignment="Top" Width="186"/>
-        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="33,292,0,0" VerticalAlignment="Top" Width="178"/>
-        <Label x:Name="PointsAfterFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="33,309,0,0" VerticalAlignment="Top" Width="186"/>
-        <Label x:Name="PointsBeforeFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="170,250,0,0" VerticalAlignment="Top" Width="41"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="146" Margin="38,184,0,0" FontWeight="Bold"><Run Language="en-ca" Text="Points Balance"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <Label Content="Current Points" HorizontalAlignment="Left" Height="26" Margin="38,219,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="38,230,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="PointsFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="38,246,0,0" VerticalAlignment="Top" Width="186"/>
+        <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="38,261,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="PointsAfterFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="38,278,0,0" VerticalAlignment="Top" Width="186"/>
+        <Label x:Name="PointsBeforeFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="26" Margin="175,219,0,0" VerticalAlignment="Top" Width="41"/>
         <TextBox HorizontalAlignment="Left" Margin="592,84,0,0" Text="Time left for seat reservation:" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="55" FontSize="14" Background="{x:Null}"/>
         <Label x:Name="TimerLabel" Content="Label" HorizontalAlignment="Left" Margin="609,107,0,0" VerticalAlignment="Top" Width="158" FontSize="14"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="50,67,0,0" VerticalAlignment="Top" Width="682"/>

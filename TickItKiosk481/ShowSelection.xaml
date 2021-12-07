@@ -33,8 +33,8 @@
             </Button.Background>
         </Button>
         <Button Content="Venom" HorizontalAlignment="Left" Margin="525,409,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.67" Background="{x:Null}" FontWeight="Bold" BorderBrush="{x:Null}" Click="SelectVenom" />
-        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="29" Margin="640,153,0,0" VerticalAlignment="Top" Width="150" Click="ScanMemberShow" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
-        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="644,80,0,0" VerticalAlignment="Top" Width="146" Height="68" Foreground="#FF663232"/>
+        <Button x:Name="ScanMemberButton" Content="Scan membership card" HorizontalAlignment="Left" Height="29" Margin="636,153,0,0" VerticalAlignment="Top" Width="150" Click="ScanMemberShow" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <Label x:Name="MemberInfoLabel" x:FieldModifier="public" Content="&#xA;&#xA;No membership info" HorizontalAlignment="Left" Margin="632,91,0,0" VerticalAlignment="Top" Width="158" Height="57" Foreground="#FF663232" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="44" Margin="192,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextAlignment="Center" Foreground="#FFF1F1C0" Background="#FF471F1F"><Run Language="zh-cn" Text=" "/><Run Text="Show Selection"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="290,26,0,0" Text="Time Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="363,26,0,0" Text="Ticket Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
