@@ -8,8 +8,9 @@
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
         <TextBlock HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="682" FontSize="30"><Run Text="Please scan "/><Run Language="en-ca" Text="the barcode on "/><Run Text="your membership card"/></TextBlock>
-        <Image Margin="88,160,492,90" Stretch="Fill" Source="images/scanner.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Margin="339,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="402" FontSize="25" Foreground="#FF663232"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
+
+        <MediaElement  Height="250" HorizontalAlignment="Left" Margin="72,192,0,0" Name="mediaElement1" VerticalAlignment="Top" Width="218" Source="images/Giftcard-scanning.gif" LoadedBehavior="Play" Stretch="Fill" SpeedRatio="0.8" IsMuted="True" />
+        <TextBlock HorizontalAlignment="Left" Margin="361,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="402" FontSize="25" Foreground="#FF663232"><Run Text="Use the barcode scanner to scan"/><Run Language="en-in" Text=" your Membership Card"/><LineBreak/><Run Language="en-in"/></TextBlock>
         <Button Content="Skip and Continue without Membership" HorizontalAlignment="Left" Margin="361,285,0,210" Width="341" FontSize="18" Click="SkipMember" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Skip and Continue without Membership" HorizontalAlignment="Left" Margin="361,285,0,210" Width="341" FontSize="18" Click="SkipMember" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Sign in as Johnny" HorizontalAlignment="Left" Margin="361,367,0,136" Width="157" FontSize="18" Click="SignInAsJohnny" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>

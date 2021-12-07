@@ -118,6 +118,23 @@
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="508,26,0,0" Text="Food Selection" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="582,26,0,0" Text="Order Review and Payment" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" TextAlignment="Center" RenderTransformOrigin="0.167,0.178" Background="#FFC4A484"/>
         <TextBlock HorizontalAlignment="Left" Height="44" Margin="408,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextAlignment="Center" Foreground="#FFF1F1C0" Background="#FF471F1F"><Run Text=" "/><Run Language="zh-cn" Text="Seat"/><LineBreak/><Run Text="Selection"/></TextBlock>
+        <Label Content="A" HorizontalAlignment="Left" Height="34" Margin="8,195,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold"/>
+        <Label Content="B" HorizontalAlignment="Left" Height="34" Margin="8,236,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold"/>
+        <Label Content="C" HorizontalAlignment="Left" Height="34" Margin="8,278,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold"/>
+        <Label Content="D" HorizontalAlignment="Left" Height="34" Margin="8,322,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold"/>
+        <Label Content="E" HorizontalAlignment="Left" Height="34" Margin="8,368,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.324,0.584"/>
+        <Label Content="F" HorizontalAlignment="Left" Height="34" Margin="8,412,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.505,0.836"/>
+        <Label Content="1" HorizontalAlignment="Left" Height="34" Margin="92,156,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="2" HorizontalAlignment="Left" Height="34" Margin="138,156,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="3" HorizontalAlignment="Left" Height="34" Margin="183,156,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="4" HorizontalAlignment="Left" Height="34" Margin="229,156,0,0" VerticalAlignment="Top" Width="25" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="5" HorizontalAlignment="Left" Height="34" Margin="274,156,0,0" VerticalAlignment="Top" Width="24" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="6" HorizontalAlignment="Left" Height="34" Margin="320,156,0,0" VerticalAlignment="Top" Width="24" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="7" HorizontalAlignment="Left" Height="34" Margin="365,156,0,0" VerticalAlignment="Top" Width="24" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="8" HorizontalAlignment="Left" Height="34" Margin="411,157,0,0" VerticalAlignment="Top" Width="24" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="9" HorizontalAlignment="Left" Height="34" Margin="456,156,0,0" VerticalAlignment="Top" Width="24" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+        <Label Content="10" HorizontalAlignment="Left" Height="34" Margin="497,156,0,0" VerticalAlignment="Top" Width="34" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.903,-0.186"/>
+
 
     </Grid>
 </Window>

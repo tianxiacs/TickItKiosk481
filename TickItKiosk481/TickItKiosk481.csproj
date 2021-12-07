@@ -9,8 +9,11 @@
   <ItemGroup>
     <None Remove="debit.jpg" />
     <None Remove="drink-rem.png" />
+    <None Remove="images\card-reader.jpg" />
     <None Remove="images\Dunkirk-movie-poster.jpg" />
     <None Remove="images\fries-rem.png" />
+    <None Remove="images\Giftcard-scanning.gif" />
+    <None Remove="images\Giftcard-scanning2.gif" />
     <None Remove="images\logo.png" />
     <None Remove="images\logoLetter.png" />
     <None Remove="images\MUTCD_D9-6.svg.png" />
@@ -22,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\card-reader.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\debit.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -34,6 +40,12 @@
     <Resource Include="images\fries-rem.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Content Include="images\Giftcard-scanning.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Giftcard-scanning2.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="images\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <Image Margin="94,155,486,114" Stretch="Fill" Source="images/scanner.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Margin="345,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="414" FontSize="25" Foreground="#FF663232"><Run Language="en-ca" Text="&lt;-"/><Run Text="Use the barcode scanner to scan"/></TextBlock>
+        <Image  Height="250" HorizontalAlignment="Left" Margin="72,192,0,0" VerticalAlignment="Top" Width="218" Source="images/Giftcard-scanning2.gif" Stretch="Fill" />
+        <TextBlock HorizontalAlignment="Left" Margin="345,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="414" FontSize="25" Foreground="#FF663232"><Run Text="Use the barcode scanner to scan"/><Run Language="en-in" Text=" the barcode behind the gift card"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="113,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="564" FontSize="30"><Run Text="Please scan "/><Run Text="the barcode on "/><Run Text="your "/><Run Language="en-ca" Text="gift"/><Run Text=" card"/></TextBlock>
         <Button Content="Select another payment method" HorizontalAlignment="Left" Height="35" Margin="18,48,0,0" VerticalAlignment="Top" Width="232" Click="BackToPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="15"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="18,489,0,28" Width="91" FontSize="16" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>

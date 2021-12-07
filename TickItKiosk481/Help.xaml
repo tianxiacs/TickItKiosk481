@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <Label Content="Please wait for assistance from a staff member" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Height="46" Width="522" FontSize="25" FontWeight="Bold"/>
-        <Button Content="Cancel" HorizontalAlignment="Center" Margin="0,304,0,0" VerticalAlignment="Top" Height="37" Width="104" Click="GoBack" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="18"/>
+        <Label Content="Please wait for assistance from a staff member" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top" Height="50" Width="564" FontSize="25" FontWeight="Bold"/>
+        <Button Content="Cancel" HorizontalAlignment="Center" Margin="0,346,0,0" VerticalAlignment="Top" Height="37" Width="104" Click="GoBack" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="18"/>
         <Image HorizontalAlignment="Center" Height="50" Margin="0,50,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="35,68,0,0" VerticalAlignment="Top" Width="289"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="473,68,0,0" VerticalAlignment="Top" Width="302"/>

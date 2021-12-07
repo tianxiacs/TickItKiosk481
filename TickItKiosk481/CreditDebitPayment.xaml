@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800" Background="PaleGoldenrod">
-        <TextBlock HorizontalAlignment="Left" Margin="419,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="371" FontSize="25" Foreground="#FF663232"><Run Text="&lt;-"/><Run Text="Use the "/><Run Language="en-ca" Text="debit machine to insert, tap, or swipe the card"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="419,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="371" FontSize="25" Foreground="#FF663232"><Run Language="en-in" Text="Use the pin pad to complete the transaction"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="104,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="631" FontSize="30"><Run Text="Please "/><Run Text="use the debit machin"/><Run Language="en-ca" Text="e for card payment"/><Run Text=" "/></TextBlock>
         <Button Content="Select another payment method" HorizontalAlignment="Left" Height="35" Margin="10,49,0,0" VerticalAlignment="Top" Width="232" Click="BackToPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="15"/>
-        <Image HorizontalAlignment="Left" Height="300" Margin="171,158,0,0" VerticalAlignment="Top" Width="219" Source="images/debit.jpg"/>
+        <Image Source="images/card-reader.jpg" Margin="112,151,407,103"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="15,498,0,21" Width="85" FontSize="14" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="113,498,0,0" VerticalAlignment="Top" Height="41" Width="78" FontSize="14" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Successfully Pay" HorizontalAlignment="Left" Height="47" Margin="482,322,0,0" VerticalAlignment="Top" Width="159" FontSize="20" Click="GoToEndWindow" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>

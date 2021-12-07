@@ -67,14 +67,13 @@
         <Run Language="zh-cn" Text=" "/>
         <Run Text="Food Selection"/>
         </TextBlock>
-        <Button x:Name="YesGiveUpButton" Content="Yes" HorizontalAlignment="Left" Height="32" Margin="176,278,0,0" VerticalAlignment="Top" Width="78" Click="GiveUpAndGoBackToSeat" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
-        <Button x:Name="NoGiveUpButton" Content="No" HorizontalAlignment="Left" Height="32" Margin="328,278,0,0" VerticalAlignment="Top" Width="78" Click="StayInFood" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
-
         <TextBlock x:Name="GiveUpSeatLabel" HorizontalAlignment="Left" Height="195" Margin="101,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You are about to give up your reserved seat(s). Do you still want to go back?" Padding="10,10,10,0">
             <TextBlock.Background>
                 <SolidColorBrush Color="#FFEAE3D7" Opacity="0.9"/>
             </TextBlock.Background>
         </TextBlock>
+        <Button x:Name="YesGiveUpButton" Content="Yes" HorizontalAlignment="Left" Height="32" Margin="176,278,0,0" VerticalAlignment="Top" Width="78" Click="GiveUpAndGoBackToSeat" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
+        <Button x:Name="NoGiveUpButton" Content="No" HorizontalAlignment="Left" Height="32" Margin="328,278,0,0" VerticalAlignment="Top" Width="78" Click="StayInFood" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
 
         <TextBlock x:Name="TimerPopUpWindow" HorizontalAlignment="Left" Height="196" Margin="172,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448" Foreground="#FFD83424" FontWeight="Normal" FontSize="30" Text="You have 4 minutes left to complete the transaction before your seat reservation expires." Padding="10,10,10,0">
             <TextBlock.Background>
