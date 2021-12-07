@@ -41,8 +41,8 @@
         <Label Content="$ 7.99" HorizontalAlignment="Left" Height="29" Margin="456,390,0,0" VerticalAlignment="Top" Width="45"/>
         <Label Content="$ 8.99" HorizontalAlignment="Left" Height="29" Margin="274,229,0,0" VerticalAlignment="Top" Width="44"/>
         <Label Content="$ 10.99" HorizontalAlignment="Left" Height="30" Margin="284,396,0,0" VerticalAlignment="Top" Width="56"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="165" Margin="11,216,0,0" FontSize="20" FontWeight="Bold"><Run Language="en-ca" Text="Subtotal"/></TextBlock>
-        <Label x:Name="FoodSubtotalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="188" Margin="11,295,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="165" Margin="11,202,0,0" FontSize="20" FontWeight="Bold"><Run Language="en-ca" Text="Subtotal"/></TextBlock>
+        <Label x:Name="FoodSubtotalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="188" Margin="11,242,0,0" VerticalAlignment="Top" Width="179"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,421,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="12,437,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="12,447,0,0" VerticalAlignment="Top" Width="178"/>
