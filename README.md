@@ -1,14 +1,13 @@
--------------------------------CPSC 481: Group Project -  Read Me -----------------------------------------------------
-Group 10 - Tick-It Theatre TVM
+# CPSC 481 Group 10 - Tick-It Theatre TVM
 
-Members:
+### Members:
 Hrithvik Gadhiya (hrithvikmanoj.gadhiy@ucalgary.ca)
 Yuan Liu (yuan.liu1@ucalgary.ca)
 Shehzan Murad Ali (shehzan.muradali@ucalgary.ca)
 Zhezheng Wang (zhezheng.wang1@ucalgary.ca)
 Tian Xia (tian.xia2@ucalgary.ca)
 
-Procedure to start up the Tick-It interface:
+### Procedure to start up the Tick-It interface:
 1. Extract all the contents of the "TickIt481-master.zip" and store it in a folder called "TickItKiosk481-master"
 2. Open Visual Studio 2019
 3. Click on "Open a project or solution"
@@ -18,7 +17,7 @@ Procedure to start up the Tick-It interface:
 7. From the menu bar, click on the play button.
 8. Then, the code will be executed and you will see the main screen.
 
-Steps to use the Tick-It interface and the cases implemented:
+### Steps to use the Tick-It interface and the cases implemented:
 1. From the main window, click on the language you want to interact in with the kiosk
 2. This screen is the show_selection screen, at any point if you want to change the language, you can select the
    "Language" button on the bottom left corner of the screen to change the language, or if you want help at any point
@@ -52,7 +51,7 @@ Steps to use the Tick-It interface and the cases implemented:
 17. After clicking on the stub, you get to the order completed screen which has an option to print the receipt, or
     start over a new transaction. 
 
-Cases Implemented:
+### Cases Implemented:
 1. Membership scanning via barcode
 2. Selecting Show with and without membership scanned
 3. Selecting Show Timings with and without membership scanned
@@ -63,4 +62,3 @@ Cases Implemented:
 8. Payment types
 9. Transaction completed
 10. Miscellaneous cases such as: obtaining Help, changing Language, going Back a screen
- 
