@@ -12,7 +12,7 @@
         <Button Content="Language" HorizontalAlignment="Left" Margin="12,523,0,0" VerticalAlignment="Top" Height="26" Width="60" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="84,524,0,0" VerticalAlignment="Top" Height="25" Width="60" Click="GetHelp" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading" FontSize="14"/>
         <Label Content="Click on the movie poster or title to select your movie" HorizontalAlignment="Left" Margin="221,124,0,0" VerticalAlignment="Top" Foreground="#FF663232"/>
-        <Label Content="Next show: 3D @ 1:45 PM&#xA;Available Seats: 27&#xA;Longest row of connected seats: 7" HorizontalAlignment="Left" Height="56" Margin="52,432,0,0" VerticalAlignment="Top" Width="192" Foreground="#FF663232"/>
+        <Label Content="Next show: 2D @ 9:45 PM&#xA;Available Seats: 27&#xA;Longest row of connected seats: 7" HorizontalAlignment="Left" Height="56" Margin="52,432,0,0" VerticalAlignment="Top" Width="192" Foreground="#FF663232"/>
         <Label Content="Next show: 3D @ 6 PM&#xA;Available Seats: 22&#xA;Longest row of connected seats: 5" HorizontalAlignment="Left" Height="56" Margin="256,432,0,0" VerticalAlignment="Top" Width="191" Foreground="#FF663232"/>
         <Label Content="Next show: 3D @ 7:45 PM &#xA;Available Seats: 16&#xA;Longest row of connected seats: 3" HorizontalAlignment="Left" Height="59" Margin="467,429,0,0" VerticalAlignment="Top" Width="190" Foreground="#FF663232"/>
         <Button Content="" HorizontalAlignment="Left" Margin="52,177,0,0" VerticalAlignment="Top" Height="230" Width="160" Click="SelectDunkirk">

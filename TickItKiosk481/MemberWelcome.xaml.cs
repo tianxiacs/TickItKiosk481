@@ -27,6 +27,12 @@ namespace TickItKiosk481
         {
             this.Visibility = Visibility.Hidden;
             nextPage.Show();
+
+            App.ticket.GreyButtonMinus.Background = Brushes.Black;
+            App.ticket.GreyButtonPlus.Background = Brushes.Black;
+            App.ticket.RedeemGray1.Foreground = Brushes.Black;
+            App.ticket.RedeemGray2.Foreground = Brushes.Black;
+            App.ticket.MemberSignInReminder.Visibility = Visibility.Hidden;
         }
 
         private void GetLanguage(object sender, RoutedEventArgs e)

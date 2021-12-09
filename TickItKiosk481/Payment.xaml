@@ -16,7 +16,7 @@
         <Button Content="Debit Card" HorizontalAlignment="Left" Margin="617,253,0,264" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Credit Card" HorizontalAlignment="Left" Margin="617,316,0,202" Width="71" Click="GoToCreditDebitPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
         <Button Content="Gift Card" HorizontalAlignment="Left" Margin="618,382,0,134" Width="70" Click="GoToGiftCardPayment" Background="Black" Foreground="#FFE4E46D" FontFamily="Sitka Heading"/>
-        <Label x:Name="MoneyFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="200" Margin="281,225,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="MoneyFieldFinalLabel" x:FieldModifier="public" Content="" HorizontalAlignment="Left" Height="200" Margin="281,225,0,0" VerticalAlignment="Top" Width="195"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="284,413,0,0" VerticalAlignment="Top" Width="178"/>
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="284,428,0,0" VerticalAlignment="Top" Width="172"/>
         <Label Content="--------------------------------------------" HorizontalAlignment="Left" Height="26" Margin="284,439,0,0" VerticalAlignment="Top" Width="178"/>

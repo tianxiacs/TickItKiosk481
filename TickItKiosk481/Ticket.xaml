@@ -11,7 +11,7 @@
         <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="272" Margin="260,195,0,0" FontWeight="Bold"><Run Language="en-ca" Text="Please select tickets:"/><LineBreak/><Run Language="en-ca"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="35" Margin="328,298,0,0"><Run Language="en-ca" Text="Child"/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="35" Margin="328,344,0,0"><Run Language="en-ca" Text="Senior"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="103" Margin="260,386,0,0"><Run Language="en-ca" Text="Points Redemption"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="RedeemGray1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="103" Margin="260,386,0,0" Foreground="#FFA69595"><Run Language="en-ca" Text="Points Redemption"/><LineBreak/><Run/></TextBlock>
         <Button Content="-" HorizontalAlignment="Left" Margin="374,252,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusAdult" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Label x:Name="AdultLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="403,248,0,0" VerticalAlignment="Top" Width="23"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="35" Margin="328,254,0,0"><Run Language="en-ca" Text="Adult"/><LineBreak/><Run/></TextBlock>
@@ -33,9 +33,9 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="374,342,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusSenior" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Label x:Name="SeniorLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="403,340,0,0" VerticalAlignment="Top" Width="20"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="431,342,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddSenior" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold" />
-        <Button Content="-" HorizontalAlignment="Left" Margin="374,386,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusRedeem" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold"/>
+        <Button x:Name="GreyButtonMinus" Content="-" HorizontalAlignment="Left" Margin="374,386,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="MinusRedeem" Background="#FFA69595" Foreground="#FFE4E46D" FontWeight="Bold"/>
         <Label x:Name="RedeemLabel" x:FieldModifier="public" Content="0" HorizontalAlignment="Left" Height="26" Margin="403,384,0,0" VerticalAlignment="Top" Width="20"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="431,386,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" Background="Black" Foreground="#FFE4E46D" FontWeight="Bold" />
+        <Button x:Name="GreyButtonPlus" Content="+" HorizontalAlignment="Left" Margin="431,386,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="AddRedeem" Background="#FFA69595" Foreground="#FFE4E46D" FontWeight="Bold" />
         <Label x:Name="SubtotalFieldTicket" Content="" HorizontalAlignment="Left" Height="80" Margin="591,137,0,0" VerticalAlignment="Top" Width="190"/>
         <Label Content="------------------------------------" HorizontalAlignment="Left" Height="26" Margin="590,207,0,0" VerticalAlignment="Top" Width="180"/>
         <Label Content="GST&#x9;&#x9;&#x9;5%" HorizontalAlignment="Left" Height="26" Margin="590,222,0,0" VerticalAlignment="Top" Width="172"/>
@@ -44,7 +44,7 @@
         <Label x:Name="AdultPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="478,248,0,0" VerticalAlignment="Top" Width="57"/>
         <Label x:Name="ChildPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="478,294,0,0" VerticalAlignment="Top" Width="57"/>
         <Label x:Name="SeniorPrice" Content="12.99" x:FieldModifier="public" HorizontalAlignment="Left" Height="26" Margin="478,338,0,0" VerticalAlignment="Top" Width="57"/>
-        <Label Content="1000 points" HorizontalAlignment="Left" Height="26" Margin="469,382,0,0" VerticalAlignment="Top" Width="74"/>
+        <Label x:Name="RedeemGray2" Content="1000 points" HorizontalAlignment="Left" Height="26" Margin="469,382,0,0" VerticalAlignment="Top" Width="74" Foreground="#FFA69595"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="19,450,0,0" Foreground="#FF663232"><Run Text="Time"/><Run Language="en-ca" Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="44" Margin="19,470,0,0" Foreground="#FF663232"><Run Text="Format"/><Run Language="en-ca" Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="35" Margin="19,429,0,0" Foreground="#FF663232"><Run Text="Date"/><Run Language="en-ca" Text=":"/><LineBreak/><Run/></TextBlock>
@@ -69,6 +69,7 @@
         <Image HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="132" Source="/images/logoLetter.png"/>
         <Separator HorizontalAlignment="Left" Height="13" Margin="50,67,0,0" VerticalAlignment="Top" Width="682"/>
         <TextBlock HorizontalAlignment="Left" Height="44" Margin="332,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" TextAlignment="Center" Foreground="#FFF1F1C0" Background="#FF471F1F"><Run Text=" "/><Run Text="Ti"/><Run Language="zh-cn" Text="cket"/><LineBreak/><Run Language="zh-cn" Text="Selection"/></TextBlock>
+        <TextBlock x:Name="MemberSignInReminder" HorizontalAlignment="Left" Height="32" Margin="308,415,0,0" Text="Please sign in with your membership card to redeem tickets." TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Foreground="#FFE40F0F" FontWeight="Normal"/>
 
     </Grid>
 </Window>
