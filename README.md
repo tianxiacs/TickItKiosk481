@@ -1,10 +1,10 @@
 # CPSC 481 Group 10 - Tick-It Theatre TVM
 
 ### Members:
-Hrithvik Gadhiya (hrithvikmanoj.gadhiy@ucalgary.ca)
-Yuan Liu (yuan.liu1@ucalgary.ca)
-Shehzan Murad Ali (shehzan.muradali@ucalgary.ca)
-Zhezheng Wang (zhezheng.wang1@ucalgary.ca)
+Hrithvik Gadhiya (hrithvikmanoj.gadhiy@ucalgary.ca) <br />
+Yuan Liu (yuan.liu1@ucalgary.ca) <br />
+Shehzan Murad Ali (shehzan.muradali@ucalgary.ca) <br />
+Zhezheng Wang (zhezheng.wang1@ucalgary.ca) <br />
 Tian Xia (tian.xia2@ucalgary.ca)
 
 ### Procedure to start up the Tick-It interface:
