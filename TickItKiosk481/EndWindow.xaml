@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Show_Selection" WindowStartupLocation="Manual" Left="0" Top="0" SizeToContent="WidthAndHeight" Background="PaleGoldenrod">
     <Grid HorizontalAlignment="Center" Height="560" VerticalAlignment="Top" Width="800">
-        <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" Text="Payment Successful. Thankyou for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="496" TextAlignment="Center" FontSize="24" Height="37" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" Text="Payment Successful. Thank you for using Tick-It!" TextWrapping="Wrap" VerticalAlignment="Top" Width="618" TextAlignment="Center" FontSize="24" Height="37" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
         <Button Content="Language" HorizontalAlignment="Left" Margin="22,495,0,27" Width="68" FontSize="14" Click="GetLanguage" Background="Black" Foreground="#FFE4E46D"/>
         <Button Content="Help" HorizontalAlignment="Left" Margin="104,495,0,0" VerticalAlignment="Top" Height="38" Width="64" FontSize="14" Click="GetHelp" Background="Black" Foreground="#FFE4E46D"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Height="59" FontSize="20" TextAlignment="Center" Foreground="#FF663232"><Run Text="Please collect your tickets and "/><Run Language="en-ca" Text="enjoy your show!"/></TextBlock>
